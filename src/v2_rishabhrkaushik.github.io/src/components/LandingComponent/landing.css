@@ -1,0 +1,5 @@
+#landingPageDiv {
+  background-image: url("./landingBG.jpg");
+  background-size: cover !important;
+  height: 100vh;
+}

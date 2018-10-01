@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Landing from "./components/landing";
 
 ReactDOM.render(
-  <p> Hello, let see what this does </p>
-  ,document.getElementById('root'),
+  <div> Index.js </div>
+  ,document.getElementById('root')
+);
+
+ReactDOM.render(
+  <Landing />
+  ,document.getElementById('landingIndex'),
 );

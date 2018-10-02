@@ -1,6 +1,7 @@
 #landingPageDiv {
   background-image: url("./landingBG-2.jpg");
   background-size: cover !important;
+  background-attachment: fixed !important;
   height: 100vh;
   color: white;
 }
@@ -13,11 +14,23 @@
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  padding-top: 4em;
   border-width: thick;
   vertical-align: middle;
-  box-shadow: 0 0 0 4px #fff;
+  /* box-shadow: 0 0 0 4px #fff; */
 }
 
 .centered-text {
   text-align: center;
+}
+
+.social-networking-icons i {
+  padding: 10px 10px 10px 10px;
+  line-height: 2;
+  border-color: #FFFFFF;
+  border: 2px 2px 2px 2px;
+}
+
+.social-networking-icons a {
+  color: #FFFFFF;
 }

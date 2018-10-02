@@ -10,6 +10,20 @@ class Landing extends Component {
         </div>
         <div className="centered-text">
           <h2> I AM RISHABH KAUSHIK </h2>
+          <div className="social-networking-icons">
+            <a href="https://www.linkedin.com/in/rishabhrkaushik/" target="_blank">
+              <i className="fab fa-linkedin fa-2x"> </i>
+            </a>
+            <a href="https://github.com/rishabhrkaushik/" target="_blank">
+              <i className="fab fa-github fa-2x"> </i>
+            </a>
+            <a href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
+              <i className="fab fa-quora fa-2x"> </i>
+            </a>
+            <a href="https://www.facebook.com/rishabhrkaushik" target="_blank">
+              <i className="fab fa-facebook fa-2x"> </i>
+            </a>
+          </div>
         </div>
       </div>
     );

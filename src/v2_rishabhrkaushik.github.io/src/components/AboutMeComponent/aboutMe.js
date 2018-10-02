@@ -32,12 +32,10 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <div className="container-fluid">
+        <div className="container-fluid text-columns">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-4">
               <h4 className="text-column">Tech is reserved for the people like me - The freaks, the weirdos, the misfits, the geeks, the dweebs, the dorks<br /> - Richard Hendriks, Silicon Valley</h4>
-            </div>
-            <div className="col-md-1">
             </div>
             <div className="col-md-4">
               <p className="text-column">I am a task oriented guy who likes to get his hands dirty working on interdisciplinary projects. Topic of interests range wide from Embedded systems, Programming, Robotics, Mechanics, UX etc.</p>

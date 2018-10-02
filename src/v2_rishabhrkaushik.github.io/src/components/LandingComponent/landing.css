@@ -6,18 +6,19 @@
   color: white;
 }
 
+.profile-image {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
 .centered-image {
-  height: 40vh;
-  width: 40vh;
+  height: 50vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 4em;
   border-width: thick;
-  vertical-align: middle;
-  /* box-shadow: 0 0 0 4px #fff; */
+  box-shadow: 0 0 0 4px #fff;
 }
 
 .centered-text {

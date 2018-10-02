@@ -5,7 +5,7 @@ class Landing extends Component {
   render() {
     return (
       <div id="landingPageDiv">
-        <div>
+        <div className="profile-image">
           <img src={require('./profile.jpg')} alt="Profile" className="centered-image" />
         </div>
         <div className="centered-text">

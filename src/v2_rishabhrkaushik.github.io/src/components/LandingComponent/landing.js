@@ -4,7 +4,14 @@ import "./landing.css";
 class Landing extends Component {
   render() {
     return (
-      <div id="landingPageDiv"> Landing Page </div>
+      <div id="landingPageDiv">
+        <div>
+          <img src={require('./profile.jpg')} alt="Profile" className="centered-image" />
+        </div>
+        <div className="centered-text">
+          <h2> I AM RISHABH KAUSHIK </h2>
+        </div>
+      </div>
     );
   };
 }

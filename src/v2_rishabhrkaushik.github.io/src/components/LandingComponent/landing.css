@@ -1,5 +1,23 @@
 #landingPageDiv {
-  background-image: url("./landingBG.jpg");
+  background-image: url("./landingBG-2.jpg");
   background-size: cover !important;
   height: 100vh;
+  color: white;
+}
+
+.centered-image {
+  height: 40vh;
+  width: 40vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-width: thick;
+  vertical-align: middle;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.centered-text {
+  text-align: center;
 }

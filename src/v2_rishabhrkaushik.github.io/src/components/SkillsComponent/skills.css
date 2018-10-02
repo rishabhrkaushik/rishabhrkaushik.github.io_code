@@ -1,0 +1,7 @@
+#skillsDiv{
+	padding:50px;
+	background-image:url('./skills_bg.png');
+  position:relative;
+	width:100%;
+  color: #FFFFFF;
+}

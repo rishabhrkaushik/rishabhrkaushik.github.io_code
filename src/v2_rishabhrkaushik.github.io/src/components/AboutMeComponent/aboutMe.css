@@ -1,4 +1,4 @@
-#AboutMe {
+#aboutMeDiv {
   background-image: url("./aboutMe_bg.jpg");
 	position:relative;
 	width:100%;
@@ -16,7 +16,10 @@ h2 {
 }
 
 .icon-row {
-  padding: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em
 }
 
 .icon-and-text {

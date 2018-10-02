@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Landing from "./components/LandingComponent/landing";
 import AboutMe from "./components/AboutMeComponent/aboutMe";
-
-// ReactDOM.render(
-//   <div> Index.js </div>
-//   ,document.getElementById('root')
-// );
+import Skills from "./components/SkillsComponent/skills";
 
 ReactDOM.render(
   <Landing />,
@@ -16,4 +12,9 @@ ReactDOM.render(
 ReactDOM.render(
   <AboutMe />,
   document.getElementById('aboutMeIndex'),
+);
+
+ReactDOM.render(
+  <Skills />,
+  document.getElementById('skillsIndex'),
 );

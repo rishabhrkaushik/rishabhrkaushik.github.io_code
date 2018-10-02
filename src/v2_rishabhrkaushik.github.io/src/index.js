@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Landing from "./components/LandingComponent/landing";
 import AboutMe from "./components/AboutMeComponent/aboutMe";
 import Skills from "./components/SkillsComponent/skills";
+import Projects from "./components/ProjectsComponent/projects";
+import Experiences from "./components/ExperiencesComponent/experiences";
 
 ReactDOM.render(
   <Landing />,
@@ -17,4 +19,14 @@ ReactDOM.render(
 ReactDOM.render(
   <Skills />,
   document.getElementById('skillsIndex'),
+);
+
+ReactDOM.render(
+  <Projects />,
+  document.getElementById("projectsIndex"),
+);
+
+ReactDOM.render(
+  <Experiences />,
+  document.getElementById("experiencesIndex"),
 );

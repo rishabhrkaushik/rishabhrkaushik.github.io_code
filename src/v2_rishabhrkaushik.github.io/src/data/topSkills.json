@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Python",
+		"level": 80,
+		"details": "Self learnt. Used to do image processing, scripting and task automation and few other projects"
+	},
+  {
+		"name": "Embedded System",
+		"level": 85,
+		"details": "Self learnt and enhanced via college course."
+	},
+	{
+		"name": "Node.js",
+		"level": 75,
+		"details": "Self learnt. Used in Smarthomes project and other web development projects."
+	},
+  {
+		"name": "Electronics",
+		"level": 70,
+		"details": "Learnt in college. Domain expertise particularly in Embedded systems, digital electronics"
+	},
+  {
+		"name": "Arduino",
+		"level": 90,
+		"details": "Self learnt. Used in lot many DIY projects. Also learnt as a part of open elective."
+	},
+	{
+		"name": "Web Development",
+		"level": 75,
+		"details": "Self learnt. Languages used were Javascript, HTML, CSS, Node.js, PHP, Python etc"
+	}
+]

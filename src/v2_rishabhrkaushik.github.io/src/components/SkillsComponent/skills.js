@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './skills.css';
+import topSkills from '../../data/topSkills.json';
 
 class DonutChart extends Component {
   render() {
@@ -51,24 +52,31 @@ class Skills extends Component {
         <h2> Top Skills </h2>
         <div id="ringCharts">
           <div className="row">
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
-            <div className="col-md-2">
-              <DonutChart value={60} valuelabel='Completed'/>
-            </div>
+            {
+              topSkills.map(topSkill =>
+                <div className="col-md-2">
+                  <DonutChart value={topSkill.level} valuelabel={topSkill.name}/>
+                </div>
+              )
+            }
+            {
+            //
+            // <div className="col-md-2">
+            //   <DonutChart value={60} valuelabel='Completed'/>
+            // </div>
+            // <div className="col-md-2">
+            //   <DonutChart value={60} valuelabel='Completed'/>
+            // </div>
+            // <div className="col-md-2">
+            //   <DonutChart value={60} valuelabel='Completed'/>
+            // </div>
+            // <div className="col-md-2">
+            //   <DonutChart value={60} valuelabel='Completed'/>
+            // </div>
+            // <div className="col-md-2">
+            //   <DonutChart value={60} valuelabel='Completed'/>
+            // </div>
+          }
           </div>
         </div>
         <h2> Other Skills </h2>

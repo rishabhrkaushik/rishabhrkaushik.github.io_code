@@ -1,0 +1,31 @@
+[
+	{
+		"type": "Work",
+		"startDate": "October 2016",
+		"endDate": "Present",
+		"jobTitle": "Associate Engineer",
+		"company": "Larsen and Toubro Technology Services",
+		"location": "Bangalore, India",
+		"team": "Aero and Rail VDU. <br>",
+    "jobDesc": "Worked on designing of ATE. DO 160 standards testing"
+	},
+	{
+		"type": "Work",
+		"startDate": "May 2016",
+		"endDate": "July 2016",
+		"jobTitle": "Research & Development Intern",
+		"company": "1Thing Design and Innovation Pvt. Ltd.",
+		"location": "Gurgaon, India",
+    "team": "SmartHomes",
+		"jobDesc": "As a part of this intern I worked on SmartHomes project. My responsibilities involved prototyping of the product. I majorly worked on embedded systems and central hub to manage all the devices.<br> Platforms worked on involve Python, Arduino, ESP8266 etc"
+	},
+	{
+		"type": "Work",
+		"startDate": "May 2015",
+		"endDate": "July 2015",
+		"jobTitle": "Technical Intern",
+		"company": "True Education Institute Pvt. Ltd",
+		"location": "Nagpur, India",
+		"jobDesc": "In this intern I worked on projects like CNC Machine, Quadcopter, Attendance Machine etc."
+	}
+]

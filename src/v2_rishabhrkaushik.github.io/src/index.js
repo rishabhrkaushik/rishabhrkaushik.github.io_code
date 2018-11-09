@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMeComponent/aboutMe";
 import Skills from "./components/SkillsComponent/skills";
 import Projects from "./components/ProjectsComponent/projects";
 import Experiences from "./components/ExperiencesComponent/experiences";
+import Education from "./components/EducationComponent/education";
 
 ReactDOM.render(
   <Landing />,
@@ -29,4 +30,9 @@ ReactDOM.render(
 ReactDOM.render(
   <Experiences />,
   document.getElementById("experiencesIndex"),
+);
+
+ReactDOM.render(
+  <Education />,
+  document.getElementById("educationIndex"),
 );

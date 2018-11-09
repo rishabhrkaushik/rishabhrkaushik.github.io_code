@@ -1,0 +1,17 @@
+#educationDiv {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.title {
+  padding: 1em;
+  top: 50%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.firstrow {
+  padding: 2em;
+}

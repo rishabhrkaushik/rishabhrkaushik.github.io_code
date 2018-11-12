@@ -1,6 +1,7 @@
 import React, {  Component } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Collapse, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardText, CardBody, CardHeader, CardFooter, CardDeck} from 'reactstrap';
 import "./projects.css";
+import projects from '../../data/projects.json';
 
 class ProjectModal extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class ProjectModal extends React.Component {
   render() {
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <i className="showMore" onClick={this.toggle}> Show More </i>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}> {this.props.projectTitle} </ModalHeader>
           <ModalBody>
@@ -35,69 +36,65 @@ class ProjectModal extends React.Component {
   }
 }
 
-class Card extends Component {
-    render(){
-      return (
-        <article>
-          <div className="project">
-            <div className="cover">
-              <div className="projectTitle">
-                <h3> {this.props.projectTitle} </h3>
-              </div>
-              <div className="tags">
-                <span className="tag"> Tag 1 </span>
-                <span className="tag"> Tag 2 </span>
-                <span className="tag"> Tag 3 </span>
+class ProjectCard extends Component {
+  createTagString(tags){
+    var tagsString = "";
+    tags.map(tag =>
+      tagsString = tagsString + ", " + tag)
+    return tagsString.substr(2)
+  }
 
-                <span className="tag"> Tag 1 </span>
-                <span className="tag"> Tag 2 </span>
-              </div>
-            </div>
-            <div className="overlay">
-              <div className="heading">
-                <h4> Project </h4>
-                <hr />
-              </div>
-              <div className="projectSummary">
-                <h6> {this.props.projectSummary} </h6>
-              </div>
-              <ProjectModal buttonLabel="Show More" projectTitle={this.props.projectTitle} projectDesc={this.props.projectDesc}/>
-            </div>
-          </div>
-        </article>
-      );
-    }
+  render(){
+    return (
+      <Card>
+        <CardHeader>{this.props.projectTitle}</CardHeader>
+        <CardBody>
+          <CardText>{this.props.projectSummary}</CardText>
+          <ProjectModal projectTitle={this.props.projectTitle} projectDesc={this.props.projectDesc} buttonLabel="Show More"/>
+        </CardBody>
+        <CardFooter>{this.createTagString(this.props.tags)}</CardFooter>
+      </Card>
+    );
+  }
 }
 
 class Projects extends Component {
   render(){
     return (
       <div id="projectsDiv">
-        <h1> Projects </h1>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-3">
-              <Card projectTitle='Project 1' projectSummary='This is Summary 1' projectDesc="This is the description of project 1"/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 2' projectSummary='This is Summary 2'/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 3' projectSummary='This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. This is Summary 3. '/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 4' projectSummary='This is Summary 4'/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 5' projectSummary='This is Summary 5'/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 6' projectSummary='This is Summary 6'/>
-            </div>
-            <div className="col-md-3">
-              <Card projectTitle='Project 7' projectSummary='This is Summary 7'/>
-            </div>
-          </div>
+        <div className="heading">
+          <h1>
+            Project
+          </h1>
+        </div>
+        <div className="projectsList">
+          {/* {
+            for(i = 0; i < 4; i++){
+              <ProjectCard projectTitle={projects[i].title} projectSubtitle={project[i].subTitle} tags={project[i].tags} projectSummary={projects[i].summary} projectDesc={projects[i].projectDesc}/>
+            }
+          }
+
+          {
+            for(i = 0; i < 4; i++){
+              <ProjectCard projectTitle={projects[i].title} projectSubtitle={project[i].subTitle} tags={project[i].tags} projectSummary={projects[i].summary} projectDesc={projects[i].projectDesc}/>
+            }
+          } */}
+
+            {
+              projects.map(project =>
+                  <ProjectCard projectTitle={project.title} projectSubtitle={project.subTitle} tags={project.tags} projectSummary={project.summary} projectDesc={project.projectDesc}/>
+              )
+            }
+          {/* <ProjectCard projectTitle="Project 1" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          <ProjectCard projectTitle="Project 2" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          <ProjectCard projectTitle="Project 3" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          <ProjectCard projectTitle="Project 4" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+        </CardDeck>
+        <CardDeck>
+          <ProjectCard projectTitle="Project 5" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          <ProjectCard projectTitle="Project 6" tags="Tag 1, Tag 2, Tag 3, Tag 4" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          <ProjectCard projectTitle="Project 7" tags="Tag 1, Tag 2, Tag 3, Tag 4, Tag 5, Tag 6,Tag 7, Tag 8, Tag 9, Tag 10" projectSummary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor." projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut tincidunt felis, ut facilisis mi. Integer tristique augue eget eros pharetra mattis. Quisque rutrum scelerisque tellus in condimentum. Sed lacinia ultricies magna, vitae tincidunt magna. Sed elementum ex vel ultrices viverra. Fusce sit amet eleifend metus. Nullam fermentum dapibus ligula finibus semper. Donec vel purus vulputate, faucibus sem eu, eleifend diam. Curabitur sed rutrum lectus. Vivamus mollis mi sit amet erat rutrum, vestibulum ornare nibh hendrerit. "/>
+          {/* <ProjectCard collapse={true} /> */} */}
         </div>
       </div>
     );

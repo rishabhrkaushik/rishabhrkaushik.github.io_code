@@ -1,0 +1,53 @@
+[
+	{
+		"title": "Frisbee Throwing Robot",
+		"subTitle": "The landing Disc, Robocon 17",
+		"tags": ["Robotics", "Electronics", "Arduino", "Processing"],
+		"projectDesc": "In this project we made a robot capable of making frisbees land on a pole of different height kept at various distance and positions. As a core member commitee, I looked after almost everything from management to design to manufacturing. Made as a part of Robocon 17 team of RCOEM.",
+		"summary": "In this project we made a robot capable of making frisbees land on a pole of different height kept at various distance and positions. As a core member commitee, I looked after almost everything from management to design to manufacturing. Made as a part of Robocon 17 team of RCOEM."
+	},
+	{
+		"title": "Puzzle Solving Robot",
+		"subTitle": "e-Yantra 2016, IIT bombay",
+		"tags": ["Robotics", "AVR", "Python", "Image Processing"],
+		"_comment":["openCV"],
+		"projectDesc": "The task was to first find the digits from image using image processing, then do some mathematical calculations of the digits and their position, feed this information to the bot which will then travel to locations autonomously picking and placing blocks on the way using its constructed robotic arm.",
+		"summary": "The task was to first find the digits from image using image processing, then do some mathematical calculations of the digits and their position, feed this information to the bot which will then travel to locations autonomously picking and placing blocks on the way using its constructed robotic arm."
+	},
+	{
+		"title": "Smarthomes",
+		"subTitle": "As a part of 1thing internship, then B.E. project and then personal project.",
+		"tags": ["Embedded Systems", "Arduino", "Node.js"],
+		"_comment": ["Web Development", "ESP8266"],
+		"projectDesc": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few feature implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc.",
+		"summary": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few feature implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc."
+	},
+	{
+		"title": "CNC Vertical Mill",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "Mechanics", "PC Toolchain"],
+		"projectDesc": "Two CNC vertical mill of different dimmension was made. The machine is capable of millings, drilling and engraving by giving a gcode file.",
+		"summary": "Two CNC vertical mill of different dimmension was made. The machine is capable of millings, drilling and engraving by giving a gcode file."
+	},
+	{
+		"title": "Quadcopter",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "UAV", "Sensors"],
+		"projectDesc": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
+		"summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it."
+	},
+	{
+		"title": "Attendance Machine",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "IoT", "Sensors"],
+		"projectDesc": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
+		"summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats."
+	},
+	{
+		"title": "RPi Server",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Raspberry Pi", "Linux"],
+		"projectDesc": "Set up a complete server on Raspberry Pi including Web server, File server, Print server, Node.js server, Media server. Quite useful setup for daily computational needs.",
+		"summary": "Set up a complete server on Raspberry Pi including Web server, File server, Print server, Node.js server, Media server. Quite useful setup for daily computational needs."
+	}
+]

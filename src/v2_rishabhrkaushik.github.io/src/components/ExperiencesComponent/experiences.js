@@ -14,8 +14,8 @@ class Card extends Component {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
           <h3 className="vertical-timeline-element-title">{this.props.title}</h3>
-          <h4 className="vertical-timeline-element-subtitle">{this.props.team + this.props.company}</h4>
-          {/* <h4 className="vertical-timeline-element-subtitle">{experience.company}</h4> */}
+          <h4 className="vertical-timeline-element-subtitle">{this.props.team}</h4>
+          <h4 className="vertical-timeline-element-subtitle">{this.props.company + ", " + this.props.location}</h4>
           <p>
             {this.props.content}
           </p>
@@ -24,7 +24,6 @@ class Card extends Component {
   }
 }
 
-{/* icon={<i className="fa fa-briefcase"></i>} */}
 class Experiences extends Component {
   render(){
     return (

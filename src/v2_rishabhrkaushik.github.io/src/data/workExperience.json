@@ -1,8 +1,18 @@
 [
 	{
 		"type": "Work",
-		"startDate": "October 2016",
+		"startDate": "Oct 2018",
 		"endDate": "Present",
+		"jobTitle": "Engineer",
+		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
+		"location": "Bangalore, India",
+		"team": "Aero and Rail VDU",
+    "jobDesc": "Worked on designing of ATE. DO 160 standards testing"
+	},
+	{
+		"type": "Work",
+		"startDate": "Oct 2017",
+		"endDate": "Oct 2018",
 		"jobTitle": "Associate Engineer",
 		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
@@ -23,9 +33,10 @@
 		"type": "Work",
 		"startDate": "May 2015",
 		"endDate": "July 2015",
-		"jobTitle": "Technical Intern",
+		"jobTitle": "Intern",
 		"company": "True Education Institute Pvt. Ltd",
 		"location": "Nagpur, India",
+		"team": "Technical Team",
 		"jobDesc": "In this intern I worked on projects like CNC Machine, Quadcopter, Attendance Machine etc."
 	}
 ]

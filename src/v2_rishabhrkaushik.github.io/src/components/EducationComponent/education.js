@@ -1,6 +1,8 @@
 import React,{ Component } from 'react';
-import { Card, CardText, CardBody, CardHeader, CardFooter, CardDeck} from 'reactstrap';
+import { Card, CardText, CardBody, CardHeader,CardTitle, CardSubtitle, CardDeck} from 'reactstrap';
 import "./education.css";
+
+import education from '../../data/education.json';
 
 
 class Education extends Component {
@@ -8,50 +10,65 @@ class Education extends Component {
     return(
       <div id="educationDiv">
         <div className="title">
-          <h1> Education </h1>
+          <h1> Certifications </h1>
           <hr />
         </div>
-        <CardDeck>
+        {/* <CardDeck>
           <Card>
             <CardHeader> Formal Education </CardHeader>
-            <div className="formalEducationItem">
-              Bachelor of Electronics Engineering,
-              Shri Ramdeobaba College of Engineering and Management
-            </div>
-            <div className="formalEducationItem">
-              Higher Secondary Education,
-              Maharashtra State Board
-            </div>
-            <div className="formalEducationItem">
-              Secondary Education,
-              Maharashtra State Board
-            </div>
           </Card>
           <Card>
             <CardHeader> Certification </CardHeader>
-            <div className="formalEducationItem">
-              Bachelor of Electronics Engineering,
-              Shri Ramdeobaba College of Engineering and Management
-            </div>
-            <div className="formalEducationItem">
-              Higher Secondary Education,
-              Maharashtra State Board
-            </div>
-            <div className="formalEducationItem">
-              Secondary Education,
-              Maharashtra State Board
-            </div>
           </Card>
-        </CardDeck>
+        </CardDeck> */}
         <CardDeck>
           <Card>
             <CardHeader> Electronics </CardHeader>
+            <CardBody className="low-padding">
+              {
+                education.Electronics.map((electronicsCert) =>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle> {electronicsCert.name} </CardTitle>
+                      <CardSubtitle> {electronicsCert.desc} </CardSubtitle>
+                    </CardHeader>
+                    <CardBody> <a target="_blank" href={electronicsCert.link}> View Certificate </a> </CardBody>
+                  </Card>
+                )
+              }
+            </CardBody>
           </Card>
           <Card>
             <CardHeader> Computer Science </CardHeader>
+            <CardBody className="low-padding">
+              {
+                education["Computer Science"].map((csCert) =>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle> {csCert.name} </CardTitle>
+                      <CardSubtitle> {csCert.desc} </CardSubtitle>
+                    </CardHeader>
+                    <CardBody> <a target="_blank" href={csCert.link}> View Certificate </a> </CardBody>
+                  </Card>
+                )
+              }
+            </CardBody>
           </Card>
           <Card>
-            <CardHeader> Humanities </CardHeader>
+            <CardHeader> Soft Skills and Humanities </CardHeader>
+            <CardBody className="low-padding">
+              {
+                education["Soft Skills and Humanities"].map((ssCert) =>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle> {ssCert.name} </CardTitle>
+                      <CardSubtitle> {ssCert.desc} </CardSubtitle>
+                    </CardHeader>
+                    <CardBody> <a target="_blank" href={ssCert.link}> View Certificate </a> </CardBody>
+                  </Card>
+                )
+              }
+            </CardBody>
           </Card>
         </CardDeck>
       </div>

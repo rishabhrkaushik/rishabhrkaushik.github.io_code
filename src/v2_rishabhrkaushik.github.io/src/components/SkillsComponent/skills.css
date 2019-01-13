@@ -53,18 +53,15 @@ h3 {
   textAnchor: 'middle';
 }
 
-.bar-container {
-		margin: 1em 1em 1em 0em;
-		width: 100%;
-    background-color: #ddd;
+.bar {
+	padding: 0.5em;
 }
 
-.bar-skill {
-    text-align: left;
-    padding: 2em;
-    color: white;
+.progress-bar {
+	padding-left: 0.5em;
+	text-align: left;
 }
 
-.skillColumn {
-	padding: 2em;
+.card-header {
+	color: #000;
 }

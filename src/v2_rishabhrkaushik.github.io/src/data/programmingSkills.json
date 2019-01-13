@@ -1,13 +1,23 @@
 [
 	{
+		"name": "Python",
+		"level": "80",
+		"details": "Self learnt. Used to do image processing, scripting and task automation and few other projects"
+	},
+	{
+		"name": "Linux",
+		"level": "75",
+		"details": "Self learnt. Love it. Regular user of Ubuntu and like trying other distros as well."
+	},
+	{
 		"name": "Javascript",
 		"level": "75",
 		"details": "Self learnt. Used in several projects like Smarthomes project and few web dev project."
 	},
 	{
-		"name": "Python",
-		"level": "80",
-		"details": "Self learnt. Used to do image processing, scripting and task automation and few other projects"
+		"name": "Linux Shell",
+		"level": "70",
+		"details": "Self learnt. Daily used."
 	},
 	{
 		"name": "Node.js",
@@ -23,20 +33,5 @@
 		"name": "Web Development",
 		"level": "65",
 		"details": "Self learnt. Languages used were Javascript, HTML, CSS, Node.js, PHP, Python etc"
-	},
-	{
-		"name": "Linux",
-		"level": "85",
-		"details": "Self learnt. Love it. Regular user of Ubuntu and like trying other distros as well."
-	},
-	{
-		"name": "Linux Shell",
-		"level": "70",
-		"details": "Self learnt. Daily used."
-	},
-	{
-		"name": "Raspberry Pi",
-		"level": "90",
-		"details": "Self learnt"
 	}
 ]

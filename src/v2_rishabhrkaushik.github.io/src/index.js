@@ -32,7 +32,7 @@ ReactDOM.render(
   document.getElementById("experiencesIndex"),
 );
 
-ReactDOM.render(
-  <Education />,
-  document.getElementById("educationIndex"),
-);
+// ReactDOM.render(
+//   <Education />,
+//   document.getElementById("educationIndex"),
+// );

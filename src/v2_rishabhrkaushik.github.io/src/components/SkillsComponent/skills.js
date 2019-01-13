@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { Card, CardText, CardBody, CardHeader, CardFooter, CardDeck} from 'reactstrap';
+import { Progress } from 'reactstrap';
 import './skills.css';
 import topSkills from '../../data/topSkills.json';
+import programmingSkills from '../../data/programmingSkills.json';
+import softSkills from '../../data/softSkills.json';
+import electronicsSkills from '../../data/electronicsSkills.json';
 
 class DonutChart extends Component {
   render() {
@@ -34,10 +39,8 @@ DonutChart.defaultProps = {
 class BarChart extends Component {
   render() {
     return (
-      <div className="bar-container">
-        <div className="bar-skills" style={{width: this.props.value, backgroundColor: this.props.color}}>
-          {this.props.label}
-        </div>
+      <div className="bar">
+        <Progress value={this.props.value} text-align="left">{this.props.label}</Progress>
       </div>
     );
   }
@@ -59,53 +62,35 @@ class Skills extends Component {
                 </div>
               )
             }
-            {
-            //
-            // <div className="col-md-2">
-            //   <DonutChart value={60} valuelabel='Completed'/>
-            // </div>
-            // <div className="col-md-2">
-            //   <DonutChart value={60} valuelabel='Completed'/>
-            // </div>
-            // <div className="col-md-2">
-            //   <DonutChart value={60} valuelabel='Completed'/>
-            // </div>
-            // <div className="col-md-2">
-            //   <DonutChart value={60} valuelabel='Completed'/>
-            // </div>
-            // <div className="col-md-2">
-            //   <DonutChart value={60} valuelabel='Completed'/>
-            // </div>
-          }
           </div>
         </div>
         <h2> Other Skills </h2>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6 skillColumn">
-              <h3> Programming </h3>
-              <BarChart value={'70%'} color="#DD0000" label="HTML" />
-              <BarChart value={'100%'} color="green" label="HTML" />
-              <BarChart value={'10%'} color="blue" label="HTML" />
-            </div>
-            <div className="col-md-6 skillColumn">
-              <h3> Electronics </h3>
-              <BarChart value={'70%'} color="gray" label="HTML" />
-              <BarChart value={'100%'} color="black" label="HTML" />
-              <BarChart value={'10%'} color="#ABDD00" label="HTML" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6 skillColumn">
-              <h3> Soft Skills </h3>
-              <BarChart value={'70%'} color="#DD0F0A" label="HTML" />
-              <BarChart value={'100%'} color="#DA00DD" label="HTML" />
-              <BarChart value={'10%'} color="#DDFF00" label="HTML" />
-            </div>
-            <div className="col-md-6 skillColumn">
-            </div>
-          </div>
-        </div>
+        <CardDeck>
+          <Card>
+            <CardHeader> Programming </CardHeader>
+            {
+              programmingSkills.map(programmingSkill =>
+                <BarChart value={programmingSkill.level} label={programmingSkill.name} />
+              )
+            }
+          </Card>
+          <Card>
+            <CardHeader> Electronics </CardHeader>
+            {
+              electronicsSkills.map(electronicsSkill =>
+                <BarChart value={electronicsSkill.level} label={electronicsSkill.name} />
+              )
+            }
+          </Card>
+          <Card>
+            <CardHeader> Soft Skills </CardHeader>
+            {
+              softSkills.map(softSkill =>
+                <BarChart value={softSkill.level} label={softSkill.name} />
+              )
+            }
+          </Card>
+        </CardDeck>
       </div>
     );
   }

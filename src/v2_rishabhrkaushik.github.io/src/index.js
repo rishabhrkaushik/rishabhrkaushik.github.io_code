@@ -6,6 +6,7 @@ import Skills from "./components/SkillsComponent/skills";
 import Projects from "./components/ProjectsComponent/projects";
 import Experiences from "./components/ExperiencesComponent/experiences";
 import Education from "./components/EducationComponent/education";
+import ContactMe from "./components/ContactMeComponent/contactMe"
 
 ReactDOM.render(
   <Landing />,
@@ -35,4 +36,10 @@ ReactDOM.render(
 ReactDOM.render(
   <Education />,
   document.getElementById("educationIndex"),
+);
+
+
+ReactDOM.render(
+  <ContactMe />,
+  document.getElementById("contactMeIndex")
 );

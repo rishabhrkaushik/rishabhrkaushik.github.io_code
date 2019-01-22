@@ -1,16 +1,67 @@
 import React, {  Component } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Card, CardText, CardBody, CardHeader, CardFooter, CardDeck} from 'reactstrap';
+import Gallery from "react-photo-gallery";
 import "./projects.css";
 import projects from '../../data/projects.json';
+
+const photos = [
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+    width: 1,
+    height: 1
+  },
+  {
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+    width: 3,
+    height: 4
+  } //,
+  // {
+  //   src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+  //   width: 4,
+  //   height: 3
+  // },
+  // {
+  //   src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+  //   width: 3,
+  //   height: 4
+  // },
+  // {
+  //   src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+  //   width: 4,
+  //   height: 3
+  // },
+  // {
+  //   src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+  //   width: 4,
+  //   height: 3
+  // }
+];
 
 class ProjectModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      picPreview: photos[0].src
     };
 
     this.toggle = this.toggle.bind(this);
+    this.selectPhoto = this.selectPhoto.bind(this);
   }
 
   toggle() {
@@ -19,14 +70,37 @@ class ProjectModal extends React.Component {
     });
   }
 
+  selectPhoto(event, obj) {
+    this.setState({
+      picPreview: obj.photo.src
+    });
+  }
+
   render() {
     return (
       <div>
         <i className="showMore" onClick={this.toggle}> Show More </i>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal size="lg" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}> {this.props.projectTitle} </ModalHeader>
           <ModalBody>
-            {this.props.projectDesc}
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="projectDesc">
+                  {this.props.projectDesc}
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="profile-image">
+                  <img src={this.state.picPreview} alt="Profile" className="centered-image" />
+                </div>
+                <Gallery
+                  photos={photos}
+                  direction={"row"}
+                  onClick={this.selectPhoto}
+                  columns={3}
+                />
+              </div>
+            </div>
           </ModalBody>
           <ModalFooter>
           </ModalFooter>

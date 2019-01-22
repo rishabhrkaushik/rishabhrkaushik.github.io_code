@@ -23,3 +23,7 @@
 .projectsList{
 	padding: 1em;
 }
+
+.projectDesc{
+	text-align: justify;
+}

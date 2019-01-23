@@ -7,7 +7,7 @@
 		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
 		"team": "Aero and Rail VDU",
-    "jobDesc": "Worked on designing of ATE. DO 160 standards testing"
+    		"jobDesc": """As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review."""
 	},
 	{
 		"type": "Work",
@@ -17,7 +17,7 @@
 		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
 		"team": "Aero and Rail VDU",
-    "jobDesc": "Worked on designing of ATE. DO 160 standards testing"
+    		"jobDesc": "Mostly worked on ATE development and DO 160 standards based testing"
 	},
 	{
 		"type": "Work",
@@ -26,8 +26,8 @@
 		"jobTitle": "Research & Development Intern",
 		"company": "1Thing Design and Innovation Pvt. Ltd.",
 		"location": "Gurgaon, India",
-    "team": "SmartHomes",
-		"jobDesc": "As a part of this intern I worked on SmartHomes project. My responsibilities involved prototyping of the product. I majorly worked on embedded systems and central hub to manage all the devices. \n Platforms worked on involve Python, Arduino, ESP8266 etc"
+    		"team": "SmartHomes",
+		"jobDesc": "Worked on SmartHomes project. My responsibilities involved \n\tPrototyping of the product\n\tEmbedded Programming\n\tCentral Intelligent Hub development. \n Platforms worked on involve Python, Arduino, ESP8266 etc"
 	},
 	{
 		"type": "Work",
@@ -37,6 +37,6 @@
 		"company": "True Education Institute Pvt. Ltd",
 		"location": "Nagpur, India",
 		"team": "Technical Team",
-		"jobDesc": "In this intern I worked on projects like CNC Machine, Quadcopter, Attendance Machine etc."
+		"jobDesc": "Developed projets such as \n\tCNC Machine\n\tQuadcopter\n\tAttendance Machine \n\tOther Hardware and Software Automations"
 	}
 ]

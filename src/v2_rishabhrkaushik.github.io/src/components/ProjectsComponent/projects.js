@@ -4,65 +4,21 @@ import Gallery from "react-photo-gallery";
 import "./projects.css";
 import projects from '../../data/projects.json';
 
-const photos = [
-  {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-    width: 1,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-    width: 1,
-    height: 1
-  },
-  {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  } //,
-  // {
-  //   src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-  //   width: 4,
-  //   height: 3
-  // },
-  // {
-  //   src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-  //   width: 3,
-  //   height: 4
-  // },
-  // {
-  //   src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-  //   width: 4,
-  //   height: 3
-  // },
-  // {
-  //   src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-  //   width: 4,
-  //   height: 3
-  // }
-];
-
 class ProjectModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modal: false,
-      picPreview: photos[0].src
+      picPreview: this.props.picPreview
     };
 
     this.toggle = this.toggle.bind(this);
     this.selectPhoto = this.selectPhoto.bind(this);
   }
+
+  // componentDidMount(){
+  //   console.log(this.props.images[0]);
+  // }
 
   toggle() {
     this.setState({
@@ -88,13 +44,18 @@ class ProjectModal extends React.Component {
                 <div className="projectDesc">
                   {this.props.projectDesc}
                 </div>
+                <div className="row">
+                  <div className="col-lg-12">
+                    <a href="https://google.co.in"> Google </a>
+                  </div>
+                </div>
               </div>
               <div className="col-lg-6">
-                <div className="profile-image">
-                  <img src={this.state.picPreview} alt="Profile" className="centered-image" />
+                <div className="project-image-div">
+                  <img src={this.state.picPreview} alt="Profile" className="project-image" />
                 </div>
                 <Gallery
-                  photos={photos}
+                  photos={this.props.images}
                   direction={"row"}
                   onClick={this.selectPhoto}
                   columns={3}
@@ -103,6 +64,7 @@ class ProjectModal extends React.Component {
             </div>
           </ModalBody>
           <ModalFooter>
+            {this.props.tags}
           </ModalFooter>
         </Modal>
       </div>
@@ -124,7 +86,7 @@ class ProjectCard extends Component {
         <CardHeader>{this.props.projectTitle}</CardHeader>
         <CardBody>
           <CardText>{this.props.projectSummary}</CardText>
-          <ProjectModal projectTitle={this.props.projectTitle} projectDesc={this.props.projectDesc} buttonLabel="Show More"/>
+          <ProjectModal projectTitle={this.props.projectTitle} projectDesc={this.props.projectDesc} buttonLabel="Show More" images={this.props.images} picPreview={this.props.picPreview}/>
         </CardBody>
         <CardFooter>{this.createTagString(this.props.tags)}</CardFooter>
       </Card>
@@ -144,7 +106,7 @@ class Projects extends Component {
         if(json_current_index + i < projects.length){
           var project = projects[json_current_index+i];
           // project_cards.push(<ProjectCard tags={project.tags}/>)
-          project_cards.push(<ProjectCard projectTitle={project.title} projectSubtitle={project.subTitle} tags={project.tags} projectSummary={project.summary} projectDesc={project.projectDesc}/>)
+          project_cards.push(<ProjectCard projectTitle={project.title} projectSubtitle={project.subTitle} tags={project.tags} projectSummary={project.summary} projectDesc={project.projectDesc} images={project.images} picPreview={project.images[0].src}/>)
         }
         else{
           project_cards.push(<ProjectCard tags={[]} />)

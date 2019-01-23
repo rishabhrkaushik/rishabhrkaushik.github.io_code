@@ -33,5 +33,15 @@
 		"name": "Web Development",
 		"level": "65",
 		"details": "Self learnt. Languages used were Javascript, HTML, CSS, Node.js, PHP, Python etc"
+	},
+	{
+		"name": "ReactJS",
+		"level": "60",
+		"details": "Self learnt. This website is mostly developed in ReactJS"
+	}
+	{
+		"name": "LabView",
+		"level": "50",
+		"details": "Worked as part of work at L&T Technology Services. Worked on developing several modules of ATE"
 	}
 ]

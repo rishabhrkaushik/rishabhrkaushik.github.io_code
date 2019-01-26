@@ -14,7 +14,7 @@ class ContactMe extends Component {
                 e-mail
               </div>
               <div className="contactContent">
-                rishabhrkaushik@gmail.com
+                {contactInfo.email}
               </div>
               <hr />
             </div>
@@ -23,7 +23,7 @@ class ContactMe extends Component {
                 Location
               </div>
               <div className="contactContent">
-                Bangalore, India
+                {contactInfo.location}
               </div>
             </div>
             <div className="col-lg-3">
@@ -31,7 +31,7 @@ class ContactMe extends Component {
                 Phone
               </div>
               <div className="contactContent">
-                +918055878067
+                {contactInfo.mobile}
               </div>
             </div>
             <div className="col-lg-3">
@@ -39,7 +39,7 @@ class ContactMe extends Component {
                 Web
               </div>
               <div className="contactContent">
-                https://rishabhrkaushik.github.io
+                {contactInfo.website}
               </div>
             </div>
           </div>

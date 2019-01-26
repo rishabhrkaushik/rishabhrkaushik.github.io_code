@@ -106,10 +106,10 @@ class Projects extends Component {
         if(json_current_index + i < projects.length){
           var project = projects[json_current_index+i];
           // project_cards.push(<ProjectCard tags={project.tags}/>)
-          project_cards.push(<ProjectCard projectTitle={project.title} projectSubtitle={project.subTitle} tags={project.tags} projectSummary={project.summary} projectDesc={project.projectDesc} images={project.images} picPreview={project.images[0].src}/>)
+          project_cards.push(<ProjectCard  key={i} projectTitle={project.title} projectSubtitle={project.subTitle} tags={project.tags} projectSummary={project.summary} projectDesc={project.projectDesc} images={project.images} picPreview={project.images[0].src}/>)
         }
         else{
-          project_cards.push(<ProjectCard tags={[]} />)
+          project_cards.push(<ProjectCard  key={i} tags={[]} />)
         }
       }
       card_decks.push(<CardDeck>{project_cards}</CardDeck>)

@@ -56,11 +56,11 @@ class Skills extends Component {
         <div id="ringCharts">
           <div className="row">
             {
-              topSkills.map(topSkill =>
-                <div className="col-md-2">
+              topSkills.map((topSkill, i) => (
+                <div className="col-md-2" key={i}>
                   <DonutChart value={topSkill.level} valuelabel={topSkill.name}/>
                 </div>
-              )
+              ))
             }
           </div>
         </div>
@@ -69,24 +69,24 @@ class Skills extends Component {
           <Card>
             <CardHeader> Programming </CardHeader>
             {
-              programmingSkills.map(programmingSkill =>
-                <BarChart value={programmingSkill.level} label={programmingSkill.name} />
+              programmingSkills.map((programmingSkill, i) =>
+                <BarChart key={i} value={programmingSkill.level} label={programmingSkill.name} />
               )
             }
           </Card>
           <Card>
             <CardHeader> Electronics </CardHeader>
             {
-              electronicsSkills.map(electronicsSkill =>
-                <BarChart value={electronicsSkill.level} label={electronicsSkill.name} />
+              electronicsSkills.map((electronicsSkill, i) =>
+                <BarChart key={i} value={electronicsSkill.level} label={electronicsSkill.name} />
               )
             }
           </Card>
           <Card>
             <CardHeader> Soft Skills </CardHeader>
             {
-              softSkills.map(softSkill =>
-                <BarChart value={softSkill.level} label={softSkill.name} />
+              softSkills.map((softSkill, i) =>
+                <BarChart key={i} value={softSkill.level} label={softSkill.name} />
               )
             }
           </Card>

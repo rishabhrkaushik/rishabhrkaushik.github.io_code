@@ -19,15 +19,15 @@ class Education extends Component {
               <CardHeader> Electronics </CardHeader>
               <CardBody className="low-padding">
                 {
-                  education.Electronics.map((electronicsCert) =>
-                    <Card>
+                  education.Electronics.map((electronicsCert, i) => (
+                    <Card key={i}>
                       <CardHeader>
                         <CardTitle> {electronicsCert.name} </CardTitle>
                         <CardSubtitle> {electronicsCert.desc} </CardSubtitle>
                       </CardHeader>
                       <CardBody> <a target="_blank" href={electronicsCert.link}> View Certificate </a> </CardBody>
                     </Card>
-                  )
+                  ))
                 }
               </CardBody>
             </Card>
@@ -35,8 +35,8 @@ class Education extends Component {
               <CardHeader> Computer Science </CardHeader>
               <CardBody className="low-padding">
                 {
-                  education["Computer Science"].map((csCert) =>
-                    <Card>
+                  education["Computer Science"].map((csCert, i) =>
+                    <Card key={i}>
                       <CardHeader>
                         <CardTitle> {csCert.name} </CardTitle>
                         <CardSubtitle> {csCert.desc} </CardSubtitle>
@@ -51,8 +51,8 @@ class Education extends Component {
               <CardHeader> Soft Skills and Humanities </CardHeader>
               <CardBody className="low-padding">
                 {
-                  education["Soft Skills and Humanities"].map((ssCert) =>
-                    <Card>
+                  education["Soft Skills and Humanities"].map((ssCert, i) =>
+                    <Card key={i}>
                       <CardHeader>
                         <CardTitle> {ssCert.name} </CardTitle>
                         <CardSubtitle> {ssCert.desc} </CardSubtitle>

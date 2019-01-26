@@ -31,8 +31,8 @@ class Experiences extends Component {
         <h1> Experiences </h1>
         <VerticalTimeline>
           {
-            experiences.map((experience) =>
-              <Card title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} />
+            experiences.map((experience, i) =>
+              <Card key={i} title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} />
             )
           }
         </VerticalTimeline>

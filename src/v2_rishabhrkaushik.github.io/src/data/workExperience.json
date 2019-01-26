@@ -7,7 +7,7 @@
 		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
 		"team": "Aero and Rail VDU",
-    		"jobDesc": """As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review."""
+    "jobDesc": "As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review."
 	},
 	{
 		"type": "Work",
@@ -17,7 +17,7 @@
 		"company": "Larsen and Toubro Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
 		"team": "Aero and Rail VDU",
-    		"jobDesc": "Mostly worked on ATE development and DO 160 standards based testing"
+    "jobDesc": "Mostly worked on ATE development and DO 160 standards based testing"
 	},
 	{
 		"type": "Work",
@@ -26,7 +26,7 @@
 		"jobTitle": "Research & Development Intern",
 		"company": "1Thing Design and Innovation Pvt. Ltd.",
 		"location": "Gurgaon, India",
-    		"team": "SmartHomes",
+    "team": "SmartHomes",
 		"jobDesc": "Worked on SmartHomes project. My responsibilities involved \n\tPrototyping of the product\n\tEmbedded Programming\n\tCentral Intelligent Hub development. \n Platforms worked on involve Python, Arduino, ESP8266 etc"
 	},
 	{

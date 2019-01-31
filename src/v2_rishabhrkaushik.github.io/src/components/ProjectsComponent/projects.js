@@ -42,7 +42,9 @@ class ProjectModal extends React.Component {
             <div className="row">
               <div className="col-lg-6">
                 <div className="projectDesc">
-                  {this.props.projectDesc}
+                  <p>
+                    {this.props.projectDesc}
+                  </p>
                 </div>
                 <div className="row">
                   <div className="col-lg-12">
@@ -85,7 +87,7 @@ class ProjectCard extends Component {
       <Card>
         <CardHeader>{this.props.projectTitle}</CardHeader>
         <CardBody>
-          <CardText>{this.props.projectSummary}</CardText>
+          <CardText className="projectSum">{this.props.projectSummary}</CardText>
           <ProjectModal projectTitle={this.props.projectTitle} projectDesc={this.props.projectDesc} buttonLabel="Show More" images={this.props.images} picPreview={this.props.picPreview}/>
         </CardBody>
         <CardFooter>{this.createTagString(this.props.tags)}</CardFooter>

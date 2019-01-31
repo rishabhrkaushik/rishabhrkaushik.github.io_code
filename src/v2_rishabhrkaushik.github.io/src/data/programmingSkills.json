@@ -35,6 +35,11 @@
 		"details": "Self learnt. Languages used were Javascript, HTML, CSS, Node.js, PHP, Python etc"
 	},
 	{
+		"name": "MongoDB",
+		"level": "65",
+		"details": "Self learnt. Used in multiple projects."
+	},
+	{
 		"name": "ReactJS",
 		"level": "60",
 		"details": "Self learnt. This website is mostly developed in ReactJS"

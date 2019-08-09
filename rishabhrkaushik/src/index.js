@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 // Bulma
 import 'bulma/css/bulma.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('landing'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

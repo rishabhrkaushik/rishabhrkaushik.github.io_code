@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+//
 // Particle JS
 import Particles from 'react-particles-js';
 
@@ -117,7 +118,14 @@ const particleConfig = {
 
 function App() {
   return (
-    <Particles className="particles-canvas" params={particleConfig}/>
+    <div class="particles-canvas ">
+    <div class="is-mobile is-vertical-center">
+      <figure class="image profile-pic">
+          <img src="https://bulma.io/images/placeholders/256x256.png" />
+      </figure>
+    </div>
+      <Particles params={particleConfig}/>
+    </div>
   );
 }
 

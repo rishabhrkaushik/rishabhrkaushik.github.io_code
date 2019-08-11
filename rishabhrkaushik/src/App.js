@@ -128,38 +128,52 @@ const fadeContent = [
     animation: 'fade',
   },
   {
-    text: 'Absolute Fucker',
+    text: 'Philosopher',
     animation: 'fade',
   },
   {
-    text: 'Project Destroyer',
+    text: 'Product Design',
     animation: 'fade',
+  },
+  {
+    text: 'Project Manager',
+    animation: 'fade'
   }
 ];
 
 function App() {
   return (
-    <div class="particles-canvas ">
-      <div class="is-mobile is-vertical-center content">
-        <figure class="profile-pic-div">
-            <img class="image profile-pic" src="https://bulma.io/images/placeholders/256x256.png" alt="Profile Pic"/>
+    <div className="background">
+      <div className="content">
+        <figure className="image">
+          <img class="image profile-pic" src="https://bulma.io/images/placeholders/256x256.png" alt="Profile Pic"/>
         </figure>
         <div className="intro">
           I AM RISHABH KAUSHIK
         </div>
-        <div className="rotating-text">
+        <div className="faded-text">
           <ReactTextRotator
             content={fadeContent}
             time={3000}
           />
         </div>
         <div className="social-icons">
-          <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
-          <FontAwesomeIcon className="social-icon" icon={faGithub} />
-          <FontAwesomeIcon className="social-icon" icon={faQuora} />
+          <div className="social-icon">
+            <a href="https://www.linkedin.com/in/rishabhrkaushik/" target="_blank">
+              <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
+            </a>
+            <a href="https://github.com/rishabhrkaushik" target="_blank">
+              <FontAwesomeIcon className="social-icon" icon={faGithub} />
+            </a>
+            <a href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
+              <FontAwesomeIcon className="social-icon" icon={faQuora} />
+            </a>
+          </div>
         </div>
       </div>
-      <Particles params={particleConfig}/>
+      <div className="animated-canvas">
+      <Particles className="animated-canvas" params={particleConfig}/>
+      </div>
     </div>
   );
 }

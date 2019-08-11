@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons'
+import ReactTextRotator from 'react-text-rotator';
 
-//
 // Particle JS
 import Particles from 'react-particles-js';
 
@@ -116,14 +118,47 @@ const particleConfig = {
   "retina_detect": true
 };
 
+const fadeContent = [
+  {
+    text: 'Programmer',
+    animation: 'fade',
+  },
+  {
+    text: 'Electronics Engineer',
+    animation: 'fade',
+  },
+  {
+    text: 'Absolute Fucker',
+    animation: 'fade',
+  },
+  {
+    text: 'Project Destroyer',
+    animation: 'fade',
+  }
+];
+
 function App() {
   return (
     <div class="particles-canvas ">
-    <div class="is-mobile is-vertical-center">
-      <figure class="image profile-pic">
-          <img src="https://bulma.io/images/placeholders/256x256.png" />
-      </figure>
-    </div>
+      <div class="is-mobile is-vertical-center content">
+        <figure class="profile-pic-div">
+            <img class="image profile-pic" src="https://bulma.io/images/placeholders/256x256.png" alt="Profile Pic"/>
+        </figure>
+        <div className="intro">
+          I AM RISHABH KAUSHIK
+        </div>
+        <div className="rotating-text">
+          <ReactTextRotator
+            content={fadeContent}
+            time={3000}
+          />
+        </div>
+        <div className="social-icons">
+          <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
+          <FontAwesomeIcon className="social-icon" icon={faGithub} />
+          <FontAwesomeIcon className="social-icon" icon={faQuora} />
+        </div>
+      </div>
       <Particles params={particleConfig}/>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Landing from './Landing/Landing';
 import * as serviceWorker from './serviceWorker';
 
 // Bulma
 import 'bulma/css/bulma.css'
 
-ReactDOM.render(<App />, document.getElementById('landing'));
+ReactDOM.render(<Landing />, document.getElementById('landing'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

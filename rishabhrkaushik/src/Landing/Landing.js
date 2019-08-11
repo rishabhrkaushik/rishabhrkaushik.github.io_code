@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './Landing.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons'
 import ReactTextRotator from 'react-text-rotator';
@@ -141,7 +141,7 @@ const fadeContent = [
   }
 ];
 
-function App() {
+function Landing() {
   return (
     <div className="background">
       <div className="content">
@@ -178,4 +178,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;

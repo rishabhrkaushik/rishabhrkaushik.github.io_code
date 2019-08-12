@@ -2,6 +2,8 @@ import React from 'react';
 import './Landing.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons'
+
+// for fading text
 import ReactTextRotator from 'react-text-rotator';
 
 // Particle JS
@@ -132,7 +134,7 @@ const fadeContent = [
     animation: 'fade',
   },
   {
-    text: 'Product Design',
+    text: 'Product Designer',
     animation: 'fade',
   },
   {
@@ -143,7 +145,7 @@ const fadeContent = [
 
 function Landing() {
   return (
-    <div className="background">
+    <div className="landing-background is-mobile">
       <div className="content">
         <figure className="image">
           <img class="image profile-pic" src="https://bulma.io/images/placeholders/256x256.png" alt="Profile Pic"/>

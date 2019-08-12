@@ -14,7 +14,8 @@
     "react-dom": "^16.8.6",
     "react-particles-js": "^2.7.0",
     "react-scripts": "3.0.1",
-    "react-text-rotator": "0.0.5"
+    "react-text-rotator": "0.0.5",
+    "react-vertical-timeline-component": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

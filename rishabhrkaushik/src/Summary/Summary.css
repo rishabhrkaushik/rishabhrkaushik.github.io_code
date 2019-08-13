@@ -1,0 +1,65 @@
+.summary-background {
+  background-color: white;
+  background-image: url("./aboutMe_bg.jpg");
+  color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  min-height: 100vh;
+}
+
+.tagline {
+  font-size: 32px;
+  background-color: #77F;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding-left: 1em;
+}
+
+.What-I-do-title {
+  color: black;
+  margin-bottom: 1em;
+  border: 2px;
+  border-style: solid;
+  boreder-color: white;
+}
+
+.icons {
+  text-align: center !important;
+}
+
+.what-I-do-icons {
+  font-size: 72px;
+  padding-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+.desc {
+  margin: 1rem;
+  padding: 1em;
+  padding-top: 3em;
+}
+
+.quote {
+  font-size: x-large;
+  font-variant: petite-caps;
+  font-style: italic;
+  padding: 1rem;
+  margin: 0rem;
+}
+
+.workinfo {
+  font-size: normal;
+  text-align: justify;
+  padding: 1rem;
+  margin: 0rem;
+}
+
+.hobbyinfo {
+  text-align: justify;
+  padding: 1rem;
+  margin: 0rem;
+}

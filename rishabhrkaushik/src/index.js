@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
+// Components
 import Landing from './Landing/Landing';
-import Experience from './Experience/Experience'
+import Summary from './Summary/Summary';
+import Experience from './Experience/Experience';
+
 import * as serviceWorker from './serviceWorker';
 
 // Bulma
 import 'bulma/css/bulma.css'
 
 ReactDOM.render(<Landing />, document.getElementById('landing'));
+ReactDOM.render(<Summary  />, document.getElementById('summary'));
 ReactDOM.render(<Experience />, document.getElementById('experience'));
 
 // If you want your app to work offline and load faster, you can change

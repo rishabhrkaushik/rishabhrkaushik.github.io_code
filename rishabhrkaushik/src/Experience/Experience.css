@@ -4,7 +4,7 @@
   border-color: white;
 }
 
-.title {
+.experiences-title {
   background-color: #2255AA;
   color: white !important;
   width: 100%;
@@ -14,6 +14,7 @@
   border: 1;
   border-style: solid;
   border-color: white;
+  font-size: x-large;
 }
 
 .vertical-timeline {

@@ -27,7 +27,7 @@ class Card extends Component {
 function Experience() {
   return (
     <div className="experience-background">
-      <h1 className="title">
+      <h1 className="experiences-title">
         Organizations I've worked with.
       </h1>
       <VerticalTimeline>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons';
 
 // for fading text
 import ReactTextRotator from 'react-text-rotator';

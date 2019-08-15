@@ -1,0 +1,17 @@
+.skills-background {
+  padding: 2em;
+}
+
+.table-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.table {
+
+}
+
+.skill-cell {
+  vertical-align: middle !important;
+}

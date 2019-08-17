@@ -2,7 +2,45 @@ import React, {Component} from 'react';
 
 import './Skills.css';
 
+import skills from './../data/skills.js';
+
 class Skills extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      columnCount: 0
+    }
+  }
+
+  createTable(){
+    if (window.innerWidth < 768) {
+      this.state.columnCount = 3;
+    }
+    else {
+      this.state.columnCount = 5;
+    }
+    var rows = [];
+
+    for(var rowIndex = 0; rowIndex < skills.length/this.state.columnCount; rowIndex++){
+      var column = [];
+
+      for(var columnIndex = 0; columnIndex < this.state.columnCount; columnIndex++){
+        if(((rowIndex * this.state.columnCount) + columnIndex) < skills.length){
+          column.push(
+            <td className="skill-cell">
+              <figure>
+                <img src={skills[(rowIndex * this.state.columnCount )+ columnIndex]["src"]} alt={skills[(rowIndex * this.state.columnCount )+ columnIndex]["skill"]} width="200px"/>
+              </figure>
+            </td>
+          );
+        }
+      }
+      rows.push(<tr>{column}</tr>);
+    }
+    return <tbody>{rows}</tbody>
+  }
+
   render() {
     return (
       <div className="skills-background">
@@ -11,89 +49,7 @@ class Skills extends Component {
         </div>
         <div className="table-container">
           <table align="center" className="table">
-            <tbody>
-              <tr>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" width="200px" alt="Arduino" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" width="200px" alt="Python" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.altexsoft.com/media/2018/07/Product-Management_22.png" width="200px" alt="Project Management" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="http://kalasalingam.ac.in/site/wp-content/uploads/2015/05/Labview-logo.jpg" width="200px" alt="LabView" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.abeautifulsite.net/uploads/2016/04/nodejs.png?width=600&key=e29b3acd7da48dbe62199ba284591dc6e8abd8cb9ce286f5cf89b53a494a9b39" width="200px" alt="NodeJS" />
-                  </figure>
-                </td>
-              </tr>
-              <tr>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" width="200px" alt="Arduino" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" width="200px" alt="Python" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.altexsoft.com/media/2018/07/Product-Management_22.png" width="200px" alt="Project Management" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="http://kalasalingam.ac.in/site/wp-content/uploads/2015/05/Labview-logo.jpg" width="200px" alt="LabView" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.abeautifulsite.net/uploads/2016/04/nodejs.png?width=600&key=e29b3acd7da48dbe62199ba284591dc6e8abd8cb9ce286f5cf89b53a494a9b39" width="200px" alt="NodeJS" />
-                  </figure>
-                </td>
-              </tr>
-              <tr>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" width="200px" alt="Arduino" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" width="200px" alt="Python" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.altexsoft.com/media/2018/07/Product-Management_22.png" width="200px" alt="Project Management" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="http://kalasalingam.ac.in/site/wp-content/uploads/2015/05/Labview-logo.jpg" width="200px" alt="LabView" />
-                  </figure>
-                </td>
-                <td className="skill-cell">
-                  <figure>
-                    <img src="https://www.abeautifulsite.net/uploads/2016/04/nodejs.png?width=600&key=e29b3acd7da48dbe62199ba284591dc6e8abd8cb9ce286f5cf89b53a494a9b39" width="200px" alt="NodeJS" />
-                  </figure>
-                </td>
-              </tr>
-            </tbody>
+            {this.createTable()}
           </table>
         </div>
       </div>

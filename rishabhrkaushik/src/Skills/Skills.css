@@ -1,5 +1,6 @@
 .skills-background {
   padding: 2em;
+  min-height: 100vh;
 }
 
 .table-container {

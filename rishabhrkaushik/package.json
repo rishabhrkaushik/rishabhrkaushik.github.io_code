@@ -14,10 +14,12 @@
     "react-dom": "^16.8.6",
     "react-particles-js": "^2.7.0",
     "react-scripts": "3.0.1",
+    "react-slick": "^0.25.2",
     "react-text-rotator": "0.0.5",
     "react-typist": "^2.0.5",
     "react-typist-loop": "0.0.5",
-    "react-vertical-timeline-component": "^2.4.0"
+    "react-vertical-timeline-component": "^2.4.0",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

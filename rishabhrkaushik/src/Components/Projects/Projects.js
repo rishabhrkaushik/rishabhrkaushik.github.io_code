@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-import projects from './../data/projects.json';
+import projects from './../../data/projects.json';
 
 class ProjectCard extends Component {
   render() {
@@ -28,7 +28,6 @@ class ProjectCard extends Component {
               Here will be image
             </div>
           </div>
-
         </div>
         <div className="tags">
         </div>

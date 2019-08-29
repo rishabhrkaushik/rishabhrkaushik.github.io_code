@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import './Experience.css';
 
-import experiences from './../data/workExperience.json';
+import experiences from './../../data/workExperience.json';
 
 class Card extends Component {
   render (){

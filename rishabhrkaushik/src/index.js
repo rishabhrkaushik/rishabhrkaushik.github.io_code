@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // Components
-import Landing from './Landing/Landing';
-import Summary from './Summary/Summary';
-import Experience from './Experience/Experience';
-import Skills from './Skills/Skills';
-import Projects from './Projects/Projects';
+import Landing from './Components/Landing/Landing';
+import Summary from './Components/Summary/Summary';
+import Experience from './Components/Experience/Experience';
+import Skills from './Components/Skills/Skills';
+import Projects from './Components/Projects/Projects';
 
 
 import * as serviceWorker from './serviceWorker';

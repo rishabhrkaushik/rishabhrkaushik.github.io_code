@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import './Skills.css';
 
-import skills from './../data/skills.js';
+import skills from './../../data/skills.js';
 
 class Skills extends Component {
 
@@ -20,7 +20,7 @@ class Skills extends Component {
     else {
       this.state.columnCount = 5
     }
-    
+
     var rows = [];
 
     for(var rowIndex = 0; rowIndex < skills.length/this.state.columnCount; rowIndex++){

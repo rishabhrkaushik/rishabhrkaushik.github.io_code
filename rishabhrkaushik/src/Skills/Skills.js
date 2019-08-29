@@ -9,17 +9,18 @@ class Skills extends Component {
   constructor(props){
     super(props);
     this.state = {
-      columnCount: 0
+      columnCount: 5
     }
   }
 
   createTable(){
     if (window.innerWidth < 768) {
-      this.state.columnCount = 3;
+      this.state.columnCount = 3
     }
     else {
-      this.state.columnCount = 5;
+      this.state.columnCount = 5
     }
+    
     var rows = [];
 
     for(var rowIndex = 0; rowIndex < skills.length/this.state.columnCount; rowIndex++){

@@ -86,7 +86,7 @@ const particleConfig = {
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -161,13 +161,13 @@ function Landing() {
         </div>
         <div className="social-icons">
           <div className="social-icon">
-            <a href="https://www.linkedin.com/in/rishabhrkaushik/" target="_blank">
+            <a href="https://www.linkedin.com/in/rishabhrkaushik/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
             </a>
-            <a href="https://github.com/rishabhrkaushik" target="_blank">
+            <a href="https://github.com/rishabhrkaushik" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="social-icon" icon={faGithub} />
             </a>
-            <a href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
+            <a href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="social-icon" icon={faQuora} />
             </a>
           </div>

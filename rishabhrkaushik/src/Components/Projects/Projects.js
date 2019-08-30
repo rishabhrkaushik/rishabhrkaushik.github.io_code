@@ -4,6 +4,17 @@ import './Projects.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+
+import Divider from '@material-ui/core/Divider';
+
 import Slider from "react-slick";
 
 import projects from './../../data/projects.json';
@@ -11,32 +22,31 @@ import projects from './../../data/projects.json';
 class ProjectCard extends Component {
   render() {
     return (
-      <div className="card">
-        <header className="card-header">
-          <p class="card-header-title">
-            {this.props.title}
-          </p>
-        </header>
-        <div className="card-content">
-          <div className="columns">
-            <div className="column">
-              <p>
-                {this.props.summary}
-              </p>
-            </div>
-            <div className="column">
-              Here will be image
-            </div>
-          </div>
-        </div>
-        <div className="tags">
-        </div>
-        <div className="card-footer">
-          <p class="card-footer-item">
-            Hero
-          </p>
-        </div>
-      </div>
+      <Card className="card-custom">
+        <CardActionArea>
+          <CardMedia
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {this.props.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {this.props.summary}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <Divider />
+        <CardActions>
+          <Button size="small" color="primary">
+            View Details
+          </Button>
+          <Button size="small" color="primary">
+            Demonstrate
+          </Button>
+        </CardActions>
+      </Card>
     );
   }
 }
@@ -83,7 +93,7 @@ class Projects extends Component {
       <Slider {...settings}>
         {
           projects.map((project, i) =>
-            <ProjectCard key={i} title={project.title} summary={project.summary}/>
+            <ProjectCard key={i} title={project.title} summary={project.summary} desc={project.projectDesc}/>
           )
         }
       </Slider>
@@ -93,7 +103,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects-background">
-        <div className="title">
+        <div className="title dark-title">
           Projects
         </div>
           {this.createProjects()}

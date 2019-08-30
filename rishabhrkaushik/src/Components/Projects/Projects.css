@@ -1,15 +1,16 @@
 .projects-background {
   padding: 2em;
   min-height: 100vh;
-  background-color: lightblue;
-  color: black;
+  background-image: url("./project-bg.jpg");
 }
 
-.card {
+.dark-title{
+  color: white !important;
+}
+
+.slick-slider{
+  padding-top: 2em;
+}
+.card-custom{
   margin: 1em;
-  height: 500px;
-}
-
-.card-content {
-  color: black !important;
 }

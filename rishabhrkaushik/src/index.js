@@ -8,6 +8,7 @@ import Summary from './Components/Summary/Summary';
 import Experience from './Components/Experience/Experience';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import Certifications from './Components/Certifications/Certifications';
 
 
 import * as serviceWorker from './serviceWorker';
@@ -20,6 +21,8 @@ ReactDOM.render(<Summary  />, document.getElementById('summary'));
 ReactDOM.render(<Experience />, document.getElementById('experience'));
 ReactDOM.render(<Skills />, document.getElementById('skills'));
 ReactDOM.render(<Projects />, document.getElementById('projects'));
+ReactDOM.render(<Certifications />, document.getElementById('certifications'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

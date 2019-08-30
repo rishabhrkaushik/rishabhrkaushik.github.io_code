@@ -83,17 +83,17 @@ class Summary extends Component {
   render(){
     return (
       <div className="summary-background">
-        <div className="tagline">
-          <TypistLoop interval={2500}>
-            {taglines.map(text => <Typist key={text} startDelay={100}>{text}</Typist>)}
-          </TypistLoop>
-        </div>
         <div className="summary-content">
           <div className="What-i-do-title title">
             What I do?
           </div>
           <div className="icons">
             {this.state.whatIDo}
+          </div>
+          <div className="tagline">
+            <TypistLoop interval={2500}>
+              {taglines.map(text => <Typist key={text} startDelay={100}>{text}</Typist>)}
+            </TypistLoop>
           </div>
           <div className="desc columns is-one-third">
             <div className="column quote">

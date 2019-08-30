@@ -1,20 +1,8 @@
 .experience-background {
-  background-color: #343;
+  background-image: url("./exp-bg.jpg");
   border-top: 5px;
   border-color: white;
-}
-
-.experiences-title {
-  background-color: #2255AA;
-  color: white !important;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  padding: 0.5em;
-  border: 1;
-  border-style: solid;
-  border-color: white;
-  font-size: x-large;
+  padding: 2em;
 }
 
 .vertical-timeline {
@@ -27,6 +15,7 @@
 
 .vertical-timeline-element-date {
   color: white !important;
+  font-size: large;
 }
 .vertical-timeline-element-title {
   font-size: 30px;
@@ -34,4 +23,12 @@
 
 .vertical-timeline-element-subtitle {
   font-size: 20px;
+}
+
+.list{
+  box-shadow: none !important;
+}
+
+.list-item{
+  border-bottom: none !important;
 }

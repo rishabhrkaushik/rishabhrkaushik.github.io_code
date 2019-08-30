@@ -16,9 +16,14 @@ class Card extends Component {
           <h3 className="vertical-timeline-element-title ">{this.props.title}</h3>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.team}</h4>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.company + ", " + this.props.location}</h4>
-          <p>
-            {this.props.content}
-          </p>
+          <h3 style={{"font-weight": "bold"}}>Responsibilities: </h3>
+          <ul className="list">
+            {
+              this.props.responsibilities.map((responsibility, i) =>
+                <li className="list-item">{responsibility}</li>
+              )
+            }
+          </ul>
         </VerticalTimelineElement>
     );
   }
@@ -27,13 +32,13 @@ class Card extends Component {
 function Experience() {
   return (
     <div className="experience-background">
-      <h1 className="experiences-title">
+      <h1 className="dark-title title">
         Organizations I've worked with.
       </h1>
       <VerticalTimeline>
         {
           experiences.map((experience, i) =>
-            <Card key={i} title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} />
+            <Card key={i} title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} responsibilities={experience.responsibilities}/>
           )
         }
       </VerticalTimeline>

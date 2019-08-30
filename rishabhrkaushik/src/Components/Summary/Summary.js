@@ -80,36 +80,40 @@ class Summary extends Component {
     }
   }
 
-render(){
+  render(){
     return (
-      <div>
+      <div className="summary-background">
         <div className="tagline">
           <TypistLoop interval={2500}>
             {taglines.map(text => <Typist key={text} startDelay={100}>{text}</Typist>)}
           </TypistLoop>
         </div>
-        <div className="summary-background">
+        <div className="summary-content">
           <div className="What-i-do-title title">
             What I do?
           </div>
           <div className="icons">
             {this.state.whatIDo}
           </div>
-          <div className="desc columns is-8">
+          <div className="desc columns is-one-third">
             <div className="column quote">
               <h4>
                 Tech is reserved for the people like me - The freaks, the weirdos, the misfits, the geeks, the dweebs, the dorks <br /> - Richard Hendriks, Silicon Valley
               </h4>
             </div>
-            <div className="column workinfo">
-              I am a task oriented guy who likes to get his hands dirty working on interdisciplinary projects. Topic of interests range wide from Embedded systems, Programming, Robotics, Mechanics, UX etc.
-            </div>
-            <div className="column hobbyinfo">
-              When I am not working, I like to indulge in discussions on science, philosophy, religion or any other topic. I love to watch TV series and have watched quite many of them. I like to indulge in adventures, swimming, road trips etc  a weird combination giving peace as well as getting my adrenaline high.
+            <div className="column is-two-thirds workinfo">
+              <p>
+                A task oriented guy who likes to get his hands dirty working on interdisciplinary projects. <br />
+                A learner with interest in versatile topics like Embedded System, Programming, Mechanics and many more. <br />
+                Likes to get engaged in complete lifecycle of project, right from planning and designing to installation and marketing.
+              </p>
+              <p className="next-para">
+                When I am not working, I like to indulge in discussions on science, philosophy, religion or any other topic. I love to watch TV series and have watched quite many of them. I like to indulge in adventures, swimming, road trips etc  a weird combination giving peace as well as getting my adrenaline high.
+              </p>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     );
   }
 }

@@ -2,6 +2,9 @@
   background-color: white;
   background-image: url("./aboutMe_bg.jpg");
   color: black;
+}
+
+.summary-content {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
@@ -32,15 +35,16 @@
 }
 
 .what-I-do-icons {
-  font-size: 72px;
+  font-size: 96px;
   padding-bottom: 0.2em;
   margin-top: 0.5em;
 }
 
 .desc {
-  margin: 1rem;
-  padding: 1em;
-  padding-top: 3em;
+  margin: 1rem ;
+  margin-top: 3em !important;
+  padding: 1em ;
+  padding-top: 3em !important;
 }
 
 .quote {
@@ -51,11 +55,16 @@
   margin: 0rem;
 }
 
+.next-para{
+  padding-top: 1em !important;
+}
+
 .workinfo {
-  font-size: normal;
+  font-size: x-large;
   text-align: justify;
   padding: 1rem;
   margin: 0rem;
+  /* font-family: monospace; */
 }
 
 .hobbyinfo {

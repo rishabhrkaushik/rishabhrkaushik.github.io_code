@@ -148,7 +148,7 @@ function Landing() {
     <div className="landing-background is-mobile">
       <div className="content">
         <figure className="image">
-          <img className="image profile-pic" src="https://bulma.io/images/placeholders/256x256.png" alt="Profile Pic"/>
+          <img className="image profile-pic" src={require("./../../data/profile.jpg")} alt="Profile Pic"/>
         </figure>
         <div className="intro">
           I AM RISHABH KAUSHIK

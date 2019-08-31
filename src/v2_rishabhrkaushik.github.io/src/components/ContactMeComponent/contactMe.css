@@ -1,0 +1,99 @@
+#contactDiv{
+	padding-top: 0.5em;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+  position:relative;
+	width:100%;
+}
+
+#bottom_bar{
+	background-color: #000;
+	color: #FFF;
+	padding: 0 !important;
+	border: 0 !important;
+	text-align: center;
+}
+
+/* i {
+	font-size: 40px !important;
+}
+.contactHeading{
+	padding-bottm: 0.5em;
+	font-weight: bold;
+}
+
+.networks {
+ padding:0;
+ list-style:none;
+ margin:0 0
+}
+.networks li {
+ margin:0;
+ margin-right:10px!important;
+ display:inline-block;
+ font-size:30px
+}
+.networks li a {
+ color:#bbb;
+ background-color:#fff;
+ -webkit-transition:all .2s ease-in-out;
+ -moz-transition:all .2s ease-in-out;
+ -o-transition:all .2s ease-in-out;
+ -ms-transition:all .2s ease-in-out;
+ transition:all .2s ease-in-out;
+ border:1px solid #d0d0d0;
+ width:52px;
+ height:52px;
+ display:inline-block;
+ border-radius:50%;
+ font-size:30px !important;
+ text-align:center;
+ padding:4px
+}
+.github a:hover {
+ background-color:#333
+}
+.google a:hover {
+ background-color:#db4437
+}
+.facebook a:hover {
+ background-color:#3b5998
+}
+.medium a:hover {
+ background-color:#37a576
+}
+.quora a:hover {
+ background-color:#b92b27
+}
+.reddit a:hover {
+ background-color:#ff5700
+}
+.linkedin a:hover {
+ background-color:#0077b5
+}
+.twitter a:hover {
+ background-color:#1da1f2
+}
+.instagram a:hover {
+ background-color:#e95950
+}
+.stumbleupon a:hover {
+ background-color:#eb4924
+}
+.extremenet {
+ padding-left:22%!important;
+ margin-right:.365%!important
+}
+.midnet {
+ padding-left:16%!important
+}
+@media(max-width:800px) {
+ .extremenet {
+  padding-left:16%!important;
+  margin-right:.365%!important
+ }
+ .midnet {
+  padding-left:5%!important
+	}
+ } */

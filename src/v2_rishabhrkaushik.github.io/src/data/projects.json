@@ -1,0 +1,176 @@
+[
+	{
+		"title": "Frisbee Throwing Robot",
+		"subTitle": "The landing Disc, Robocon 17",
+		"tags": ["Robotics", "Electronics", "Arduino", "Processing", "Mechanics"],
+		"summary": "Made as a part of Robocon 2017 theme. A bot capable of throwing frisbees autonomously to make them land on poles of different height and at different position and navigaion.",
+		"projectDesc": "Major features included:\n\tAutonomous Bot Navigation\n\tDisc Rotation closed loop speed control\n\tPlatform height and angle adjustment. \n\nApart from technical, all the managerial activities from planning project, procurement of material etc were done as  well.",
+		"images": [
+			{
+		    "src": "/images/projects/robocon17/Bot.jpg",
+		    "width": 16,
+		    "height": 9
+		  },
+			{
+		    "src": "/images/projects/robocon17/arena.jpg",
+		    "width": 16,
+		    "height": 9
+		  },
+			{
+		    "src": "/images/projects/robocon17/Bot angled.jpg",
+		    "width": 24,
+		    "height": 37
+		  },
+			{
+		    "src": "/images/projects/robocon17/arena_dimensions.jpg",
+		    "width": 3,
+		    "height": 2
+		  },
+			{
+		    "src": "/images/projects/robocon17/Disc assembly.jpg",
+		    "width": 4,
+		    "height": 3
+		  },
+			{
+		    "src": "/images/projects/robocon17/GUI Screenshot.png",
+		    "width": 14,
+		    "height": 9
+		  }
+		]
+	},
+	{
+		"title": "Puzzle Solving Robot",
+		"subTitle": "e-Yantra 2016, IIT bombay",
+		"tags": ["Robotics", "AVR", "Python", "Image Processing"],
+		"_comment":["openCV"],
+		"summary": "Project involving image processing, mathematical calculations, path finding and autonomous bot navigation.",
+		"projectDesc": "The task was to first find the digits from image using image processing, then do some mathematical calculations of the digits and their position, feed this information to the bot which will then travel to locations autonomously picking and placing blocks on the way using its constructed robotic arm.",
+		"images": [
+			{
+		    "src": "/images/projects/eyantra/On Arena.png",
+		    "width": 2,
+		    "height": 1
+		  },
+			{
+		    "src": "/images/projects/eyantra/Firebird V.jpg",
+		    "width": 3,
+		    "height": 2
+		  },
+			{
+		    "src": "/images/projects/eyantra/Input Image.jpg",
+		    "width": 9,
+		    "height": 8
+		  },
+			{
+		    "src": "/images/projects/eyantra/Image Processing.png",
+		    "width": 4,
+		    "height": 3
+		  }
+		]
+	},
+	{
+		"title": "Smarthomes",
+		"subTitle": "As a part of 1thing internship, then B.E. project and then personal project.",
+		"tags": ["Embedded Systems", "Arduino", "Node.js"],
+		"_comment": ["Web Development", "ESP8266"],
+		"summary": "Automating home and giving control to user via phone and voice making user's life more convinient.",
+		"projectDesc": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few feature implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc.",
+		"images": [
+			{
+		    "src": "/images/projects/smarthomes/Relay Control.jpg",
+		    "width": 2131,
+		    "height": 1598
+		  },
+			{
+		    "src": "/images/projects/smarthomes/Mood Light 2.jpg",
+		    "width": 3,
+		    "height": 4
+		  },
+			{
+		    "src": "/images/projects/smarthomes/Mood Light app.png",
+		    "width": 1080,
+		    "height": 1920
+		  },
+			{
+		    "src": "/images/projects/smarthomes/Mood Light 1.JPG",
+		    "width": 3264,
+		    "height": 2448
+		  }
+		]
+	},
+	{
+		"title": "CNC Vertical Mill",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "Mechanics", "PC Toolchain"],
+		"summary": "CNC machine capable of millings, drilling and engraving by giving a gcode file.",
+		"projectDesc": "Two CNC vertical mill of different dimmension was made. The machine is capable of millings, drilling and engraving by giving a gcode file. It was built from scratch for inhouse projects.",
+		"images": [
+			{
+		    "src": "/images/projects/cnc/big cnc.jpg",
+		    "width": 2560,
+		    "height": 1536
+		  },
+			{
+		    "src": "/images/projects/cnc/small cnc.jpg",
+		    "width": 1,
+		    "height": 1
+		  }
+		]
+	},
+	{
+		"title": "Quadcopter",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "UAV", "Sensors"],
+		"summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
+		"projectDesc": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it. \nConcepts leaned include\n\tPID\n\tIMU based orientation\n\tRF and WiFi based remote control\n\tQuadcopter Flight Dynamics",
+		"images": [
+			{
+		    "src": "/images/projects/quadcopter/Minicopter 1.jpg",
+		    "width": 4,
+		    "height": 3
+		  }
+		]
+	},
+	{
+		"title": "Attendance Machine",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "IoT", "Sensors"],
+		"summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
+		"projectDesc": "Several protypes of IoT conneced RFID based attendance machine were made. Wireless protocols exoerimented included WiFI, Ethernet, Bluetooth. RFID reader was interfaced which sent data to web server. Web server then did processing, stored data in SQL database and updated Web App frontend.",
+		"images": [
+			{
+		    "src": "/images/projects/attendance/arduino logo.png",
+		    "width": 1,
+		    "height": 3
+		  }
+		]
+	},
+	{
+		"title": "RPi Server",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Raspberry Pi", "Linux"],
+		"summary": "A 24*7 running machine capable of daily computational needs",
+		"projectDesc": "Set up a complete server on Raspberry Pi including \n\tWeb server\n\tFile server\n\tPrint server\n\tNode.js server\n\tMedia server. \n\nQuite useful setup for daily computational needs.",
+		"images": [
+			{
+		    "src": "/images/projects/server/raspberry pi.jpg",
+		    "width": 3,
+		    "height": 2
+		  }
+		]
+	},
+	{
+		"title": "Python Automation",
+		"subTitle": "Personal Project",
+		"tags": ["Python", "Selenium"],
+		"summary": "Lazy to do something, automate it. And there is nothing better than Python in world of automation",
+		"projectDesc": "The following were the tasks automated.\n\t1. Quora Unfollower - Unfollow all topics on quora to get a fresh start. \n\t2. Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail.",
+		"images": [
+			{
+		    "src": "/images/projects/automation/python logo.png",
+		    "width": 1280,
+		    "height": 400
+		  }
+		]
+	}
+]

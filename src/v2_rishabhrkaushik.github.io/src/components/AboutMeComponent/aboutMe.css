@@ -1,0 +1,58 @@
+#aboutMeDiv {
+  background-image: url("./aboutMe_bg.jpg");
+	position:relative;
+	width:100%;
+	padding: 20px 20px 20px 20px;
+	padding-bottom:50px;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.5em;
+}
+
+h2 {
+  padding-bottom: 1em;
+}
+
+.icon-row {
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em
+}
+
+.icon-and-text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+i {
+  font-size: 55px;
+  padding-bottom: 0.2em;
+}
+
+i.fa.fa-microchip {
+  color: #000000;
+}
+
+i.fa.fa-laptop {
+  color: #F44336;
+}
+
+i.fa.fa-cogs {
+  color: #777777;
+}
+
+i.fa.fa-th {
+  color: #03A9F4;
+}
+
+.text-columns {
+  padding: 1em 5em;
+}
+
+.text-column {
+  text-align: justify;
+  padding-bottom: 1em;
+}

@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Arduino",
+		"level": "90",
+		"details": "Self learnt. Used in lot many DIY projects. Also learnt as a part of open elective."
+	},
+	{
+		"name": "Raspberry Pi",
+		"level": "85",
+		"details": "Self learnt"
+	},
+	{
+		"name": "Embedded System",
+		"level": "85",
+		"details": "Self learnt and enhanced via college course."
+	},
+	{
+		"name": "PCB Designing",
+		"level": "70",
+		"details": "Used softwares like KiCad, Eagle, Orcad to make PCB for several projects."
+	},
+	{
+		"name": "Microcontrollers",
+		"level": "70",
+		"details": "Learnt in college and enhanced via projects. Familiar with AVR, ARM, PIC family of Microcontrollers and RTOS"
+	},
+	{
+		"name": "Mechatronics",
+		"level": "65",
+		"details": "Learnt in college. Did projects on robotics and machines."
+	},
+	{
+		"name": "Cicuit Simulation",
+		"level": "60",
+		"details": "Self learnt"
+	},
+	{
+		"name": "Electronics",
+		"level": "60",
+		"details": "Learnt in college. Domain expertise particularly in Embedded systems, digital electronics"
+	},
+	{
+		"name": "MATLAB",
+		"level": "30",
+		"details": "Learnt in college. Familiar with framework"
+	}
+]

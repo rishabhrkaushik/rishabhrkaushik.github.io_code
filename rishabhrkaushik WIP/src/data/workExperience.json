@@ -1,0 +1,58 @@
+
+[
+	{
+		"type": "Work",
+		"startDate": "Jan 2019",
+		"endDate": "Present",
+		"jobTitle": "Consultant",
+		"company": "Pye Technologies",
+		"location": "Nagpur, India",
+		"team": "",
+    "jobDesc": "Consultant for tech and operations at early stage startup dealing with clean energy domain along with industrial consultancy and commercial products.",
+		"responsibilities": ["Operations", "Product Designing", "Process Creation"]
+	},
+	{
+		"type": "Work",
+		"startDate": "Oct 2018",
+		"endDate": "Present",
+		"jobTitle": "Engineer",
+		"company": "L&T Technology Services Pvt. Ltd.",
+		"location": "Bangalore, India",
+		"team": "Aero and Rail VDU",
+    "jobDesc": "As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review.",
+		"responsibilities": ["ATE Designing", "LabView Programmer", "Circuit Designer", "Reverse Engineering", "Project Lifecycle Management"]
+	},
+	{
+		"type": "Work",
+		"startDate": "Oct 2017",
+		"endDate": "Oct 2018",
+		"jobTitle": "Associate Engineer",
+		"company": "L&T Technology Services Pvt. Ltd.",
+		"location": "Bangalore, India",
+		"team": "Aero and Rail VDU",
+    "jobDesc": "Mostly worked on ATE development and DO 160 standards based testing",
+		"responsibilities": ["DO-160 Testing"]
+	},
+	{
+		"type": "Work",
+		"startDate": "May 2016",
+		"endDate": "July 2016",
+		"jobTitle": "Research & Development Intern",
+		"company": "1Thing Design and Innovation Pvt. Ltd.",
+		"location": "Gurgaon, India",
+    "team": "SmartHomes",
+		"jobDesc": "Worked on SmartHomes project. My responsibilities involved \n\tPrototyping of the product\n\tEmbedded Programming\n\tCentral Intelligent Hub development. \n Platforms worked on involve Python, Arduino, ESP8266 etc",
+		"responsibilities": ["Product Designing", "Go To Market Stratergy", "Python Programming", "Embedded Designer"]
+	},
+	{
+		"type": "Work",
+		"startDate": "May 2015",
+		"endDate": "July 2015",
+		"jobTitle": "Intern",
+		"company": "True Education Institute Pvt. Ltd",
+		"location": "Nagpur, India",
+		"team": "Technical Team",
+		"jobDesc": "Developed projects such as \n\tCNC Machine\n\tQuadcopter\n\tAttendance Machine \n\tOther Hardware and Software Automations",
+		"responsibilities": ["Prototyping", "Embedded Programmer", "Circuit Designer", "Programmer"]
+	}
+]

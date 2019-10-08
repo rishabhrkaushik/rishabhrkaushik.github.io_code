@@ -14,10 +14,93 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import Divider from '@material-ui/core/Divider';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 import Slider from "react-slick";
 
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from 'react-image-gallery';
+
+import Modal from 'react-responsive-modal';
+
 import projects from './../../data/projects.json';
+
+class Gallery extends Component {
+
+  render() {
+
+    const images = [
+      {
+        original: 'https://picsum.photos/id/1018/1000/600/',
+        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      },
+      {
+        original: 'https://picsum.photos/id/1015/1000/600/',
+        thumbnail: 'https://picsum.photos/id/1015/250/150/',
+      },
+      {
+        original: 'https://picsum.photos/id/1019/1000/600/',
+        thumbnail: 'https://picsum.photos/id/1019/250/150/',
+      },
+    ];
+
+    return (
+      <ImageGallery items={images} showNav={false} autoPlay={true}/>
+    );
+  }
+
+}
+
+class ProjectDescription extends Component {
+  state = {
+    open: false,
+  };
+
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    const { open } = this.state;
+    return (
+      <div>
+        <Button size="small" color="primary" onClick={this.onOpenModal}>
+          View Details
+        </Button>
+        <Modal open={open} onClose={this.onCloseModal} center={true}>
+          <Card>
+            <Typography>
+              {this.props.name}
+            </Typography>
+            <Divider />
+            <CardActionArea styles={{flexgrow: 1}}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Grid item xs={12} sm={4}>
+                  <Gallery />
+                </Grid>
+                <Grid item xs={12} sm={8}>
+                  {this.props.desc}
+                </Grid>
+
+              </Grid>
+            </CardActionArea>
+
+          </Card>
+        </Modal>
+      </div>
+    );
+  }
+}
 
 class ProjectCard extends Component {
   render() {
@@ -39,9 +122,7 @@ class ProjectCard extends Component {
         </CardActionArea>
         <Divider />
         <CardActions>
-          <Button size="small" color="primary">
-            View Details
-          </Button>
+          <ProjectDescription name={this.props.title} desc={this.props.desc}/>
           <Button size="small" color="primary">
             Demonstrate
           </Button>

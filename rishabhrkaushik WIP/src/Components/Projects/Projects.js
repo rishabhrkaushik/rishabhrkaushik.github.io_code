@@ -24,29 +24,16 @@ import ImageGallery from 'react-image-gallery';
 
 import Modal from 'react-responsive-modal';
 
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+
 import projects from './../../data/projects.json';
 
 class Gallery extends Component {
 
   render() {
-
-    const images = [
-      {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
-      },
-      {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
-      },
-    ];
-
     return (
-      <ImageGallery items={images} showNav={false} autoPlay={true}/>
+      <ImageGallery items={this.props.images} showNav={false} autoPlay={true}/>
     );
   }
 
@@ -82,19 +69,17 @@ class ProjectDescription extends Component {
               <Grid
                 container
                 direction="row"
-                justify="center"
-                alignItems="center"
+                justify="left"
+                alignItems="left"
               >
                 <Grid item xs={12} sm={4}>
-                  <Gallery />
+                  <Gallery images={this.props.images}/>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                   {this.props.desc}
                 </Grid>
-
               </Grid>
             </CardActionArea>
-
           </Card>
         </Modal>
       </div>
@@ -107,10 +92,6 @@ class ProjectCard extends Component {
     return (
       <Card className="card-custom">
         <CardActionArea>
-          <CardMedia
-            image="/static/images/cards/contemplative-reptile.jpg"
-            title="Contemplative Reptile"
-          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {this.props.title}
@@ -121,8 +102,16 @@ class ProjectCard extends Component {
           </CardContent>
         </CardActionArea>
         <Divider />
+        <div className="tags-space">
+          {
+            this.props.tags.map((tag, i) =>
+              <Chip color="primary" size="small" label={tag} className="project-tag"/>
+            )
+          }
+        </div>
+        <Divider />
         <CardActions>
-          <ProjectDescription name={this.props.title} desc={this.props.desc}/>
+          <ProjectDescription name={this.props.title} desc={this.props.desc} images={this.props.images}/>
           <Button size="small" color="primary">
             Demonstrate
           </Button>
@@ -174,7 +163,13 @@ class Projects extends Component {
       <Slider {...settings}>
         {
           projects.map((project, i) =>
-            <ProjectCard key={i} title={project.title} summary={project.summary} desc={project.projectDesc}/>
+            <ProjectCard key={i}
+              title={project.title}
+              summary={project.summary}
+              desc={project.projectDesc}
+              images={project.images}
+              tags={project.tags}
+            />
           )
         }
       </Slider>

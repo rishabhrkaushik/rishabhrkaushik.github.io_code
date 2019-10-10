@@ -10,7 +10,7 @@ import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Certifications from './Components/Certifications/Certifications';
 import Contact from './Components/Contact/Contact';
-import Modal from './Components/Modal/Modal';
+// import Modal from './Components/Modal/Modal';
 
 import * as serviceWorker from './serviceWorker';
 

@@ -4,7 +4,21 @@
 		"subTitle": "",
 		"tags": ["ATE", "Electronics", "LabView", "PCB Designing", "Documentation"],
 		"summary": "Made as part of LnT Technology Services, Aero and Rail Vertical. Part of designing and manufacturing team for complete Automatic test assembly equipment",
-		"projectDesc": ""
+		"projectDesc": "S",
+		 "images": [
+		      {
+		        "original": "https://picsum.photos/id/1018/1000/600/",
+		        "thumbnail": "https://picsum.photos/id/1018/250/150/"
+		      },
+		      {
+		        "original": "https://picsum.photos/id/1015/1000/600/",
+		        "thumbnail": "https://picsum.photos/id/1015/250/150/"
+		      },
+		      {
+		        "original": "https://picsum.photos/id/1019/1000/600/",
+		        "thumbnail": "https://picsum.photos/id/1019/250/150/"
+		      }
+		    ]
 	},
 	{
 		"title": "Frisbee Throwing Robot",
@@ -19,7 +33,21 @@
 		"tags": ["Robotics", "AVR", "Python", "Image Processing"],
 		"_comment":["openCV"],
 		"summary": "Project involving image processing, mathematical calculations, path finding and autonomous bot navigation.",
-		"projectDesc": "The task was to first find the digits from image using image processing, then do some mathematical calculations of the digits and their position, feed this information to the bot which will then travel to locations autonomously picking and placing blocks on the way using its constructed robotic arm."
+		"projectDesc": "The task was to first find the digits from image using image processing, then do some mathematical calculations of the digits and their position, feed this information to the bot which will then travel to locations autonomously picking and placing blocks on the way using its constructed robotic arm.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "Smarthomes",
@@ -27,41 +55,125 @@
 		"tags": ["Embedded Systems", "Arduino", "Node.js"],
 		"_comment": ["Web Development", "ESP8266"],
 		"summary": "Automating home and giving control to user via phone and voice making user's life more convinient.",
-		"projectDesc": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few feature implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc."
+		"projectDesc": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few feature implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "CNC Vertical Mill",
 		"subTitle": "As a part of True-education internship",
 		"tags": ["Arduino", "Mechanics", "PC Toolchain"],
 		"summary": "CNC machine capable of millings, drilling and engraving by giving a gcode file.",
-		"projectDesc": "Two CNC vertical mill of different dimmension was made. The machine is capable of millings, drilling and engraving by giving a gcode file. It was built from scratch for inhouse projects."
+		"projectDesc": "Two CNC vertical mill of different dimmension was made. The machine is capable of millings, drilling and engraving by giving a gcode file. It was built from scratch for inhouse projects.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "Quadcopter",
 		"subTitle": "As a part of True-education internship",
 		"tags": ["Arduino", "UAV", "Sensors"],
 		"summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
-		"projectDesc": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it. \nConcepts leaned include\n\tPID\n\tIMU based orientation\n\tRF and WiFi based remote control\n\tQuadcopter Flight Dynamics"
+		"projectDesc": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it. \nConcepts leaned include\n\tPID\n\tIMU based orientation\n\tRF and WiFi based remote control\n\tQuadcopter Flight Dynamics",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "Attendance Machine",
 		"subTitle": "As a part of True-education internship",
 		"tags": ["Arduino", "IoT", "Sensors"],
 		"summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
-		"projectDesc": "Several protypes of IoT conneced RFID based attendance machine were made. Wireless protocols exoerimented included WiFI, Ethernet, Bluetooth. RFID reader was interfaced which sent data to web server. Web server then did processing, stored data in SQL database and updated Web App frontend."
+		"projectDesc": "Several protypes of IoT conneced RFID based attendance machine were made. Wireless protocols exoerimented included WiFI, Ethernet, Bluetooth. RFID reader was interfaced which sent data to web server. Web server then did processing, stored data in SQL database and updated Web App frontend.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "RPi Server",
 		"subTitle": "As a part of True-education internship",
 		"tags": ["Raspberry Pi", "Linux"],
 		"summary": "A 24*7 running machine capable of daily computational needs",
-		"projectDesc": "Set up a complete server on Raspberry Pi including \n\tWeb server\n\tFile server\n\tPrint server\n\tNode.js server\n\tMedia server. \n\nQuite useful setup for daily computational needs."
+		"projectDesc": "Set up a complete server on Raspberry Pi including \n\tWeb server\n\tFile server\n\tPrint server\n\tNode.js server\n\tMedia server. \n\nQuite useful setup for daily computational needs.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	},
 	{
 		"title": "Python Automation",
 		"subTitle": "Personal Project",
 		"tags": ["Python", "Selenium"],
 		"summary": "Lazy to do something, automate it. And there is nothing better than Python in world of automation",
-		"projectDesc": "The following were the tasks automated.\n\t1. Quora Unfollower - Unfollow all topics on quora to get a fresh start. \n\t2. Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail."
+		"projectDesc": "The following were the tasks automated.\n\t1. Quora Unfollower - Unfollow all topics on quora to get a fresh start. \n\t2. Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail.",
+		"images": [
+				 {
+					 "original": "https://picsum.photos/id/1018/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1018/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1015/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1015/250/150/"
+				 },
+				 {
+					 "original": "https://picsum.photos/id/1019/1000/600/",
+					 "thumbnail": "https://picsum.photos/id/1019/250/150/"
+				 }
+			 ]
 	}
 ]

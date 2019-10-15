@@ -11,6 +11,7 @@
 .slick-slider{
   padding-top: 2em;
 }
+
 .card-custom{
   margin: 1em;
 }
@@ -29,4 +30,16 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   justify-content: center;
+}
+
+.project-desc-title{
+  padding: 0.5em;
+}
+.project-desc-text{
+  text-align: justify;
+}
+
+/* remove padding from modal */
+.styles_modal__gNwvD {
+  padding: 0em !important;
 }

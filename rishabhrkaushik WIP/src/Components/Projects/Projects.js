@@ -24,7 +24,6 @@ import ImageGallery from 'react-image-gallery';
 
 import Modal from 'react-responsive-modal';
 
-import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 
 import projects from './../../data/projects.json';
@@ -33,7 +32,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <ImageGallery items={this.props.images} showNav={false} autoPlay={true}/>
+      <ImageGallery items={this.props.images} showNav={false} autoPlay={true} showPlayButton={false} showFullscreenButton={false}/>
     );
   }
 
@@ -59,9 +58,9 @@ class ProjectDescription extends Component {
         <Button size="small" color="primary" onClick={this.onOpenModal}>
           View Details
         </Button>
-        <Modal open={open} onClose={this.onCloseModal} center={true}>
+        <Modal open={open} onClose={this.onCloseModal} center={true} showCloseIcon={false}>
           <Card>
-            <Typography>
+            <Typography gutterBottom variant="h5" component="h2" className="project-desc-title">
               {this.props.name}
             </Typography>
             <Divider />
@@ -75,8 +74,22 @@ class ProjectDescription extends Component {
                 <Grid item xs={12} sm={4}>
                   <Gallery images={this.props.images}/>
                 </Grid>
-                <Grid item xs={12} sm={8}>
-                  {this.props.desc}
+                <Grid item xs={12} sm={8} className="project-desc-text">
+                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+                    {this.props.desc["P1"]}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+                    {this.props.desc["P2"]}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+                   <ul>
+                    {
+                      this.props.desc["B"].map(function(bullet, i){
+                        return <li key={i}>{bullet}</li>;
+                      })
+                    }
+                  </ul>
+                </Typography>
                 </Grid>
               </Grid>
             </CardActionArea>

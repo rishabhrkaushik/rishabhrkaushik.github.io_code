@@ -9,12 +9,12 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+// import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import Divider from '@material-ui/core/Divider';
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import Slider from "react-slick";
@@ -58,10 +58,13 @@ class ProjectDescription extends Component {
         <Button size="small" color="primary" onClick={this.onOpenModal}>
           View Details
         </Button>
-        <Modal open={open} onClose={this.onCloseModal} center={true} showCloseIcon={false}>
+        <Modal open={open} onClose={this.onCloseModal} center={true} showCloseIcon={true}>
           <Card>
-            <Typography gutterBottom variant="h5" component="h2" className="project-desc-title">
+            <Typography variant="h5" component="h2" className="project-desc-title">
               {this.props.name}
+            </Typography>
+            <Typography gutterBottom variant="subtitle2" component="h4" color="textSecondary" className="project-subtitle">
+              {this.props.subtitle}
             </Typography>
             <Divider />
             <CardActionArea styles={{flexgrow: 1}}>
@@ -124,7 +127,7 @@ class ProjectCard extends Component {
         </div>
         <Divider />
         <CardActions>
-          <ProjectDescription name={this.props.title} desc={this.props.desc} images={this.props.images}/>
+          <ProjectDescription name={this.props.title} desc={this.props.desc} images={this.props.images} subtitle={this.props.subtitle}/>
           <Button size="small" color="primary">
             Demonstrate
           </Button>
@@ -178,6 +181,7 @@ class Projects extends Component {
           projects.map((project, i) =>
             <ProjectCard key={i}
               title={project.title}
+              subtitle={project.subTitle}
               summary={project.summary}
               desc={project.projectDesc}
               images={project.images}

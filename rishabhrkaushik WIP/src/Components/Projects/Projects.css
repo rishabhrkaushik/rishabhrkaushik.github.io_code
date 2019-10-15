@@ -33,7 +33,16 @@
 }
 
 .project-desc-title{
-  padding: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+}
+.project-subtitle{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
 }
 .project-desc-text{
   text-align: justify;

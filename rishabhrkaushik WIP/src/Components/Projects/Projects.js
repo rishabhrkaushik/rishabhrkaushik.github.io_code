@@ -51,6 +51,80 @@ class ProjectDescription extends Component {
     this.setState({ open: false });
   };
 
+  createDescription(){
+    if(this.props.images.length > 0){
+      return(
+        <Grid
+          container
+          direction="row"
+          justify="left"
+          alignItems="left"
+        >
+          <Grid item xs={12} sm={4}>
+            <Gallery images={this.props.images}/>
+          </Grid>
+          <Grid item xs={12} sm={8} className="project-desc-text">
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+              {this.props.desc["P1"]}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+              {this.props.desc["P2"]}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+             <ul>
+              {
+                this.props.desc["B"].map(function(bullet, i){
+                  return <li key={i}>{bullet}</li>;
+                })
+              }
+            </ul>
+          </Typography>
+          </Grid>
+        </Grid>
+      )
+    }
+    else{
+      return(
+        <Grid
+          container
+          direction="row"
+          justify="left"
+          alignItems="left"
+        >
+          <Grid item xs={12} sm={12} className="project-desc-text">
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+              {this.props.desc["P1"]}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+              {this.props.desc["P2"]}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
+             <ul>
+              {
+                this.props.desc["B"].map(function(bullet, i){
+                  return <li key={i}>{bullet}</li>;
+                })
+              }
+            </ul>
+          </Typography>
+          </Grid>
+        </Grid>
+      )
+    }
+  }
+
+  generateButtons(){
+    if(this.props.links.length > 0){
+      return (
+        <div>
+          <Divider />
+          <Button size="small" color="primary">
+            Demonstrate
+          </Button>
+        </div>
+      )
+    }
+  }
   render() {
     const { open } = this.state;
     return (
@@ -66,36 +140,10 @@ class ProjectDescription extends Component {
             <Typography gutterBottom variant="subtitle2" component="h4" color="textSecondary" className="project-subtitle">
               {this.props.subtitle}
             </Typography>
-            <Divider />
             <CardActionArea styles={{flexgrow: 1}}>
-              <Grid
-                container
-                direction="row"
-                justify="left"
-                alignItems="left"
-              >
-                <Grid item xs={12} sm={4}>
-                  <Gallery images={this.props.images}/>
-                </Grid>
-                <Grid item xs={12} sm={8} className="project-desc-text">
-                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
-                    {this.props.desc["P1"]}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
-                    {this.props.desc["P2"]}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
-                   <ul>
-                    {
-                      this.props.desc["B"].map(function(bullet, i){
-                        return <li key={i}>{bullet}</li>;
-                      })
-                    }
-                  </ul>
-                </Typography>
-                </Grid>
-              </Grid>
+              {this.createDescription()}
             </CardActionArea>
+            {this.generateButtons()}
           </Card>
         </Modal>
       </div>
@@ -127,10 +175,7 @@ class ProjectCard extends Component {
         </div>
         <Divider />
         <CardActions>
-          <ProjectDescription name={this.props.title} desc={this.props.desc} images={this.props.images} subtitle={this.props.subtitle}/>
-          <Button size="small" color="primary">
-            Demonstrate
-          </Button>
+          <ProjectDescription name={this.props.title} desc={this.props.desc} images={this.props.images} subtitle={this.props.subtitle} links={this.props.links}/>
         </CardActions>
       </Card>
     );
@@ -186,6 +231,7 @@ class Projects extends Component {
               desc={project.projectDesc}
               images={project.images}
               tags={project.tags}
+              links={project.links}
             />
           )
         }

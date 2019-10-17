@@ -9,12 +9,8 @@
 			"P2": "My Responsibilities included: ",
 			"B": ["Designing of LabVIEW Software", "System Designing", "Circuit Designing", "Harness Designing"]
 		},
-		"images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+		"images": [],
+		"links": []
 	},
 	{
 		"title": "Frisbee Throwing Robot",
@@ -26,12 +22,8 @@
 			"P2": "The features of bot were as following:",
 			"B": ["Autonomous Bot Navigation", "Disc Rotation closed loop speed control", "Platform height and angle adjustment"]
 		},
-		"images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+		"images": [],
+		"links": []
 	},
 	{
 	  "title": "Smarthomes",
@@ -43,12 +35,8 @@
 			"P2": "The backend app was made on Python and then ported to NodeJS. All the rules were written in customizable JSON based rules. The front end was written with JQuery and was customizable just based on JSON without needing to rewrite the code. All the inputs were stored in SQL database for further analyzing. The physical module was based on ESP8266 and communicated based on MQTT protocol. The actions were taken by Arduino. The central server was hosted on Raspberry Pi.",
 			"B": []
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "CNC Vertical Mill and 3D printer",
@@ -60,12 +48,8 @@
 			"P2": "3D printer was assembled with modifications to improve quality of printing.",
 			"B": []
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "Quadcopter",
@@ -77,12 +61,8 @@
 			"P2": "The concepts learnt and implemented involved",
 			"B": ["BLDC Motor Driving", "IMU based orientation calculation", "PID", "RF and WiFi Based Remote Control", "Multirotor's flight Dynamics"]
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "Attendance Machine",
@@ -94,12 +74,8 @@
 			"P2": "The hardware consisted of Arduino board with LCD, RFID reader, Communication Module and buzzer. The backend was integrated with already hosted PHP site to connect with existing infrastructure.",
 			"B": []
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "RPi Server",
@@ -111,12 +87,8 @@
 			"P2": "The following services and servers were configured",
 			"B": ["File Sharing Server", "Print Server", "Media Server", "Web Server", "NodeJS server"]
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "Python Automation",
@@ -128,12 +100,8 @@
 			"P2": "The following were the tasks automated",
 			"B": ["Quora Unfollower - Unfollow all topics on quora to get a fresh start", "Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail."]
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "Investment Visualizer and Summarizer",
@@ -145,12 +113,8 @@
 			"P2": "The graphs show ",
 			"B": ["Amount Invested vs Current Value", "NAV with purchase and selling points and units"]
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	},
 	{
 	  "title": "Personal Portfolio Website",
@@ -159,14 +123,10 @@
 	  "summary": "The very webiste you are viewing. This is the 3rd version of website built to showcase portfolio and learn ReactJS.",
 	  "projectDesc": {
 			"P1": "Personal portfolio acting to increase online visibility and acting as resume. The website is built on ReactJS and hosted as github pages.",
-			"P2": "",
+			"P2": "The website is highly modular with JSON based configuration to populate most of the fields. Material UI is used for components giving it slick look.",
 			"B": []
 		},
-	  "images": [
-	       {
-	         "original": "https://picsum.photos/id/1018/1000/600/",
-	         "thumbnail": "https://picsum.photos/id/1018/250/150/"
-	       }
-	     ]
+	  "images": [],
+		"links": []
 	}
 ]

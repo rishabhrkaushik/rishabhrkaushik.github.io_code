@@ -1,7 +1,7 @@
 # Rishabh Kaushik's Personal Portfolio
 This website serves as my personal portfolio. It showcases all my projects, certifications, work experience and skills.
 The website has been built in ReactJS and is hosted over github pages. Feel free to browse through the code and use it in your project.
-The website is hosted [here](https://rishabhrkaushik/rishabhrkaushik.github.io)
+The website is hosted [here](https://rishabhrkaushik.github.io)
 
 ## Getting started with the website on localhost
 1. Install NodeJS and Node Package Manager in your PC.

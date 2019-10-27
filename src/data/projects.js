@@ -101,7 +101,10 @@ const projects = [
 			"B": ["Quora Unfollower - Unfollow all topics on quora to get a fresh start", "Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail."]
 		},
 	  "images": [],
-		"links": {}
+		"links": {
+			"Quora Unfollower": "https://github.com/rishabhrkaushik/quoraUnfollower",
+			"Secret Santa Randomizer": "https://github.com/rishabhrkaushik/SecretSantaRandomizer"
+		}
 	},
 	{
 	  "title": "Investment Visualizer and Summarizer",
@@ -143,6 +146,32 @@ const projects = [
 			"B": []
 		},
 	  "images": [],
+		"links": {}
+	},
+	{
+		"title": "Puzzle Solving Robot",
+		"subTitle": "e-Yantra 2016, IIT-B Challenge",
+		"tags": ["Robotics", "Image Processing", "AVR", "Python", "OpenCV"],
+		"summary": "Made for e-Yantra 2016, a Autonomous robot was programmed to navigate and act based on image input",
+		"projectDesc": {
+			"P1": "A Firebird V robot was programmed to navigate the field. Python script was written to detect digits in an image input using openCV. Operations were performed on the numbers to get the shortest route.",
+			"P2": "An Arm was constructed over the bot to pick and place the blocks in the field.",
+			"B": []
+		},
+		"images": [
+			{
+        "original": require("./../data/Projects/Bot in Fields.png"),
+        "thumbnail": require("./../data/Projects/Bot in Fields.png")
+      },
+      {
+        "original": require("./../data/Projects/Digit Recognition.png"),
+        "thumbnail": require("./../data/Projects/Digit Recognition.png")
+      },
+      {
+        "original": require("./../data/Projects/Firebird V.jpg"),
+        "thumbnail": require("./../data/Projects/Firebird V.jpg")
+      }
+		],
 		"links": {}
 	}
 ]

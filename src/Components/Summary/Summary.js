@@ -10,6 +10,7 @@ import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop'
 
 import { Typography } from '@material-ui/core';
+import Link from '@material-ui/core/Link';
 
 const taglines = ["Let's solve some problem.", "Let's create a product.", "Let's build a business.", "Let's change the world!"]
 
@@ -102,11 +103,29 @@ class Summary extends Component {
               What else?
             </Typography>
             <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
-              I code! Where? Find me on Github.
+              I code! Where? Find me on &nbsp;
+              <Link href="https://github.com/rishabhrkaushik" target="_blank">
+              Github.
+              </Link>
               <br />
-              I write! Not much but find me on Medium or Quora.
+              I write! Not much but find me on &nbsp;
+              <Link href="https://medium.com/@rishabhrkaushik" target="_blank">
+              Medium &nbsp;
+              </Link>
+               or &nbsp;
+              <Link href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
+              Quora.
+              </Link>
               <br />
-              I binge! What? Find me on Simkl.
+              I binge! What? Find me on &nbsp;
+              <Link href="https://simkl.com/318567/stats/" target="_blank">
+              Simkl.
+              </Link>
+            </Typography>
+            <br />
+            <br />
+            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+              I also like to read, go for hikings or any type of adventures and love swimming.
             </Typography>
           </div>
         </div>

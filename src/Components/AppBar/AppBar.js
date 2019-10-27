@@ -8,10 +8,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 import Button from '@material-ui/core/Button';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 class CustomAppBar extends Component{
 
@@ -41,7 +40,7 @@ class CustomAppBar extends Component{
             </Button>
           </Toolbar>
         </AppBar>
-        <SwipeableDrawer
+        <Drawer
           variant="persistent"
           anchor="left"
           open={this.state.open}
@@ -81,7 +80,7 @@ class CustomAppBar extends Component{
               </Button>
             </ListItem>
           </List>
-        </SwipeableDrawer>
+        </Drawer>
       </div>
     );
   }

@@ -119,7 +119,7 @@ class ProjectDescription extends Component {
       var buttons = []
       for(var i = 0; i < buttonKeys.length; i++){
         buttons.push(
-          <Button size="small" color="primary" href={this.props.links[buttonKeys[i]]} target="_blank">
+          <Button key={i} size="small" color="primary" href={this.props.links[buttonKeys[i]]} target="_blank">
             {buttonKeys[i]}
           </Button>
         )
@@ -176,7 +176,7 @@ class ProjectCard extends Component {
         <div className="tags-space">
           {
             this.props.tags.map((tag, i) =>
-              <Chip color="primary" size="small" label={tag} className="project-tag"/>
+              <Chip key={i} color="primary" size="small" label={tag} className="project-tag"/>
             )
           }
         </div>
@@ -231,7 +231,8 @@ class Projects extends Component {
       <Slider {...settings}>
         {
           projects.map((project, i) =>
-            <ProjectCard key={i}
+            <ProjectCard
+              key={i}
               title={project.title}
               subtitle={project.subTitle}
               summary={project.summary}

@@ -16,11 +16,11 @@ class Card extends Component {
           <h3 className="vertical-timeline-element-title ">{this.props.title}</h3>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.team}</h4>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.company + ", " + this.props.location}</h4>
-          <h3 style={{"font-weight": "bold"}}>Responsibilities: </h3>
+          <h3 style={{"fontWeight": "bold"}}>Responsibilities: </h3>
           <ul className="list">
             {
               this.props.responsibilities.map((responsibility, i) =>
-                <li className="list-item">{responsibility}</li>
+                <li key={i} className="list-item">{responsibility}</li>
               )
             }
           </ul>

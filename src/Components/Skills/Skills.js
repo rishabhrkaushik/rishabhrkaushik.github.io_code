@@ -11,16 +11,15 @@ class Skills extends Component {
     this.state = {
       columnCount: 5
     }
-  }
-
-  createTable(){
     if (window.innerWidth < 768) {
       this.state.columnCount = 3
     }
     else {
       this.state.columnCount = 5
     }
+  }
 
+  createTable(){
     var rows = [];
 
     for(var rowIndex = 0; rowIndex < skills.length/this.state.columnCount; rowIndex++){
@@ -29,7 +28,7 @@ class Skills extends Component {
       for(var columnIndex = 0; columnIndex < this.state.columnCount; columnIndex++){
         if(((rowIndex * this.state.columnCount) + columnIndex) < skills.length){
           column.push(
-            <td className="skill-cell">
+            <td className="skill-cell" key={columnIndex}>
               <figure>
                 <img src={skills[(rowIndex * this.state.columnCount )+ columnIndex]["src"]} alt={skills[(rowIndex * this.state.columnCount )+ columnIndex]["skill"]} width="200px"/>
               </figure>
@@ -37,7 +36,7 @@ class Skills extends Component {
           );
         }
       }
-      rows.push(<tr>{column}</tr>);
+      rows.push(<tr key={rowIndex}>{column}</tr>);
     }
     return <tbody>{rows}</tbody>
   }

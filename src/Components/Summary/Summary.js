@@ -93,16 +93,16 @@ class Summary extends Component {
             </h4>
           </div>
           <div className="column is-one-third">
-            <Typography align="justify" color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
               A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
               A designer and multi domain technical architect.
             </Typography>
           </div>
           <div className="column is-one-third">
-            <Typography color="text-primary" gutterBottom={true} variant="h5" component="h5">
+            <Typography color="textPrimary" gutterBottom={true} variant="h5" component="h5">
               What else?
             </Typography>
-            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
               I code! Where? Find me on &nbsp;
               <Link href="https://github.com/rishabhrkaushik" target="_blank">
               Github.
@@ -124,7 +124,7 @@ class Summary extends Component {
             </Typography>
             <br />
             <br />
-            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
               I also like to read, go for hikings or any type of adventures and love swimming.
             </Typography>
           </div>
@@ -135,16 +135,16 @@ class Summary extends Component {
       return(
         <div>
           <div className="column is-one-third">
-            <Typography align="justify" color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
               A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
               A designer and multi domain technical architect.
             </Typography>
           </div>
           <div className="column is-one-third">
-            <Typography color="text-primary" gutterBottom={true} variant="h5" component="h5">
+            <Typography color="textPrimary" gutterBottom={true} variant="h5" component="h5">
               What else?
             </Typography>
-            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
               I code! Where? Find me on Github.
               <br />
               I write! Where? Find me on Medium or Quora.

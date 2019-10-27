@@ -76,7 +76,7 @@ class Certifications extends Component {
     var cards = [];
 
     certifications["Electronics"].map((certificate, i) =>
-      cards.push(<CertificatesCard title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
     )
 
     return(
@@ -90,7 +90,7 @@ class Certifications extends Component {
     var cards = [];
 
     certifications["Computer Science"].map((certificate, i) =>
-      cards.push(<CertificatesCard title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
     )
 
     return(
@@ -104,7 +104,7 @@ class Certifications extends Component {
     var cards = [];
 
     certifications["Soft Skills and Humanities"].map((certificate, i) =>
-      cards.push(<CertificatesCard title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
     )
 
     return(

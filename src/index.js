@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // Components
+import CustomAppBar from './Components/AppBar/AppBar';
 import Landing from './Components/Landing/Landing';
 import Summary from './Components/Summary/Summary';
 import Experience from './Components/Experience/Experience';
@@ -16,6 +17,7 @@ import * as serviceWorker from './serviceWorker';
 // Bulma
 import 'bulma/css/bulma.css'
 
+ReactDOM.render(<CustomAppBar />, document.getElementById('appbar'));
 ReactDOM.render(<Landing />, document.getElementById('landing'));
 ReactDOM.render(<Summary  />, document.getElementById('summary'));
 ReactDOM.render(<Experience />, document.getElementById('experience'));

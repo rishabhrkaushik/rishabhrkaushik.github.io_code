@@ -9,6 +9,8 @@ import { faMicrochip, faLaptop, faCogs, faTh } from '@fortawesome/free-solid-svg
 import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop'
 
+import { Typography } from '@material-ui/core';
+
 const taglines = ["Let's solve some problem.", "Let's create a product.", "Let's build a business.", "Let's change the world!"]
 
 class WhatIDoMobile extends Component{
@@ -83,21 +85,29 @@ class Summary extends Component {
   returnText(){
     if (window.innerWidth > 768) {
       return(
-        <div className="desc columns is-one-third">
-          <div className="column quote">
+        <div className="desc columns">
+          <div className="column is-one-third quote">
             <h4>
               Tech is reserved for the people like me - The freaks, the weirdos, the misfits, the geeks, the dweebs, the dorks <br /> - Richard Hendriks, Silicon Valley
             </h4>
           </div>
-          <div className="column is-two-thirds workinfo">
-            <p>
-              A task oriented guy who likes to get his hands dirty working on interdisciplinary projects. <br />
-              A learner with interest in versatile topics like Embedded System, Programming, Mechanics and many more. <br />
-              Likes to get engaged in complete lifecycle of project, right from planning and designing to installation and marketing.
-            </p>
-            <p className="next-para">
-              When I am not working, I like to indulge in discussions on science, philosophy, religion or any other topic. I love to watch TV series and have watched quite many of them. I like to indulge in adventures, swimming, road trips etc  a weird combination giving peace as well as getting my adrenaline high.
-            </p>
+          <div className="column is-one-third">
+            <Typography align="justify" color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+              A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
+              A designer and multi domain technical architect.
+            </Typography>
+          </div>
+          <div className="column is-one-third">
+            <Typography color="text-primary" gutterBottom={true} variant="h5" component="h5">
+              What else?
+            </Typography>
+            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+              I code! Where? Find me on Github.
+              <br />
+              I write! Not much but find me on Medium or Quora.
+              <br />
+              I binge! What? Find me on Simkl.
+            </Typography>
           </div>
         </div>
       )
@@ -105,6 +115,24 @@ class Summary extends Component {
     else {
       return(
         <div>
+          <div className="column is-one-third">
+            <Typography align="justify" color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+              A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
+              A designer and multi domain technical architect.
+            </Typography>
+          </div>
+          <div className="column is-one-third">
+            <Typography color="text-primary" gutterBottom={true} variant="h5" component="h5">
+              What else?
+            </Typography>
+            <Typography color="text-primary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+              I code! Where? Find me on Github.
+              <br />
+              I write! Where? Find me on Medium or Quora.
+              <br />
+              I binge! What? Find me on Simkl.
+            </Typography>
+          </div>
         </div>
       );
     }

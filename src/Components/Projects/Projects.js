@@ -26,13 +26,13 @@ import Modal from 'react-responsive-modal';
 
 import Chip from '@material-ui/core/Chip';
 
-import projects from './../../data/projects.json';
+import projects from './../../data/projects.js';
 
 class Gallery extends Component {
 
   render() {
     return (
-      <ImageGallery items={this.props.images} showNav={false} autoPlay={true} showPlayButton={false} showFullscreenButton={false}/>
+      <ImageGallery items={this.props.images} showNav={false} autoPlay={true} showPlayButton={false} showFullscreenButton={true}/>
     );
   }
 
@@ -70,15 +70,15 @@ class ProjectDescription extends Component {
             <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
               {this.props.desc["P2"]}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
              <ul>
+             <Typography variant="body2" color="textSecondary" component="p" paragraph={true}>
               {
                 this.props.desc["B"].map(function(bullet, i){
                   return <li key={i}>{bullet}</li>;
                 })
               }
+              </Typography>
             </ul>
-          </Typography>
           </Grid>
         </Grid>
       )
@@ -114,13 +114,20 @@ class ProjectDescription extends Component {
   }
 
   generateButtons(){
-    if(this.props.links.length > 0){
+    var buttonKeys = Object.keys(this.props.links)
+    if(buttonKeys.length > 0){
+      var buttons = []
+      for(var i = 0; i < buttonKeys.length; i++){
+        buttons.push(
+          <Button size="small" color="primary" href={this.props.links[buttonKeys[i]]} target="_blank">
+            {buttonKeys[i]}
+          </Button>
+        )
+      }
       return (
         <div>
           <Divider />
-          <Button size="small" color="primary">
-            Demonstrate
-          </Button>
+          {buttons}
         </div>
       )
     }

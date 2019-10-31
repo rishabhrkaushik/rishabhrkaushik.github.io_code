@@ -42,7 +42,7 @@ class CustomAppBar extends Component{
                 Resume
               </Button>
               <Button color="inherit" href="#contact">
-                Contact Me
+                Contact
               </Button>
             </div>
           </Toolbar>

@@ -11,6 +11,8 @@ import Divider from '@material-ui/core/Divider';
 
 import Chip from '@material-ui/core/Chip';
 
+import Button from '@material-ui/core/Button';
+
 import ProjectDescription from './ProjectDescription';
 
 class ProjectCard extends Component {

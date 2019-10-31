@@ -12,6 +12,8 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
+import "./AppBar.css"
+
 class CustomAppBar extends Component{
 
   constructor(props) {
@@ -35,9 +37,14 @@ class CustomAppBar extends Component{
             <Typography variant="h6">
               Rishabh Kaushik
             </Typography>
-            <Button color="inherit" href="#contact" style={{ position:"absolute", right:"10px"}}>
-              Contact Me
-            </Button>
+            <div className="appbar-buttons">
+              <Button color="inherit" href="https://drive.google.com/open?id=16SVIAxMAtndPNrYb_zQoiFPpt-VTz9sZ" target="_blank" rel="noopener noreferrer">
+                Resume
+              </Button>
+              <Button color="inherit" href="#contact">
+                Contact Me
+              </Button>
+            </div>
           </Toolbar>
         </AppBar>
         <Drawer

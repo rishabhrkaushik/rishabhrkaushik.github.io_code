@@ -8,6 +8,8 @@ import Slider from "react-slick";
 
 import ProjectCard from './ProjectSubComponents/ProjectCard';
 
+import AllProjects from './ProjectSubComponents/AllProjects';
+
 import projects from './../../data/projects.js';
 
 class Projects extends Component {
@@ -73,6 +75,7 @@ class Projects extends Component {
       <div className="projects-background">
         <div className="title dark-title">
           Projects
+          <AllProjects />
         </div>
           {this.createProjects()}
       </div>

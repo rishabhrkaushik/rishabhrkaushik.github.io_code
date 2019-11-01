@@ -6,6 +6,7 @@
 
 .dark-title{
   color: white !important;
+  display: flex;
 }
 
 .slick-slider{

@@ -15,11 +15,7 @@ import Button from '@material-ui/core/Button';
 
 import TextField from '@material-ui/core/TextField';
 
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
+import ResponsiveTable from 'material-ui-next-responsive-table';
 
 import Chip from '@material-ui/core/Chip';
 
@@ -32,7 +28,8 @@ class AllProjects extends Component {
     open: true,
     toggle: true,
     keywordsString: "",
-    keywords: []
+    keywords: [],
+    data: []
   };
 
   onOpenModal = () => {
@@ -61,6 +58,26 @@ class AllProjects extends Component {
 
   render() {
     const { open } = this.state;
+    const columns = [
+      {
+        key: 'title',
+        label: 'Project Title',
+        primary: true,
+      },
+      {
+        key: 'summary',
+        label: 'Summary',
+      },
+      {
+        key: 'tags',
+        label: 'Tags',
+      },
+      {
+        key: 'show-more',
+        label: 'Show More',
+      }
+    ]
+    var localdata = [];
     return (
       <div className="view-all">
         <div onClick={this.onOpenModal} style={{
@@ -110,72 +127,42 @@ class AllProjects extends Component {
               )
             }
             <div style={{maxHeight: 440, overflow: 'auto'}}>
-              <Table stickyHeader aria-label="sticky table">
-                <TableHead>
-                  <TableRow>
-                  <TableCell  align='right'>
-                    Project Name
-                  </TableCell>
-                  <TableCell style={{ minWidth: 400 }} align='right'>
-                    Summary
-                  </TableCell>
-                  <TableCell align='right' style={{
-                    'justify-content': 'center'
-                  }}>
-                    Tags
-                  </TableCell>
-                  <TableCell align='right'>
-                    Details
-                  </TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {
-                    projects.map((project, i) => {
-                      var toShow = true
-                      for(var i=0; i<this.state.keywords.length; i++){
-                        if(!project.tags.join('|').toLowerCase().split('|').includes(this.state.keywords[i].toLowerCase())){
-                          toShow = false
-                        }
-                      }
-                      if(toShow){
-                        return (
-                          <TableRow hover role="checkbox" tabIndex={-1} >
-                            <TableCell  align='right'>
-                              {project.title}
-                            </TableCell>
-                            <TableCell  align='right'>
-                              {project.summary}
-                            </TableCell>
-                            <TableCell  align='right'>
-                              {
-                                project.tags.map((tag, i) =>
-                                  <Chip
-                                    key={i}
-                                    color="primary"
-                                    size="small"
-                                    label={tag}
-                                    className="project-tag"
-                                  />
-                                )
-                              }
-                            </TableCell>
-                            <TableCell  align='right'>
-                              <ProjectDescription
-                                  name={project.title}
-                                  desc={project.projectDesc}
-                                  images={project.images}
-                                  subtitle={project.subTitle}
-                                  links={project.links}
-                              />
-                            </TableCell>
-                          </TableRow>
-                        )
-                      }
+              {
+                projects.map((project, i) => {
+                  var toShow = true
+                  for(var i=0; i<this.state.keywords.length; i++){
+                    if(!project.tags.join('|').toLowerCase().split('|').includes(this.state.keywords[i].toLowerCase())){
+                      toShow = false
                     }
-                  )}
-                </TableBody>
-              </Table>
+                  }
+                  if(toShow){
+                    localdata.push({
+                      "title": project.title,
+                      "summary": project.summary,
+                      "tags": project.tags.map((tag, i) =>
+                        <Chip
+                          key={i}
+                          color="primary"
+                          size="small"
+                          label={tag}
+                          className="project-tag"
+                        />
+                      ),
+                      "show-more": <ProjectDescription
+                          name={project.title}
+                          desc={project.projectDesc}
+                          images={project.images}
+                          subtitle={project.subTitle}
+                          links={project.links}
+                      />
+                    })
+                  }
+                })
+              }
+              <ResponsiveTable
+                columns={columns}
+                data={localdata}
+              />
             </div>
           </Card>
         </Modal>

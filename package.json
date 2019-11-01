@@ -13,6 +13,8 @@
     "@material-ui/icons": "^4.5.1",
     "bulma": "^0.8.0",
     "csstools": "^0.1.5",
+    "lodash.isequal": "^4.5.0",
+    "material-ui-next-responsive-table": "^0.5.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

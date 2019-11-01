@@ -25,11 +25,10 @@ import projects from './../../../data/projects.js';
 
 class AllProjects extends Component {
   state = {
-    open: true,
+    open: false,
     toggle: true,
     keywordsString: "",
-    keywords: [],
-    data: []
+    keywords: []
   };
 
   onOpenModal = () => {

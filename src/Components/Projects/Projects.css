@@ -53,3 +53,10 @@
 .styles_modal__gNwvD {
   padding: 0em !important;
 }
+
+.view-all{
+  font-size: 1em;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}

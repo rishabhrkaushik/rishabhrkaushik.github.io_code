@@ -30,6 +30,9 @@ import projects from './../../../data/projects.js';
 class AllProjects extends Component {
   state = {
     open: true,
+    toggle: true,
+    keywordsString: "",
+    keywords: []
   };
 
   onOpenModal = () => {
@@ -40,11 +43,40 @@ class AllProjects extends Component {
     this.setState({ open: false });
   };
 
+  toggle = () => {
+    this.setState({ toggle: !this.state.toggle })
+  }
+
+  updateKeywords = () => {
+    var unTrimmedKeywords = this.state.keywordsString.split(',');
+    var keywords = unTrimmedKeywords.map((keyword, i) => {
+      return (keyword.trim())
+    })
+    this.setState({ keywords: keywords })
+  }
+
+  handleDelete = chipToDelete => () => {
+    this.setState({keywords: this.state.keywords.filter(keyword =>  keyword !== chipToDelete)})
+  };
+
   render() {
     const { open } = this.state;
     return (
-      <div>
-        <Icon color="primary" style={{ 'font-size': '2rem', 'margin-left': '1em', 'font-weight': 600 }} onClick={this.onOpenModal}>dashboard</Icon>
+      <div className="view-all">
+        <div onClick={this.onOpenModal} style={{
+          'display': 'flex',
+          'align-items': 'center'
+        }}>
+          <Icon color="primary" style={{
+            'display': 'flex',
+            'margin-right': '0.5rem'
+          }}>
+            dashboard
+          </Icon>
+          <Typography variant='overline' component="p">
+            View All Projects
+          </Typography>
+        </div>
         <Modal open={open} onClose={this.onCloseModal} center={true} showCloseIcon={false} >
           <Card style={{'padding': '0.5em', 'width': '100%'}}>
             <div style={{'display': 'flex'}}>
@@ -61,9 +93,22 @@ class AllProjects extends Component {
                   'margin-left': '1em'
                 }}
                 variant="outlined"
+                value={this.state.keywordsString}
+                onChange={e => this.setState({ keywordsString: e.target.value })}
+                onKeyPress={(ev) => {
+                  if (ev.key === 'Enter') {
+                    // Do code here
+                    this.updateKeywords()
+                  }
+                }}
               />
-              <Icon color="primary" style={{'margin': 'auto', 'margin-left': '1rem', 'font-size': '3rem'}} onClick={this.onOpenModal}>search</Icon>
+              <Icon color="primary" style={{'margin': 'auto', 'margin-left': '1rem', 'font-size': '3rem'}} onClick={this.updateKeywords}>search</Icon>
             </div>
+            {
+              this.state.keywords.map((keyword, i) =>
+                <Chip key={i} color="primary" size="small" label={keyword} className="project-tag" onDelete={this.handleDelete(keyword)}/>
+              )
+            }
             <div style={{maxHeight: 440, overflow: 'auto'}}>
               <Table stickyHeader aria-label="sticky table">
                 <TableHead>
@@ -71,10 +116,12 @@ class AllProjects extends Component {
                   <TableCell  align='right'>
                     Project Name
                   </TableCell>
-                  <TableCell style={{ minWidth: 500 }} align='right'>
+                  <TableCell style={{ minWidth: 400 }} align='right'>
                     Summary
                   </TableCell>
-                  <TableCell align='right'>
+                  <TableCell align='right' style={{
+                    'justify-content': 'center'
+                  }}>
                     Tags
                   </TableCell>
                   <TableCell align='right'>
@@ -83,32 +130,49 @@ class AllProjects extends Component {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {projects.map((project, i) =>
-                    <TableRow hover role="checkbox" tabIndex={-1} >
-                      <TableCell  align='right'>
-                        {project.title}
-                      </TableCell>
-                      <TableCell  align='right'>
-                        {project.summary}
-                      </TableCell>
-                      <TableCell  align='right'>
-                      {  // {
-                        //   project.tags.map((tag, i) =>
-                        //     <Chip key={i} color="primary" size="small" label={tag} className="project-tag"/>
-                        //   )
-                        // }
+                  {
+                    projects.map((project, i) => {
+                      var toShow = true
+                      for(var i=0; i<this.state.keywords.length; i++){
+                        if(!project.tags.join('|').toLowerCase().split('|').includes(this.state.keywords[i].toLowerCase())){
+                          toShow = false
+                        }
                       }
-                      </TableCell>
-                      <TableCell  align='right'>
-                        <ProjectDescription
-                            name={project.title}
-                            desc={project.projectDesc}
-                            images={project.images}
-                            subtitle={project.subTitle}
-                            links={project.links}
-                        />
-                      </TableCell>
-                    </TableRow>
+                      if(toShow){
+                        return (
+                          <TableRow hover role="checkbox" tabIndex={-1} >
+                            <TableCell  align='right'>
+                              {project.title}
+                            </TableCell>
+                            <TableCell  align='right'>
+                              {project.summary}
+                            </TableCell>
+                            <TableCell  align='right'>
+                              {
+                                project.tags.map((tag, i) =>
+                                  <Chip
+                                    key={i}
+                                    color="primary"
+                                    size="small"
+                                    label={tag}
+                                    className="project-tag"
+                                  />
+                                )
+                              }
+                            </TableCell>
+                            <TableCell  align='right'>
+                              <ProjectDescription
+                                  name={project.title}
+                                  desc={project.projectDesc}
+                                  images={project.images}
+                                  subtitle={project.subTitle}
+                                  links={project.links}
+                              />
+                            </TableCell>
+                          </TableRow>
+                        )
+                      }
+                    }
                   )}
                 </TableBody>
               </Table>

@@ -3,27 +3,29 @@ const projects = [
 		"title": "Circuit Breaker Testing ATE",
 		"subTitle": "LnT Technology Services, Aerospace Vertical",
 		"tags": ["ATE", "Electronics", "LabView", "PCB Designing", "Documentation"],
-		"summary": "Made as part of LnT Technology Services, Aerospace Vertical. Part of designing and manufacturing team for complete Automatic test assembly equipment.",
+		"summary": "Designing and manufacturing for complete automated test assembly equipment.",
 		"projectDesc": {
 			"P1": "Designed and Build a full fledged ATE for testing of Circuit Breakers. The project involved various stations to perform Electrical and Mechanical test on the CB's. PLC along with actuators took care of movement of CB from one station to another. Parallel stations and testing was used to achieve the required throughput. PXI chassis was used along with measuring and powering instruments to perform the test, record the result and generate the result.",
 			"P2": "My Responsibilities included: ",
 			"B": ["Designing of LabVIEW Software", "System Designing", "Circuit Designing", "Harness Designing"]
 		},
 		"images": [],
-		"links": {}
+		"links": {},
+		"topProject": true
 	},
 	{
 		"title": "Frisbee Throwing Robot",
 		"subTitle": "The landing Disc, Robocon 17",
 		"tags": ["Robotics", "Electronics", "Arduino", "Processing", "Mechanics"],
-		"summary": "Made as a part of Robocon 2017 theme. A bot capable of throwing Frisbee autonomously to make them land on poles of different height and at different position and navigation.",
+		"summary": "A bot capable of throwing Frisbee autonomously to make them land on poles and navigation.",
 		"projectDesc": {
 			"P1": "As a team lead, I took care of everything right including making project proposal and presenting to administration, budgeting, making design comparisons, procurement to designing and manufacturing of bot. The project involved studying of aerodynamics of a flying frisbee to take into effect the effect of rotation, angle of flight and release velocity to make the disc land on the platform of various height.",
 			"P2": "The features of bot were as following:",
 			"B": ["Autonomous Bot Navigation", "Disc Rotation closed loop speed control", "Platform height and angle adjustment"]
 		},
 		"images": [],
-		"links": {}
+		"links": {},
+		"topProject": true
 	},
 	{
 	  "title": "Smarthomes",
@@ -36,7 +38,8 @@ const projects = [
 			"B": []
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": true
 	},
 	{
 	  "title": "CNC Vertical Mill and 3D printer",
@@ -49,7 +52,8 @@ const projects = [
 			"B": []
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": false
 	},
 	{
 	  "title": "Quadcopter",
@@ -62,7 +66,8 @@ const projects = [
 			"B": ["BLDC Motor Driving", "IMU based orientation calculation", "PID", "RF and WiFi Based Remote Control", "Multirotor's flight Dynamics"]
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": false
 	},
 	{
 	  "title": "Attendance Machine",
@@ -75,7 +80,8 @@ const projects = [
 			"B": []
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": false
 	},
 	{
 	  "title": "RPi Server",
@@ -88,7 +94,8 @@ const projects = [
 			"B": ["File Sharing Server", "Print Server", "Media Server", "Web Server", "NodeJS server"]
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": false
 	},
 	{
 	  "title": "Python Automation",
@@ -104,13 +111,14 @@ const projects = [
 		"links": {
 			"Quora Unfollower": "https://github.com/rishabhrkaushik/quoraUnfollower",
 			"Secret Santa Randomizer": "https://github.com/rishabhrkaushik/SecretSantaRandomizer"
-		}
+		},
+		"topProject": false
 	},
 	{
-	  "title": "Investment Visualizer and Summarizer",
+	  "title": "Mutual Fund Analyser",
 	  "subTitle": "Personal Project",
 	  "tags": ["Python", "Plot.ly", "Pandas", "Numpy", "Jupyter Notebook"],
-	  "summary": "Mutual Fund investment visualization to see point of investment, current NAV and create a summary table to find current investment details.",
+	  "summary": "Mutual Fund investment visualization to see investment graph an summary table of current investment details.",
 	  "projectDesc": {
 			"P1": "Mutual fund analysis to view few graphs and create a summary table. Most of the data is read out of a JSON template filled with data by user.",
 			"P2": "The graphs show ",
@@ -133,7 +141,8 @@ const projects = [
 		"links": {
 			"Code": "https://github.com/rishabhrkaushik/MF-Investment-Analyser",
 			"Demonstrate": "https://drive.google.com/file/d/1Eo82HDiAqpC19mlH2wZ9VF5dO_Addf3x/view?usp=sharing"
-		}
+		},
+		"topProject": true
 	},
 	{
 	  "title": "Personal Portfolio Website",
@@ -146,7 +155,8 @@ const projects = [
 			"B": []
 		},
 	  "images": [],
-		"links": {}
+		"links": {},
+		"topProject": false
 	},
 	{
 		"title": "Puzzle Solving Robot",
@@ -172,7 +182,8 @@ const projects = [
         "thumbnail": require("./../data/Projects/Firebird V.jpg")
       }
 		],
-		"links": {}
+		"links": {},
+		"topProject": true
 	}
 ]
 

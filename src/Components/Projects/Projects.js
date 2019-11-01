@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import ProjectCard from './ProjectSubComponents/ProjectCard';
 
 import AllProjects from './ProjectSubComponents/AllProjects';
+import Typography from '@material-ui/core/Typography';
 
 import projects from './../../data/projects.js';
 
@@ -53,18 +54,22 @@ class Projects extends Component {
     return(
       <Slider {...settings}>
         {
-          projects.map((project, i) =>
-            <ProjectCard
-              key={i}
-              title={project.title}
-              subtitle={project.subTitle}
-              summary={project.summary}
-              desc={project.projectDesc}
-              images={project.images}
-              tags={project.tags}
-              links={project.links}
-            />
-          )
+          projects.map((project, i) => {
+            if(project.topProject){
+              return (
+                <ProjectCard
+                  key={i}
+                  title={project.title}
+                  subtitle={project.subTitle}
+                  summary={project.summary}
+                  desc={project.projectDesc}
+                  images={project.images}
+                  tags={project.tags}
+                  links={project.links}
+                />
+              )
+            }
+          })
         }
       </Slider>
     );
@@ -77,6 +82,11 @@ class Projects extends Component {
           Projects
           <AllProjects />
         </div>
+          <Typography variant="h5" component="p" style={{
+            "color": "white"
+          }}>
+            Top Projects
+          </Typography>
           {this.createProjects()}
       </div>
     );

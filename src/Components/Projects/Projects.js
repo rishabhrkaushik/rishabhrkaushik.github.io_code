@@ -69,6 +69,9 @@ class Projects extends Component {
                 />
               )
             }
+            else{
+              return null
+            }
           })
         }
       </Slider>

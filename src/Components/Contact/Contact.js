@@ -17,7 +17,9 @@ class Contact extends Component {
         <div className="columns">
           <div className="column">
             <div>
-              rishabhrkaushik@gmail.com
+              <a href="mailto:rishabhrkaushik@gmail.com" target="_blank" rel="noopener noreferrer">
+                rishabhrkaushik@gmail.com
+              </a>
             </div>
           </div>
           <div className="column">

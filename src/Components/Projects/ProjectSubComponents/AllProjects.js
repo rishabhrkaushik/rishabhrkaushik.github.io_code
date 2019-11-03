@@ -4,14 +4,10 @@ import './../Projects.css';
 import Modal from 'react-responsive-modal';
 
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 
 import Icon from '@material-ui/core/Icon';
-import Button from '@material-ui/core/Button';
 
 import TextField from '@material-ui/core/TextField';
 
@@ -99,7 +95,7 @@ class AllProjects extends Component {
               <TextField
                 id="outlined-full-width"
                 label="Search"
-                placeholder="Keywords"
+                placeholder="Tags"
                 fullWidth
                 margin="normal"
                 InputLabelProps={{
@@ -127,7 +123,7 @@ class AllProjects extends Component {
             }
             <div style={{maxHeight: 440, overflow: 'auto'}}>
               {
-                projects.map((project, i) => {
+                projects.map((project, key) => {
                   var toShow = true
                   for(var i=0; i<this.state.keywords.length; i++){
                     if(!project.tags.join('|').toLowerCase().split('|').includes(this.state.keywords[i].toLowerCase())){
@@ -138,9 +134,9 @@ class AllProjects extends Component {
                     localdata.push({
                       "title": project.title,
                       "summary": project.summary,
-                      "tags": project.tags.map((tag, i) =>
+                      "tags": project.tags.map((tag, tagkey) =>
                         <Chip
-                          key={i}
+                          key={tagkey}
                           color="primary"
                           size="small"
                           label={tag}
@@ -156,6 +152,7 @@ class AllProjects extends Component {
                       />
                     })
                   }
+                  return null
                 })
               }
               <ResponsiveTable

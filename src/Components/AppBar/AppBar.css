@@ -3,3 +3,10 @@
   display: flex;
   margin-left: auto;
 }
+
+.toggleButton{
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}

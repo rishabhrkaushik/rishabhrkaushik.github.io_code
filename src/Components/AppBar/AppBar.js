@@ -51,8 +51,9 @@ class CustomAppBar extends Component{
           variant="persistent"
           anchor="left"
           open={this.state.open}
+          className="drawer"
         >
-          <IconButton onClick={this.handleDrawer}>
+          <IconButton onClick={this.handleDrawer} className="toggleButton">
             <ChevronLeftIcon />
           </IconButton>
           <List>

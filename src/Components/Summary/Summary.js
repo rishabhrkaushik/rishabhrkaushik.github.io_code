@@ -103,10 +103,11 @@ class Summary extends Component {
               What else?
             </Typography>
             <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
-              I code! Where? Find me on &nbsp;
-              <Link href="https://github.com/rishabhrkaushik" target="_blank">
-              Github.
+              I code! Where? Find my Github styled &nbsp;
+              <Link href="https://resume.github.io/?rishabhrkaushik" target="_blank">
+              Resume
               </Link>
+              .
               <br />
               I write! Not much but find me on &nbsp;
               <Link href="https://medium.com/@rishabhrkaushik" target="_blank">
@@ -114,13 +115,15 @@ class Summary extends Component {
               </Link>
                or &nbsp;
               <Link href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
-              Quora.
+              Quora
               </Link>
+              .
               <br />
               I binge! What? Find me on &nbsp;
               <Link href="https://simkl.com/318567/stats/" target="_blank">
-              Simkl.
+              Simkl
               </Link>
+              .
             </Typography>
             <br />
             <br />
@@ -145,11 +148,32 @@ class Summary extends Component {
               What else?
             </Typography>
             <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
-              I code! Where? Find me on Github.
+              I code! Where? Find my Github styled &nbsp;
+              <Link href="https://resume.github.io/?rishabhrkaushik" target="_blank">
+              Resume
+              </Link>
+              .
               <br />
-              I write! Where? Find me on Medium or Quora.
+              I write! Not much but find me on &nbsp;
+              <Link href="https://medium.com/@rishabhrkaushik" target="_blank">
+              Medium &nbsp;
+              </Link>
+               or &nbsp;
+              <Link href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
+              Quora
+              </Link>
+              .
               <br />
-              I binge! What? Find me on Simkl.
+              I binge! What? Find me on &nbsp;
+              <Link href="https://simkl.com/318567/stats/" target="_blank">
+              Simkl
+              </Link>
+              .
+            </Typography>
+            <br />
+            <br />
+            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+              I also like to read, go for hikings or any type of adventures and love swimming.
             </Typography>
           </div>
         </div>

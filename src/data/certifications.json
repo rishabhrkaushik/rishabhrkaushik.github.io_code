@@ -23,7 +23,14 @@
   		"endDate": "",
       "status": "Certified",
   		"link": "https://courses.edx.org/certificates/126c093ea33247bbbabe8a65158417a8"
-  	}
+  	},
+    {
+      "title": "Mastering RTOS: Hands on FreeRTOS and STM32Fx with Debugging",
+      "issued by": "Udemy",
+      "endDate": "",
+      "status": "Certified",
+      "link": "https://www.udemy.com/certificate/UC-7PU1884W/"
+    }
   ],
   "Computer Science": [
     {

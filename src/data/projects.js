@@ -184,6 +184,20 @@ const projects = [
 		],
 		"links": {},
 		"topProject": true
+	},
+	{
+		"title": "Hex Parser Tool",
+		"subTitle": "LnT Technology Services, Aerospace Vertical",
+		"tags": ["Python", "PyQT5", "GUI", "Excel VBA"],
+		"summary": "Designing of a scalable and modular Python based GUI for rule based Hex Parsing.",
+		"projectDesc": {
+			"P1": "Designed a NVM parsing tool to decode hex data based on rules stored in configuration file. GUI was created in PyQT5. The configurations files were generated and validated using user friendly Excel and could be changed with respect to rules without changing the tool. ",
+			"P2": "The complete architecture and tool was designed individualy right from conception to deployment.",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": true
 	}
 ]
 

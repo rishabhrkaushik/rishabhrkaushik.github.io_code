@@ -1,16 +1,6 @@
 
 [
-	{
-		"type": "Work",
-		"startDate": "Jan 2019",
-		"endDate": "Present",
-		"jobTitle": "Consultant",
-		"company": "Pye Technologies",
-		"location": "Nagpur, India",
-		"team": "",
-    "jobDesc": "Consultant for tech and operations at early stage startup dealing with clean energy domain along with industrial consultancy and commercial products.",
-		"responsibilities": ["Operations", "Product Designing", "Process Creation"]
-	},
+
 	{
 		"type": "Work",
 		"startDate": "Oct 2018",

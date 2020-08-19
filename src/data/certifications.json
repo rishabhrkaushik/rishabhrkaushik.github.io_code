@@ -49,7 +49,28 @@
     }
   ],
   "Soft Skills and Humanities": [
-    {
+      {
+        "title": "Influencing People",
+        "issued by": "University of Michigan, Coursera",
+        "endDate": "",
+        "status": "Certified",
+        "link": "https://coursera.org/share/8199e6eb66b193fa6cb4178e4dabf618"
+      },
+      {
+        "title": "Managing Talent",
+        "issued by": "University of Michigan, Coursera",
+        "endDate": "",
+        "status": "Certified",
+        "link": "https://coursera.org/share/2b221412b9900d94f47fe60b92e9538f"
+      },
+      {
+        "title": "Inspiring and Motivating Individuals",
+        "issued by": "Univesity of Michigan, Coursera",
+        "endDate": "",
+        "status": "Certified",
+        "link": "https://coursera.org/share/f8a0debf76af0ec3b478b8681554100b"
+      },
+      {
       "title": "Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator",
       "issued by": "Yale, Coursera",
       "endDate": "",

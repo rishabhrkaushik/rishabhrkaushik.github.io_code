@@ -28,86 +28,86 @@ const projects = [
 		"topProject": true
 	},
 	{
-	  "title": "Smarthomes",
-	  "subTitle": "As a part of 1Thing internship, then B.E. project and then personal project.",
-	  "tags": ["Embedded Systems", "Arduino", "Node.js", "Raspberry Pi", "Frontend Web Development", "Database", "ESP8266"],
-	  "summary": "Automating home and giving control to user via phone and voice making user's life more convinient.",
-	  "projectDesc": {
+		"title": "Smarthomes",
+		"subTitle": "As a part of 1Thing internship, then B.E. project and then personal project.",
+		"tags": ["Embedded Systems", "Arduino", "Node.js", "Raspberry Pi", "Frontend Web Development", "Database", "ESP8266"],
+		"summary": "Automating home and giving control to user via phone and voice making user's life more convinient.",
+		"projectDesc": {
 			"P1": "A device making existing homes smarter. Wireless modules across the house communicating with the central server. A web app to control all devices. Few features implemented involve scheduler, app control, voice control, integration with physical switches, central intelligent server, control and sensor modules etc.",
 			"P2": "The backend app was made on Python and then ported to NodeJS. All the rules were written in customizable JSON based rules. The front end was written with JQuery and was customizable just based on JSON without needing to rewrite the code. All the inputs were stored in SQL database for further analyzing. The physical module was based on ESP8266 and communicated based on MQTT protocol. The actions were taken by Arduino. The central server was hosted on Raspberry Pi.",
 			"B": []
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": true
 	},
 	{
-	  "title": "CNC Vertical Mill and 3D printer",
-	  "subTitle": "As a part of True-education internship",
-	  "tags": ["Arduino", "Mechanics", "PC Toolchain"],
-	  "summary": "CNC machine capable of millings, drilling and engraving by giving a gcode file.",
-	  "projectDesc": {
+		"title": "CNC Vertical Mill and 3D printer",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "Mechanics", "PC Toolchain"],
+		"summary": "CNC machine capable of millings, drilling and engraving by giving a gcode file.",
+		"projectDesc": {
 			"P1": "Two CNC vertical mill of different dimension was made. The machine is capable of millings, drilling and engraving by giving a gcode file. They were built from scratch for in house projects.",
 			"P2": "3D printer was assembled with modifications to improve quality of printing.",
 			"B": []
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": false
 	},
 	{
-	  "title": "Quadcopter",
-	  "subTitle": "As a part of True-education internship",
-	  "tags": ["Arduino", "UAV", "Sensors"],
-	  "summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
-	  "projectDesc": {
+		"title": "Quadcopter",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "UAV", "Sensors"],
+		"summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
+		"projectDesc": {
 			"P1": "A Quadcopter implemented from scratch as a learning project. ",
 			"P2": "The concepts learnt and implemented involved",
 			"B": ["BLDC Motor Driving", "IMU based orientation calculation", "PID", "RF and WiFi Based Remote Control", "Multirotor's flight Dynamics"]
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": false
 	},
 	{
-	  "title": "Attendance Machine",
-	  "subTitle": "As a part of True-education internship",
-	  "tags": ["Arduino", "IoT", "Sensors"],
-	  "summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
-	  "projectDesc": {
+		"title": "Attendance Machine",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Arduino", "IoT", "Sensors"],
+		"summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
+		"projectDesc": {
 			"P1": "Several protypes of IoT conneced RFID based attendance machine were made. Communication protocols exoerimented included WiFI, Ethernet and Bluetooth. RFID reader was interfaced which sent data to web server. Web server then did processing, stored data in SQL database and updated Web App frontend.",
 			"P2": "The hardware consisted of Arduino board with LCD, RFID reader, Communication Module and buzzer. The backend was integrated with already hosted PHP site to connect with existing infrastructure.",
 			"B": []
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": false
 	},
 	{
-	  "title": "RPi Server",
-	  "subTitle": "As a part of True-education internship",
-	  "tags": ["Raspberry Pi", "Linux"],
-	  "summary": "A 24*7 running machine capable of daily computational needs",
-	  "projectDesc": {
+		"title": "RPi Server",
+		"subTitle": "As a part of True-education internship",
+		"tags": ["Raspberry Pi", "Linux"],
+		"summary": "A 24*7 running machine capable of daily computational needs",
+		"projectDesc": {
 			"P1": "Set up a complete server on Raspberry Pi for day to day operations.The server would be accesible from all intranet devices with appropriate permissions. Learnt configuration of Linux.",
 			"P2": "The following services and servers were configured",
 			"B": ["File Sharing Server", "Print Server", "Media Server", "Web Server", "NodeJS server"]
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": false
 	},
 	{
-	  "title": "Python Automation",
-	  "subTitle": "Personal Project",
-	  "tags": ["Python", "Selenium"],
-	  "summary": "Lazy to do something, automate it. And there is nothing better than Python in world of automation",
-	  "projectDesc": {
+		"title": "Python Automation",
+		"subTitle": "Personal Project",
+		"tags": ["Python", "Selenium"],
+		"summary": "Lazy to do something, automate it. And there is nothing better than Python in world of automation",
+		"projectDesc": {
 			"P1": "",
 			"P2": "The following were the tasks automated",
 			"B": ["Quora Unfollower - Unfollow all topics on quora to get a fresh start", "Secret Santa Randomizer - Randomly pairs people for secret santa and send them automated mail."]
 		},
-	  "images": [],
+		"images": [],
 		"links": {
 			"Quora Unfollower": "https://github.com/rishabhrkaushik/quoraUnfollower",
 			"Secret Santa Randomizer": "https://github.com/rishabhrkaushik/SecretSantaRandomizer"
@@ -115,28 +115,28 @@ const projects = [
 		"topProject": false
 	},
 	{
-	  "title": "Mutual Fund Analyser",
-	  "subTitle": "Personal Project",
-	  "tags": ["Python", "Plot.ly", "Pandas", "Numpy", "Jupyter Notebook"],
-	  "summary": "Mutual Fund investment visualization to see investment graph an summary table of current investment details.",
-	  "projectDesc": {
+		"title": "Mutual Fund Analyser",
+		"subTitle": "Personal Project",
+		"tags": ["Python", "Plot.ly", "Pandas", "Numpy", "Jupyter Notebook"],
+		"summary": "Mutual Fund investment visualization to see investment graph an summary table of current investment details.",
+		"projectDesc": {
 			"P1": "Mutual fund analysis to view few graphs and create a summary table. Most of the data is read out of a JSON template filled with data by user.",
 			"P2": "The graphs show ",
 			"B": ["Amount Invested vs Current Value", "NAV with purchase and selling points and units"]
 		},
-	  "images": [
+		"images": [
 			{
-        "original": require("./../data/Projects/Current Value vs Invested Amount.png"),
-        "thumbnail": require("./../data/Projects/Current Value vs Invested Amount.png")
-      },
-      {
-        "original": require("./../data/Projects/Point of Investment Graph.png"),
-        "thumbnail": require("./../data/Projects/Point of Investment Graph.png")
-      },
-      {
-        "original": require("./../data/Projects/Summary Table.png"),
-        "thumbnail": require("./../data/Projects/Summary Table.png")
-      }
+				"original": require("./../data/Projects/Current Value vs Invested Amount.png"),
+				"thumbnail": require("./../data/Projects/Current Value vs Invested Amount.png")
+			},
+			{
+				"original": require("./../data/Projects/Point of Investment Graph.png"),
+				"thumbnail": require("./../data/Projects/Point of Investment Graph.png")
+			},
+			{
+				"original": require("./../data/Projects/Summary Table.png"),
+				"thumbnail": require("./../data/Projects/Summary Table.png")
+			}
 		],
 		"links": {
 			"Code": "https://github.com/rishabhrkaushik/MF-Investment-Analyser",
@@ -145,16 +145,16 @@ const projects = [
 		"topProject": true
 	},
 	{
-	  "title": "Personal Portfolio Website",
-	  "subTitle": "Personal Project",
-	  "tags": ["ReactJS", "HTML", "CSS", "JSON"],
-	  "summary": "The very webiste you are viewing. This is the 3rd version of website built to showcase portfolio and learn ReactJS.",
-	  "projectDesc": {
+		"title": "Personal Portfolio Website",
+		"subTitle": "Personal Project",
+		"tags": ["ReactJS", "HTML", "CSS", "JSON"],
+		"summary": "The very webiste you are viewing. This is the 3rd version of website built to showcase portfolio and learn ReactJS.",
+		"projectDesc": {
 			"P1": "Personal portfolio acting to increase online visibility and acting as resume. The website is built on ReactJS and hosted as github pages.",
 			"P2": "The website is highly modular with JSON based configuration to populate most of the fields. Material UI is used for components giving it slick look.",
 			"B": []
 		},
-	  "images": [],
+		"images": [],
 		"links": {},
 		"topProject": false
 	},
@@ -170,17 +170,17 @@ const projects = [
 		},
 		"images": [
 			{
-        "original": require("./../data/Projects/Bot in Fields.png"),
-        "thumbnail": require("./../data/Projects/Bot in Fields.png")
-      },
-      {
-        "original": require("./../data/Projects/Digit Recognition.png"),
-        "thumbnail": require("./../data/Projects/Digit Recognition.png")
-      },
-      {
-        "original": require("./../data/Projects/Firebird V.jpg"),
-        "thumbnail": require("./../data/Projects/Firebird V.jpg")
-      }
+				"original": require("./../data/Projects/Bot in Fields.png"),
+				"thumbnail": require("./../data/Projects/Bot in Fields.png")
+			},
+			{
+				"original": require("./../data/Projects/Digit Recognition.png"),
+				"thumbnail": require("./../data/Projects/Digit Recognition.png")
+			},
+			{
+				"original": require("./../data/Projects/Firebird V.jpg"),
+				"thumbnail": require("./../data/Projects/Firebird V.jpg")
+			}
 		],
 		"links": {},
 		"topProject": true
@@ -196,6 +196,37 @@ const projects = [
 			"B": []
 		},
 		"images": [],
+		"links": {},
+		"topProject": true
+	},
+	{
+		"title": "Wall Clock Panel",
+		"subTitle": "Personal Project",
+		"tags": ["Alexa", "Arduino", "ESP8266", "WS2812"],
+		"summary": "Color Changing, Alexa integrated clock, timer and wall light panel",
+		"projectDesc": {
+			"P1": "Designed a panel for my room to emulate clock functionality along with timer and mood light. ",
+			"P2": "The panel is controlled over Alexa, webpage or alexa app",
+			"B": []
+		},
+		"images": [
+			{
+				"original": require("./../data/Projects/clock.jpg"),
+				"thumbnail": require("./../data/Projects/clock.jpg")
+			},
+			{
+				"original": require("./../data/Projects/panel.jpg"),
+				"thumbnail": require("./../data/Projects/panel.jpg")
+			},
+			{
+				"original": require("./../data/Projects/alexa.jpg"),
+				"thumbnail": require("./../data/Projects/alexa.jpg")
+			},
+			{
+				"original": require("./../data/Projects/webpage.png"),
+				"thumbnail": require("./../data/Projects/webpage.png")
+			}
+		],
 		"links": {},
 		"topProject": true
 	}

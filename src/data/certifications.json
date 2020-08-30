@@ -50,46 +50,118 @@
     ],
     "Soft Skills and Humanities": [
         {
-            "title": "Leading Teams",
+            "title": "Leading People and Teams - Specialization",
             "issued by": "University of Michigan, Coursera",
             "endDate": "",
             "status": "Certified",
-            "link": "https://coursera.org/share/718e1a81ce3df33b61806014d369038b"
+            "link": "https://coursera.org/share/260993dc6c13e8163131a8c9eea1692d",
+            "subcourses": [
+                {
+                    "title": "Inspiring and Motivating Individuals",
+                    "issued by": "Univesity of Michigan, Coursera",
+                    "endDate": "July 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/f8a0debf76af0ec3b478b8681554100b"
+                },
+                {
+                    "title": "Managing Talent",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/2b221412b9900d94f47fe60b92e9538f"
+                },
+                {
+                    "title": "Influencing People",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/8199e6eb66b193fa6cb4178e4dabf618"
+                },
+                {
+                    "title": "Leading Teams",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/718e1a81ce3df33b61806014d369038b"
+                },
+                {
+                    "title": "Leading People and Teams Capstone ",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/55bd00773c67afe1ff9fc3f10fbf3052"
+                }
+            ]
         },
         {
-            "title": "Influencing People",
-            "issued by": "University of Michigan, Coursera",
+            "title": "Negotiation Skills - Multiple Courses",
+            "issued by": "Multiple Universities, Coursera",
             "endDate": "",
             "status": "Certified",
-            "link": "https://coursera.org/share/8199e6eb66b193fa6cb4178e4dabf618"
+            "link": "",
+            "subcourses": [
+                {
+                    "title": "Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator",
+                    "issued by": "Yale, Coursera",
+                    "endDate": "",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/b2b95b1f03ce638876fbff0b16b3fecc"
+                },
+                {
+                    "title": "Successful Negotiation: Essential Strategies and Skills",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/9d86c740024746d254097c8de5593b05"
+                }
+            ]
+        },
+
+        {
+            "title": "Agile Development",
+            "issued by": "University of Virginia, Coursera",
+            "endDate": "",
+            "status": "Certified",
+            "link": "",
+            "subcourses": [
+                {
+                    "title": "Agile Meets Design Thinking",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/ec485c7dafb0596b49a6d775122df2ca"
+                },
+                {
+                    "title": "Hypothesis Driven Development",
+                    "issued by": "University of Michigan, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/0cdaf85492d890cb40551f075e05bf4c"
+                }
+            ]
         },
         {
-            "title": "Managing Talent",
-            "issued by": "University of Michigan, Coursera",
+            "title": "Project Management - Multiple Courses",
+            "issued by": "",
             "endDate": "",
             "status": "Certified",
-            "link": "https://coursera.org/share/2b221412b9900d94f47fe60b92e9538f"
-        },
-        {
-            "title": "Inspiring and Motivating Individuals",
-            "issued by": "Univesity of Michigan, Coursera",
-            "endDate": "",
-            "status": "Certified",
-            "link": "https://coursera.org/share/f8a0debf76af0ec3b478b8681554100b"
-        },
-        {
-            "title": "Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator",
-            "issued by": "Yale, Coursera",
-            "endDate": "",
-            "status": "Certified",
-            "link": "https://coursera.org/share/b2b95b1f03ce638876fbff0b16b3fecc"
-        },
-        {
-            "title": "Introduction to Project Management (Project101x)",
-            "issued by": "AdelaideX, edx",
-            "endDate": "",
-            "status": "Certified",
-            "link": "https://courses.edx.org/certificates/b240835a7c054d888d9bf652a878d492"
+            "link": "",
+            "subcourses": [
+                {
+                    "title": "Introduction to Project Management (Project101x)",
+                    "issued by": "AdelaideX, edx",
+                    "endDate": "",
+                    "status": "Certified",
+                    "link": "https://courses.edx.org/certificates/b240835a7c054d888d9bf652a878d492"
+                },
+                {
+                    "title": "Project Management Essential Training",
+                    "issued by": "Udemy",
+                    "endDate": "",
+                    "status": "Certified",
+                    "link": "https://www.udemy.com/certificate/UC-RK96GDB0/"
+                }
+            ]
         },
         {
             "title": "Startup India",
@@ -104,20 +176,6 @@
             "endDate": "",
             "status": "Certified",
             "link": "https://www.youracclaim.com/badges/a63ad5da-5533-4be5-9d3d-44243dd92560/linked_in_profile"
-        },
-        {
-            "title": "Project Management Essential Training",
-            "issued by": "Udemy",
-            "endDate": "",
-            "status": "Certified",
-            "link": "https://www.udemy.com/certificate/UC-RK96GDB0/"
-        },
-        {
-            "title": "Successful Negotiation: Essential Strategies and Skills",
-            "issued by": "University of Michigan, Coursera",
-            "endDate": "",
-            "status": "Certified",
-            "link": "https://coursera.org/share/9d86c740024746d254097c8de5593b05"
         },
         {
             "title": "Learning How to Learn: Powerful mental tools to help you master tough subjects",

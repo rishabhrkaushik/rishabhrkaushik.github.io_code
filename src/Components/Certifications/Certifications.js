@@ -44,6 +44,42 @@ class CertificatesCard extends Component {
       )
     }
   }
+
+  generateSubcourseCards(subcourses){
+      var cards = [];
+
+      subcourses.map((subcourse, i) =>
+        cards.push(
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+              <Typography>{subcourse.title}</Typography>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails>
+                <Typography>
+                  Issued By: {subcourse.issuedBy}
+                </Typography>
+              </ExpansionPanelDetails>
+              <Divider />
+                <ExpansionPanelActions>
+                  {
+                    this.generateCertButton(subcourse.status, subcourse.link)
+                  }
+                </ExpansionPanelActions>
+            </ExpansionPanel>
+        )
+      )
+
+      return(
+        <div>
+          {cards}
+        </div>
+      )
+  }
+  
   render(){
     return(
       <ExpansionPanel>
@@ -104,7 +140,7 @@ class Certifications extends Component {
     var cards = [];
 
     certifications["Soft Skills and Humanities"].map((certificate, i) =>
-      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status} subcourses={certificate.subcourses}/>)
     )
 
     return(

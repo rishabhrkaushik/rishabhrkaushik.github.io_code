@@ -48,30 +48,32 @@ class CertificatesCard extends Component {
   generateSubcourseCards(subcourses){
       var cards = [];
 
-      subcourses.map((subcourse, i) =>
-        cards.push(
-            <ExpansionPanel>
-              <ExpansionPanelSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-              <Typography>{subcourse.title}</Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <Typography>
-                  Issued By: {subcourse.issuedBy}
-                </Typography>
-              </ExpansionPanelDetails>
-              <Divider />
-                <ExpansionPanelActions>
-                  {
-                    this.generateCertButton(subcourse.status, subcourse.link)
-                  }
-                </ExpansionPanelActions>
-            </ExpansionPanel>
+      if(subcourses){
+        subcourses.map((subcourse, i) =>
+          cards.push(
+              <ExpansionPanel>
+                <ExpansionPanelSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                <Typography>{subcourse.title}</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                  <Typography>
+                    Issued By: {subcourse["issued by"]}
+                  </Typography>
+                </ExpansionPanelDetails>
+                <Divider />
+                  <ExpansionPanelActions>
+                    {
+                      this.generateCertButton(subcourse.status, subcourse.link)
+                    }
+                  </ExpansionPanelActions>
+              </ExpansionPanel>
+          )
         )
-      )
+      }
 
       return(
         <div>
@@ -79,7 +81,7 @@ class CertificatesCard extends Component {
         </div>
       )
   }
-  
+
   render(){
     return(
       <ExpansionPanel>
@@ -94,7 +96,11 @@ class CertificatesCard extends Component {
           <Typography>
             Issued By: {this.props.issuedBy}
           </Typography>
-        </ExpansionPanelDetails>
+          <Divider />
+          </ExpansionPanelDetails>
+          <ExpansionPanelDetails>
+            {this.generateSubcourseCards(this.props.subcourses)}
+          </ExpansionPanelDetails>
         <Divider />
           <ExpansionPanelActions>
             {

@@ -28,6 +28,20 @@ const projects = [
 		"topProject": true
 	},
 	{
+		"title": "LED Driver Testing",
+		"subTitle": "LnT Technology Services, Industrial and Consumer Products",
+		"tags": ["LED Drivers", "Electronics", "Testing"],
+		"summary": "Testing various performance factors of several LED drivers.",
+		"projectDesc": {
+			"P1": "Testing parameters like Performance Curve, Efficiency, Dim waveforms, Line and Load Regulation, Startup Time etc. for various LED drivers.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false
+	},
+	{
 		"title": "Smarthomes",
 		"subTitle": "As a part of 1Thing internship, then B.E. project and then personal project.",
 		"tags": ["Embedded Systems", "Arduino", "Node.js", "Raspberry Pi", "Frontend Web Development", "Database", "ESP8266"],

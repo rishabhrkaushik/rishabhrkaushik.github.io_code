@@ -118,11 +118,11 @@
         },
 
         {
-            "title": "Agile Development",
+            "title": "Agile Development Specialization",
             "issued by": "University of Virginia, Coursera",
             "endDate": "",
             "status": "Certified",
-            "link": "",
+            "link": "https://www.coursera.org/account/accomplishments/specialization/U3NG7PEB72EA",
             "subcourses": [
                 {
                     "title": "Agile Meets Design Thinking",
@@ -133,10 +133,24 @@
                 },
                 {
                     "title": "Hypothesis Driven Development",
-                    "issued by": "University of Michigan, Coursera",
+                    "issued by": "University of Virginia, Coursera",
                     "endDate": "Aug 20",
                     "status": "Certified",
                     "link": "https://coursera.org/share/0cdaf85492d890cb40551f075e05bf4c"
+                },
+                {
+                    "title": "Agile Analytics",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Sept 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/3486db037e910ccf2b46e9d851f36153"
+                },
+                {
+                    "title": "HManaging Agile Team",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Sept 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/2fb1cadc21d50670e0fd5b6db175aade"
                 }
             ]
         },

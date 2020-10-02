@@ -62,9 +62,9 @@ class CertificatesCard extends Component {
                 <Typography>{subcourse.title}</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                  <Typography>
-                    Issued By: {subcourse["issued by"]}
-                  </Typography>
+                <Typography className="issued-by">
+                  {subcourse["issued by"]}
+                </Typography>
                 </ExpansionPanelDetails>
                 <Divider />
                   <ExpansionPanelActions>
@@ -92,12 +92,15 @@ class CertificatesCard extends Component {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-        <Typography>{this.props.title}</Typography>
+        <Typography>
+        {this.props.title}
+        <br />
+        <i className="issued-by">
+          {this.props.issuedBy}
+        </i>
+        </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            Issued By: {this.props.issuedBy}
-          </Typography>
           <Divider />
           </ExpansionPanelDetails>
           <ExpansionPanelDetails>
@@ -178,8 +181,8 @@ class Certifications extends Component {
                 </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                  <Typography>
-                    Issued By: {certifications["Formal Education"][0].university}
+                  <Typography className="issued-by">
+                    {certifications["Formal Education"][0].university}
                   </Typography>
                 </ExpansionPanelDetails>
               </ExpansionPanel>

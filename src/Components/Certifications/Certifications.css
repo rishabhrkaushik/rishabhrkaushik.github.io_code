@@ -19,3 +19,9 @@
   border-color: white;
   font-size: x-large;
 }
+
+.issued-by{
+  color: gray;
+  font-style: italic;
+  font-size: 0.75em;
+}

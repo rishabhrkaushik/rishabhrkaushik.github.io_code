@@ -85,7 +85,7 @@ class AllProjects extends Component {
           }}>
             dashboard
           </Icon>
-          <Typography variant='overline' component="p">
+          <Typography variant='overline' component="p" className="view-all-text">
             View All Projects
           </Typography>
         </div>

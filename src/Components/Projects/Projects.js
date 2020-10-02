@@ -83,7 +83,6 @@ class Projects extends Component {
       <div className="projects-background">
         <div className="title dark-title">
           Projects
-          <AllProjects />
         </div>
           <Typography variant="h5" component="p" style={{
             "color": "white"
@@ -91,6 +90,9 @@ class Projects extends Component {
             Top Projects
           </Typography>
           {this.createProjects()}
+          <br />
+          <br />
+          <AllProjects />
       </div>
     );
   }

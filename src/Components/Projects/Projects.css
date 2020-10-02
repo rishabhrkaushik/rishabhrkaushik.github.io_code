@@ -55,9 +55,14 @@
 }
 
 .view-all{
-  font-size: 1em;
   margin-left: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   cursor: pointer;
+  color: white;
+}
+
+.view-all-text{
+  font-size: 1em !important;
+  font-weight: bold !important;
 }

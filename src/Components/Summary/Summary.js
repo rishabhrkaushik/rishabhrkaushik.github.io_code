@@ -94,8 +94,11 @@ class Summary extends Component {
           </div>
           <div className="column is-one-third">
             <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
-              A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
-              A designer and multi domain technical architect.
+              A Engineer with a knack for Product Development, Project Management and Product Lifecycle. A Philomath who also likes to get his hands dirty working on cool stuff.
+            <br />
+            </Typography>
+            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+              A System Thinker and a multidomain Technical Architect with experience in Electronics Engineering, Software Development and Product Management.
             </Typography>
           </div>
           <div className="column is-one-third">
@@ -106,6 +109,12 @@ class Summary extends Component {
               I code! Where? Find my Github styled &nbsp;
               <Link href="https://resume.github.io/?rishabhrkaushik" target="_blank">
               Resume
+              </Link>
+              .
+              <br />
+              I love to read! Find me on &nbsp;
+              <Link href="https://www.goodreads.com/review/list/82274615-rishabh-kaushik?ref=nav_mybooks&shelf=read&utf8=%E2%9C%93" target="_blank">
+              Goodread
               </Link>
               .
               <br />
@@ -128,7 +137,7 @@ class Summary extends Component {
             <br />
             <br />
             <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
-              I also like to read, go for hikings or any type of adventures and love swimming.
+              I also like to go for hikings or any type of adventures and love swimming.
             </Typography>
           </div>
         </div>

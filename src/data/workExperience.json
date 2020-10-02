@@ -3,7 +3,7 @@
 
 	{
 		"type": "Work",
-		"startDate": "Oct 2018",
+		"startDate": "Oct 2017",
 		"endDate": "Present",
 		"jobTitle": "Engineer",
 		"company": "L&T Technology Services Pvt. Ltd.",
@@ -11,17 +11,6 @@
 		"team": "Aerospace OEM and Tier 1",
     "jobDesc": "As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review.",
 		"responsibilities": ["ATE Designing", "LabView Programmer", "Circuit Designer", "Reverse Engineering", "Project Lifecycle Management", "Python Development", "Electronics Testing"]
-	},
-	{
-		"type": "Work",
-		"startDate": "Oct 2017",
-		"endDate": "Oct 2018",
-		"jobTitle": "Associate Engineer",
-		"company": "L&T Technology Services Pvt. Ltd.",
-		"location": "Bangalore, India",
-		"team": "Aero and Rail VDU",
-    "jobDesc": "Mostly worked on ATE development and DO 160 standards based testing",
-		"responsibilities": ["DO-160 Testing"]
 	},
 	{
 		"type": "Work",

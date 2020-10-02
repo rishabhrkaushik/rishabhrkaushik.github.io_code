@@ -17,12 +17,16 @@
   color: white !important;
   font-size: large;
 }
+
 .vertical-timeline-element-title {
-  font-size: 30px;
+  font-size: 1.25em;
 }
 
 .vertical-timeline-element-subtitle {
-  font-size: 20px;
+  font-size: 1em !important;
+  color: gray !important;
+  font-style: italic !important;
+  margin-bottom: 0.7rem !important;
 }
 
 .list{

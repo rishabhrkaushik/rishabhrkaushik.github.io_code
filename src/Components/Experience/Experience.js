@@ -13,7 +13,7 @@ class Card extends Component {
           date={this.props.startDate + " - " + this.props.endDate}
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title ">{this.props.title}</h3>
+          <h3 className="vertical-timeline-element-title">{this.props.title}</h3>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.team}</h4>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.company + ", " + this.props.location}</h4>
           <h3 style={{"fontWeight": "bold"}}>Responsibilities: </h3>

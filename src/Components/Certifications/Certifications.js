@@ -27,21 +27,23 @@ import certifications from './../../data/certifications.json';
 
 class CertificatesCard extends Component {
   generateCertButton(status, link){
-    if(status === "Non Certified"){
-      return(
-        <Button size="small" color="primary">
-          No Formal Certificate
-        </Button>
-      )
-    }
-    else if(status === "Certified"){
-      return(
-        <a href={link} target="_blank" rel="noopener noreferrer">
+    if(this.props.link != ""){
+      if(status === "Non Certified"){
+        return(
           <Button size="small" color="primary">
-            View Certificate
+            No Formal Certificate
           </Button>
-        </a>
-      )
+        )
+      }
+      else if(status === "Certified"){
+        return(
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <Button size="small" color="primary">
+              View Certificate
+            </Button>
+          </a>
+        )
+      }
     }
   }
 
@@ -104,7 +106,7 @@ class CertificatesCard extends Component {
         <Divider />
           <ExpansionPanelActions>
             {
-              this.generateCertButton(this.props.status, this.props.link)
+                this.generateCertButton(this.props.status, this.props.link)
             }
           </ExpansionPanelActions>
       </ExpansionPanel>

@@ -50,6 +50,22 @@
     ],
     "Soft Skills and Humanities": [
         {
+            "title": "Business Technology Management Specialization",
+            "issued by": "Indian School of Business, Coursera",
+            "endDate": "",
+            "status": "Ongoing",
+            "link": "",
+            "subcourses": [
+                {
+                    "title": "IT Project Management",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Oct 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/verify/9V25DXH2RA9S"
+                }
+            ]
+        },
+        {
             "title": "Leading People and Teams - Specialization",
             "issued by": "University of Michigan, Coursera",
             "endDate": "",
@@ -94,6 +110,50 @@
             ]
         },
         {
+            "title": "Digital Product Management Specialization",
+            "issued by": "University of Virginia, Coursera",
+            "endDate": "",
+            "status": "Certified",
+            "link": "https://www.coursera.org/account/accomplishments/specialization/SC42X8NQQC4R",
+            "subcourses": [
+                {
+                    "title": "Digital Product Management: Modern Fundamentals",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Oct 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/verify/WDM8DJMA6X3F"
+                },
+                {
+                    "title": "Agile Meets Design Thinking",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/ec485c7dafb0596b49a6d775122df2ca"
+                },
+                {
+                    "title": "Hypothesis Driven Development",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Aug 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/0cdaf85492d890cb40551f075e05bf4c"
+                },
+                {
+                    "title": "Agile Analytics",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Sept 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/3486db037e910ccf2b46e9d851f36153"
+                },
+                {
+                    "title": "Managing Agile Team",
+                    "issued by": "University of Virginia, Coursera",
+                    "endDate": "Sept 20",
+                    "status": "Certified",
+                    "link": "https://coursera.org/share/2fb1cadc21d50670e0fd5b6db175aade"
+                }
+            ]
+        },
+        {
             "title": "Negotiation Skills - Multiple Courses",
             "issued by": "Multiple Universities, Coursera",
             "endDate": "",
@@ -116,7 +176,6 @@
                 }
             ]
         },
-
         {
             "title": "Agile Development Specialization",
             "issued by": "University of Virginia, Coursera",

@@ -214,13 +214,13 @@ const projects = [
 		"topProject": true
 	},
 	{
-		"title": "Wall Clock Panel",
+		"title": "Alexa Controlled Wall Clock Panel",
 		"subTitle": "Personal Project",
-		"tags": ["Alexa", "Arduino", "ESP8266", "WS2812"],
+		"tags": ["Alexa Skill Kit", "AWS Lambda", "NodeJS", "Arduino", "ESP8266", "WS2812"],
 		"summary": "Color Changing, Alexa integrated clock, timer and wall light panel",
 		"projectDesc": {
 			"P1": "Designed a panel for my room to emulate clock functionality along with timer and mood light. ",
-			"P2": "The panel is controlled over Alexa, webpage or alexa app",
+			"P2": "The panel is controlled over Alexa, webpage. Created and hosted Alexa Skill for same.",
 			"B": []
 		},
 		"images": [

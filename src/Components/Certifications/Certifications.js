@@ -44,6 +44,13 @@ class CertificatesCard extends Component {
           </a>
         )
       }
+      else if(status === "Ongoing"){
+        return(
+            <Button size="small" color="primary">
+              Ongoing
+            </Button>
+        )
+      }
     }
   }
 

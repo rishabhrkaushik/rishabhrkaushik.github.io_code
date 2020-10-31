@@ -57,6 +57,13 @@
             "link": "",
             "subcourses": [
                 {
+                    "title": "Accounting and Finance for IT Professionals",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Oct 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/MH6V24TMPF7B"
+                },
+                {
                     "title": "IT Project Management",
                     "issued by": "Indian School of Business, Coursera",
                     "endDate": "Oct 20",

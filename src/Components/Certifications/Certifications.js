@@ -27,7 +27,7 @@ import certifications from './../../data/certifications.json';
 
 class CertificatesCard extends Component {
   generateCertButton(status, link){
-    if(this.props.link != ""){
+    if(this.props.link !== ""){
       if(status === "Non Certified"){
         return(
           <Button size="small" color="primary">

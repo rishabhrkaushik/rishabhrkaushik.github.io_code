@@ -243,6 +243,34 @@ const projects = [
 		],
 		"links": {},
 		"topProject": true
+	},
+	{
+		"title": "LED Driver ATE",
+		"subTitle": "LnT Technology Services, Aerospace Vertical",
+		"tags": ["ATE", "Electronics", "LabView", "Documentation"],
+		"summary": "Design and development ",
+		"projectDesc": {
+			"P1": "The project integrated Power Meter, Osciloscope, Variable AC Source , Variable LED loads and switches with a PC application developed in LabVIEW. ATE was used to automate testing of LED driver for various performance parameters, setting multiple operating points and capturing readings from various equipments.",
+			"P2": "My Responsibilities included: ",
+			"B": ["System Architecture", "LabVIEW Development", "Electronic Mockup Boards"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": true
+	},
+	{
+		"title": "Admin Dashboard for IoT Device",
+		"subTitle": "Personal Project",
+		"tags": ["NodeJS", "ReactJS", "MongoDB", "Full Stack Development"],
+		"summary": "Development for front and backend of Admin Dashboard to monitor data from IoT devices. Also used to interact with database and perform backend tasks like registeration, deployment, activation of new device",
+		"projectDesc": {
+			"P1": "Web App for management of IoT device fleet. Based on MERN Stack.",
+			"P2": "My Responsibilities included: ",
+			"B": ["Full Stack Development", "Deployment and management on Linux Server"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": true
 	}
 ]
 

@@ -46,6 +46,13 @@
             "endDate": "",
             "status": "Certified",
             "link": "https://www.udemy.com/certificate/UC-X2E80KA3/"
+        },
+        {
+            "title": "Introduction to Front-end Development with ReactJS",
+            "issued by": "Coursera",
+            "endDate": "Sept 20",
+            "status": "Certified",
+            "link": "https://www.coursera.org/account/accomplishments/certificate/75ZASGDXBAEF"
         }
     ],
     "Soft Skills and Humanities": [
@@ -53,9 +60,23 @@
             "title": "Business Technology Management Specialization",
             "issued by": "Indian School of Business, Coursera",
             "endDate": "",
-            "status": "Ongoing",
-            "link": "",
+            "status": "Certified",
+            "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/MBMSKSXSX5J2",
             "subcourses": [
+                {
+                    "title": "Digital Transformations",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Nov 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/K2CV997BLWBF"
+                },
+                {
+                    "title": "Business Analytics and Digital Media",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Nov 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/754NSV65JQU5"
+                },
                 {
                     "title": "Accounting and Finance for IT Professionals",
                     "issued by": "Indian School of Business, Coursera",
@@ -68,7 +89,21 @@
                     "issued by": "Indian School of Business, Coursera",
                     "endDate": "Oct 20",
                     "status": "Certified",
-                    "link": "https://www.coursera.org/account/accomplishments/verify/9V25DXH2RA9S"
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/9V25DXH2RA9S"
+                },
+                {
+                    "title": "Leadership and Emotional Intelligence",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Nov 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/WJB22JBNR9ME"
+                },
+                {
+                    "title": "Capstone Project: Business Technology Management",
+                    "issued by": "Indian School of Business, Coursera",
+                    "endDate": "Nov 20",
+                    "status": "Certified",
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/SPHULYJ73RU6"
                 }
             ]
         },

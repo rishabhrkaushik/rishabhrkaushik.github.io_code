@@ -12,6 +12,16 @@ class Card extends Component {
           className="vertical-timeline-element--work"
           date={this.props.startDate + " - " + this.props.endDate}
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          icon={
+                <div style={{
+                                "text-align": "center",
+                                "vertical-align": "middle",
+                                "height": "100%",
+                                "font-family": "Roboto"
+                            }}>
+                    {this.props.duration}
+                </div>
+                }
         >
           <h3 className="vertical-timeline-element-title">{this.props.title}</h3>
           <h4 className="vertical-timeline-element-subtitle subtitle">{this.props.team}</h4>
@@ -38,7 +48,7 @@ function Experience() {
       <VerticalTimeline>
         {
           experiences.map((experience, i) =>
-            <Card key={i} title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} responsibilities={experience.responsibilities}/>
+            <Card key={i} title={experience.jobTitle} content={experience.jobDesc} company={experience.company} location={experience.location} startDate={experience.startDate} endDate={experience.endDate} team={experience.team} responsibilities={experience.responsibilities} duration={experience.duration}/>
           )
         }
       </VerticalTimeline>

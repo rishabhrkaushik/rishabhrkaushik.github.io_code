@@ -16,6 +16,7 @@
 .vertical-timeline-element-date {
   color: white !important;
   font-size: large;
+  opacity: 1 !important;
 }
 
 .vertical-timeline-element-title {

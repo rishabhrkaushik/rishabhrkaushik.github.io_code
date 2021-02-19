@@ -1,21 +1,34 @@
 
 [
-
+	{
+		"type": "Work",
+		"startDate": "June 2017",
+		"endDate": "Present",
+		"duration": "",
+		"jobTitle": "Freelancer and Consultant",
+		"company": "Multiple Clients",
+		"location": "",
+		"team": "",
+    	"jobDesc": "",
+		"responsibilities": ["IoT Product Develpment", "Python Automation", "Electronics System Designing", "Software Development", "Project Lifecycle Management"]
+	},
 	{
 		"type": "Work",
 		"startDate": "Oct 2017",
-		"endDate": "Present",
+		"endDate": "Dec 2020",
+		"duration": "3.2 Years",
 		"jobTitle": "Engineer",
 		"company": "L&T Technology Services Pvt. Ltd.",
 		"location": "Bangalore, India",
 		"team": "Aerospace OEM and Tier 1",
-    "jobDesc": "As a part of Aerospace group, I major dealt with ATE development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review.",
+    	"jobDesc": "As a part of Aerospace group, I majorly dealt with ATE development and Electronics Hardware and Software Development. \nMajor Responsibilities included\n\tSystem Designing of ATE including Hardware, Software and Admin\n\tLabView module development\n\tElectronic Schematic Designing and Analysis\n\tDO-160F based document review.",
 		"responsibilities": ["ATE Designing", "LabView Programmer", "Circuit Designer", "Reverse Engineering", "Project Lifecycle Management", "Python Development", "Electronics Testing"]
 	},
 	{
 		"type": "Work",
 		"startDate": "May 2016",
 		"endDate": "July 2016",
+		"duration": "2 Months",
 		"jobTitle": "Research & Development Intern",
 		"company": "1Thing Design and Innovation Pvt. Ltd.",
 		"location": "Gurgaon, India",
@@ -27,6 +40,7 @@
 		"type": "Work",
 		"startDate": "May 2015",
 		"endDate": "July 2015",
+		"duration": "3 Months",
 		"jobTitle": "Intern",
 		"company": "True Education Institute Pvt. Ltd",
 		"location": "Nagpur, India",

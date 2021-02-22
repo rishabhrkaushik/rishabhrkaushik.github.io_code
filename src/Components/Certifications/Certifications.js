@@ -171,7 +171,7 @@ class Certifications extends Component {
   render(){
     return (
       <div className="certifications-background">
-        <div className='title'>
+        <div className='title dark-title'>
           Certifications
         </div>
         <div className="columns">

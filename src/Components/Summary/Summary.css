@@ -1,7 +1,8 @@
 .summary-background {
   background-color: white;
-  background-image: url("./aboutMe_bg.jpg");
-  color: black;
+  /* background-image: url("./wp2533042.jpg"); */
+  color: white !important;
+  background-color: #414141;
 }
 
 .summary-content {
@@ -16,12 +17,10 @@
   margin-top: 1em;
   font-size: 32px;
   border-color: white;
-  color: black;
   padding-left: 1em;
 }
 
 .What-I-do-title {
-  color: black;
   margin-bottom: 1em;
   border: 2px;
   border-style: solid;
@@ -43,6 +42,7 @@
   margin-top: 1em !important;
   padding: 1em ;
   padding-top: 1.5em !important;
+  color: white !important;
 }
 
 .quote {
@@ -69,4 +69,8 @@
   text-align: justify;
   padding: 1rem;
   margin: 0rem;
+}
+
+.code {
+    color: #00ff00;
 }

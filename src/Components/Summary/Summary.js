@@ -11,6 +11,7 @@ import TypistLoop from 'react-typist-loop'
 
 import { Typography } from '@material-ui/core';
 import Link from '@material-ui/core/Link';
+import Chip from '@material-ui/core/Chip';
 
 const taglines = ["Let's solve some problem.", "Let's create a product.", "Let's build a business.", "Let's change the world!"]
 
@@ -20,7 +21,7 @@ class WhatIDoMobile extends Component{
         <div>
           <div className="columns is-mobile">
             <div className="column is-half">
-              <FontAwesomeIcon className="what-I-do-icons" icon={faMicrochip} color="#000000" />
+              <FontAwesomeIcon className="what-I-do-icons" icon={faMicrochip} color="#CCCCCC" />
               <h4> Electronics </h4>
             </div>
             <div className="column is-half">
@@ -48,7 +49,7 @@ class WhatIDoDesktop extends Component {
     return (
       <div className="columns is-desktop">
         <div className="column">
-          <FontAwesomeIcon className="what-I-do-icons" icon={faMicrochip} color="#000000" />
+          <FontAwesomeIcon className="what-I-do-icons" icon={faMicrochip} color="#CCCCCC" />
           <h4> Electronics </h4>
         </div>
         <div className="column">
@@ -89,54 +90,54 @@ class Summary extends Component {
         <div className="desc columns">
           <div className="column is-one-third quote">
             <h4>
-              Tech is reserved for the people like me - The freaks, the weirdos, the misfits, the geeks, the dweebs, the dorks <br /> - Richard Hendriks, Silicon Valley
+              Tech is reserved for people like me - The freaks, the weirdos, the misfits, the geeks, the dweebs, the dorks <br /> - Richard Hendriks, Silicon Valley
             </h4>
           </div>
           <div className="column is-one-third">
-            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+            <Typography align="justify" gutterBottom={true} paragraph={true} variant="body1" component="p">
               A Engineer with a knack for Product Development, Project Management and Product Lifecycle. A Philomath who also likes to get his hands dirty working on cool stuff.
             <br />
             </Typography>
-            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+            <Typography align="justify" gutterBottom={true} paragraph={true} variant="body1" component="p">
               A System Thinker and a multidomain Technical Architect with experience in Electronics Engineering, Software Development and Product Management.
             </Typography>
           </div>
           <div className="column is-one-third">
-            <Typography color="textPrimary" gutterBottom={true} variant="h5" component="h5">
+            <Typography gutterBottom={true} variant="h5" component="h5">
               What else?
             </Typography>
-            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+            <Typography gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
               I code! Where? Find my Github styled &nbsp;
-              <Link href="https://resume.github.io/?rishabhrkaushik" target="_blank">
-              Resume
-              </Link>
+                  <Link href="https://resume.github.io/?rishabhrkaushik" target="_blank">
+                    <Chip label="Resume" color="primary" clickable />
+                  </Link>
               .
               <br />
               I love to read! Find me on &nbsp;
               <Link href="https://www.goodreads.com/review/list/82274615-rishabh-kaushik?ref=nav_mybooks&shelf=read&utf8=%E2%9C%93" target="_blank">
-              Goodread
+                  <Chip label="Goodread" color="primary" clickable />
               </Link>
               .
               <br />
               I write! Not much but find me on &nbsp;
               <Link href="https://medium.com/@rishabhrkaushik" target="_blank">
-              Medium &nbsp;
+                  <Chip label="Medium" color="primary" clickable />
               </Link>
-               or &nbsp;
+                &nbsp; or &nbsp;
               <Link href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank">
-              Quora
+                  <Chip label="Quora" color="primary" clickable />
               </Link>
               .
               <br />
               I binge! What? Find me on &nbsp;
               <Link href="https://simkl.com/318567/stats/" target="_blank">
-              Simkl
+                  <Chip label="Simkl" color="primary" clickable />
               </Link>
               .
             </Typography>
             <br />
             <br />
-            <Typography color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
+            <Typography gutterBottom={true} paragraph={true} variant="body1" component="p" display="inline">
               I also like to go for hikings or any type of adventures and love swimming.
             </Typography>
           </div>
@@ -146,8 +147,8 @@ class Summary extends Component {
     else {
       return(
         <div>
-          <div className="column is-one-third">
-            <Typography align="justify" color="textPrimary" gutterBottom={true} paragraph={true} variant="body1" component="p">
+          <div className="column is-one-third para">
+            <Typography align="justify" gutterBottom={true} paragraph={true} variant="body1" component="p">
               A task oriented guy. I like to get my hand dirty working on a project. A system thinker, likes to think of impact of decision on the system.
               A designer and multi domain technical architect.
             </Typography>
@@ -194,7 +195,7 @@ class Summary extends Component {
     return (
       <div className="summary-background">
         <div className="summary-content">
-          <div className="What-i-do-title title">
+          <div className="What-i-do-title dark-title title">
             What I do?
           </div>
           <div className="icons">
@@ -202,7 +203,7 @@ class Summary extends Component {
           </div>
           <div className="tagline">
             <TypistLoop interval={2500}>
-              {taglines.map(text => <Typist key={text} startDelay={100}>{text}</Typist>)}
+              {taglines.map(text => <Typist className="code" key={text} startDelay={100}>{text}</Typist>)}
             </TypistLoop>
           </div>
           {this.returnText()}

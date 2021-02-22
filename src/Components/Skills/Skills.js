@@ -44,7 +44,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills-background">
-        <div className="title">
+        <div className="title dark-title">
           Skills
         </div>
         <div className="table-container">

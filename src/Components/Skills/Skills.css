@@ -1,6 +1,7 @@
 .skills-background {
   padding: 2em;
   min-height: 100vh;
+  background-color: #414141;
 }
 
 .table-container {
@@ -15,4 +16,5 @@
 
 .skill-cell {
   vertical-align: middle !important;
+  background-color: #414141;
 }

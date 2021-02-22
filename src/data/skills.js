@@ -26,7 +26,7 @@ const skills = [
   },
   {
     "skill": "Project Management",
-    "src": require("./../data/Skills/Project Management.png"),
+    "src": require("./../data/Skills/Agile.png"),
     "expertise": 80
   },
   {
@@ -61,7 +61,7 @@ const skills = [
   },
   {
     "skill": "PCB Designing",
-    "src": require("./../data/Skills/PCB Designing.png"),
+    "src": require("./../data/Skills/PCB Designing White.png"),
     "expertise": 80
   },
   {

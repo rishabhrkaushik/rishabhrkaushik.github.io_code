@@ -271,6 +271,48 @@ const projects = [
 		"images": [],
 		"links": {},
 		"topProject": true
+	},
+	{
+		"title": "NFC Trigger",
+		"subTitle": "Personal Project",
+		"tags": ["ESP32", "Arduino", "MQTT"],
+		"summary": "NFC Based trigger to automate most frequent hardware or software tasks.",
+		"projectDesc": {
+			"P1": "ESP32 interfaced with RC522 module. Programmed to map particular cards with tasks used regularly sent via MQTT.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false
+	},
+	{
+		"title": "Cube Runner",
+		"subTitle": "Personal Project",
+		"tags": ["Unity", "Game Development"],
+		"summary": "Control and Navigate cube via hurdles to make it reach the end",
+		"projectDesc": {
+			"P1": "Made as tutorial project to learn basics of Unity",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false
+	},
+	{
+		"title": "Principia",
+		"subTitle": "Personal Project",
+		"tags": ["Unity", "Virtual Reality", "Physics Simulations"],
+		"summary": "Physics Simulations for upcoming Mixed Reality glasses.",
+		"projectDesc": {
+			"P1": "Physics based simulations and game to teach and visualize the concepts of various physics in VR space.",
+			"P2": "Made in Unity along with VR SDK.",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": true
 	}
 ]
 

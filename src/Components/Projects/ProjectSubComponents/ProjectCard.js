@@ -16,7 +16,7 @@ import ProjectDescription from './ProjectDescription';
 class ProjectCard extends Component {
   render() {
     return (
-      <Card className="card-custom">
+      <Card className="card-custom" style={{ maxWidth: 350 }}>
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">

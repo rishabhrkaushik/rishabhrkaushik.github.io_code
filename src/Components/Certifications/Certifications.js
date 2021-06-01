@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import './Certifications.css';
+import React, { Component } from 'react'
+import './Certifications.css'
 
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel'
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
+import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions'
 
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Typography from '@material-ui/core/Typography'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-import Button from '@material-ui/core/Button';
-import Divider from '@material-ui/core/Divider';
+import Button from '@material-ui/core/Button'
+import Divider from '@material-ui/core/Divider'
 
-import certifications from './../../data/certifications.json';
+import certifications from './../../data/certifications.json'
 
 // const useStyles = makeStyles(theme => ({
 //   root: {
@@ -24,156 +24,164 @@ import certifications from './../../data/certifications.json';
 //   },
 // }));
 
-
 class CertificatesCard extends Component {
-  generateCertButton(status, link){
-    if(this.props.link !== ""){
-      if(status === "Non Certified"){
-        return(
+  generateCertButton(status, link) {
+      if (status === 'Non Certified') {
+        return (
           <Button size="small" color="primary">
             No Formal Certificate
           </Button>
         )
-      }
-      else if(status === "Certified"){
-        return(
+      } else if (status === 'Certified') {
+        return (
           <a href={link} target="_blank" rel="noopener noreferrer">
             <Button size="small" color="primary">
               View Certificate
             </Button>
           </a>
         )
-      }
-      else if(status === "Ongoing"){
-        return(
-            <Button size="small" color="primary">
-              Ongoing
-            </Button>
+      } else if (status === 'Ongoing') {
+        return (
+          <Button size="small" color="primary">
+            Ongoing
+          </Button>
         )
       }
-    }
+      else if (status === 'Individual Certificates') {
+        return (
+          <Button size="small" color="primary">
+            Individual Certificate
+          </Button>
+        )
+      } else {
+        return (
+          <Button size="small" color="primary">
+            Wrong
+          </Button>
+        )
+      }
   }
 
-  generateSubcourseCards(subcourses){
-      var cards = [];
+  generateSubcourseCards(subcourses) {
+    var cards = []
 
-      if(subcourses){
-        subcourses.map((subcourse, i) =>
-          cards.push(
-              <ExpansionPanel>
-                <ExpansionPanelSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                <Typography>{subcourse.title}</Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                <Typography className="issued-by">
-                  {subcourse["issued by"]}
-                </Typography>
-                </ExpansionPanelDetails>
-                <Divider />
-                  <ExpansionPanelActions>
-                    {
-                      this.generateCertButton(subcourse.status, subcourse.link)
-                    }
-                  </ExpansionPanelActions>
-              </ExpansionPanel>
-          )
-        )
-      }
-
-      return(
-        <div>
-          {cards}
-        </div>
+    if (subcourses) {
+      subcourses.map((subcourse, i) =>
+        cards.push(
+          <ExpansionPanel key={i}>
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>{subcourse.title}</Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography className="issued-by">
+                {subcourse['issued by']}
+              </Typography>
+            </ExpansionPanelDetails>
+            <Divider />
+            <ExpansionPanelActions>
+              {this.generateCertButton(subcourse.status, subcourse.link)}
+            </ExpansionPanelActions>
+          </ExpansionPanel>,
+        ),
       )
+    }
+
+    return <div>{cards}</div>
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <ExpansionPanel>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-        <Typography>
-        {this.props.title}
-        <br />
-        <i className="issued-by">
-          {this.props.issuedBy}
-        </i>
-        </Typography>
+          <Typography>
+            {this.props.title}
+            <br />
+            <i className="issued-by">{this.props.issuedBy}</i>
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Divider />
-          </ExpansionPanelDetails>
-          <ExpansionPanelDetails>
-            {this.generateSubcourseCards(this.props.subcourses)}
-          </ExpansionPanelDetails>
+        </ExpansionPanelDetails>
+        <ExpansionPanelDetails>
+          {this.generateSubcourseCards(this.props.subcourses)}
+        </ExpansionPanelDetails>
         <Divider />
-          <ExpansionPanelActions>
-            {
-                this.generateCertButton(this.props.status, this.props.link)
-            }
-          </ExpansionPanelActions>
+        <ExpansionPanelActions>
+          {this.generateCertButton(this.props.status, this.props.link)}
+        </ExpansionPanelActions>
       </ExpansionPanel>
-    );
+    )
   }
 }
 
 class Certifications extends Component {
+  enumerateElectronics() {
+    var cards = []
 
-  enumerateElectronics(){
-    var cards = [];
-
-    certifications["Electronics"].map((certificate, i) =>
-      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+    certifications['Electronics'].map((certificate, i) =>
+      cards.push(
+        <CertificatesCard
+          key={i}
+          title={certificate.title}
+          issuedBy={certificate['issued by']}
+          link={certificate.link}
+          status={certificate.status}
+        />,
+      ),
     )
 
-    return(
-      <div>
-        {cards}
-      </div>
-    )
+    return <div>{cards}</div>
   }
 
-  enumerateCS(){
-    var cards = [];
+  enumerateCS() {
+    var cards = []
 
-    certifications["Computer Science"].map((certificate, i) =>
-      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status}/>)
+    certifications['Computer Science'].map((certificate, i) =>
+      cards.push(
+        <CertificatesCard
+          key={i}
+          title={certificate.title}
+          issuedBy={certificate['issued by']}
+          link={certificate.link}
+          status={certificate.status}
+        />,
+      ),
     )
 
-    return(
-      <div>
-        {cards}
-      </div>
-    )
+    return <div>{cards}</div>
   }
 
-  enumerateSoftSkills(){
-    var cards = [];
+  enumerateSoftSkills() {
+    var cards = []
 
-    certifications["Soft Skills and Humanities"].map((certificate, i) =>
-      cards.push(<CertificatesCard key={i} title={certificate.title} issuedBy={certificate["issued by"]} link={certificate.link} status={certificate.status} subcourses={certificate.subcourses}/>)
+    certifications['Soft Skills and Humanities'].map((certificate, i) =>
+      cards.push(
+        <CertificatesCard
+          key={i}
+          title={certificate.title}
+          issuedBy={certificate['issued by']}
+          link={certificate.link}
+          status={certificate.status}
+          subcourses={certificate.subcourses}
+        />,
+      ),
     )
 
-    return(
-      <div>
-        {cards}
-      </div>
-    )
+    return <div>{cards}</div>
   }
 
-  render(){
+  render() {
     return (
       <div className="certifications-background">
-        <div className='title dark-title'>
-          Certifications
-        </div>
+        <div className="title dark-title">Certifications</div>
         <div className="columns">
           <div className="column">
             {
@@ -183,13 +191,14 @@ class Certifications extends Component {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                <Typography>
-                  {certifications["Formal Education"][0].title}, {certifications["Formal Education"][0].majors}
-                </Typography>
+                  <Typography>
+                    {certifications['Formal Education'][0].title},{' '}
+                    {certifications['Formal Education'][0].majors}
+                  </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                   <Typography className="issued-by">
-                    {certifications["Formal Education"][0].university}
+                    {certifications['Formal Education'][0].university}
                   </Typography>
                 </ExpansionPanelDetails>
               </ExpansionPanel>
@@ -197,19 +206,13 @@ class Certifications extends Component {
           </div>
         </div>
         <div className="columns">
-          <div className="column">
-            {this.enumerateElectronics()}
-          </div>
-          <div className="column">
-            {this.enumerateSoftSkills()}
-          </div>
-          <div className="column">
-            {this.enumerateCS()}
-          </div>
+          <div className="column">{this.enumerateElectronics()}</div>
+          <div className="column">{this.enumerateSoftSkills()}</div>
+          <div className="column">{this.enumerateCS()}</div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Certifications;
+export default Certifications

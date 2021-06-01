@@ -14,10 +14,10 @@ class Card extends Component {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={
                 <div style={{
-                                "text-align": "center",
-                                "vertical-align": "middle",
+                                "textAlign": "center",
+                                "verticalAlign": "middle",
                                 "height": "100%",
-                                "font-family": "Roboto"
+                                "fontFamily": "Roboto"
                             }}>
                     {this.props.duration}
                 </div>

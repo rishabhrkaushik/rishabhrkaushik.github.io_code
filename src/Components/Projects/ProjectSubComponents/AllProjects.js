@@ -77,11 +77,11 @@ class AllProjects extends Component {
       <div className="view-all">
         <div onClick={this.onOpenModal} style={{
           'display': 'flex',
-          'align-items': 'center'
+          'alignItems': 'center'
         }}>
           <Icon color="primary" style={{
             'display': 'flex',
-            'margin-right': '0.5rem'
+            'marginRight': '0.5rem'
           }}>
             dashboard
           </Icon>

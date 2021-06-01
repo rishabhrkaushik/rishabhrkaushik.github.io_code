@@ -130,10 +130,6 @@ const fadeContent = [
     animation: 'fade',
   },
   {
-    text: 'Philosopher',
-    animation: 'fade',
-  },
-  {
     text: 'Product Designer',
     animation: 'fade',
   },

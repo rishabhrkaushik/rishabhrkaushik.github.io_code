@@ -275,9 +275,8 @@ class Summary extends Component {
               the system. A designer and multi domain technical architect.
             </Typography>
           </div>
-          <div className="column is-one-third">
+          <div className="column is-one-third para">
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               variant="h5"
               component="h5"
@@ -285,7 +284,6 @@ class Summary extends Component {
               What else?
             </Typography>
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"
@@ -301,7 +299,6 @@ class Summary extends Component {
               Resume
             </Link>
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"
@@ -315,7 +312,6 @@ class Summary extends Component {
               Medium &nbsp;
             </Link>
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"
@@ -331,7 +327,6 @@ class Summary extends Component {
               Quora
             </Link>
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"
@@ -345,7 +340,6 @@ class Summary extends Component {
               Simkl
             </Link>
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"
@@ -357,7 +351,6 @@ class Summary extends Component {
             <br />
             <br />
             <Typography
-              color="textPrimary"
               gutterBottom={true}
               paragraph={true}
               variant="body1"

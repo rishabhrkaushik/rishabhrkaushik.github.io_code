@@ -11,7 +11,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["ATE", "Electronics Design", "LabVIEW"]
 	},
 	{
 		"title": "Frisbee Throwing Robot",
@@ -25,7 +26,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Electronics Design", "Python", "Embedded Systems", "Robotics"]
 	},
 	{
 		"title": "LED Driver Testing",
@@ -39,7 +41,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Electronics Design"]
 	},
 	{
 		"title": "Smarthomes",
@@ -53,7 +56,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Embedded Systems", "Electronics Design", "Fullstack Development", "Python"]
 	},
 	{
 		"title": "CNC Vertical Mill and 3D printer",
@@ -67,7 +71,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Electronics Design", "Embedded Systems", "Robotics"]
 	},
 	{
 		"title": "Quadcopter",
@@ -81,7 +86,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Robotics", "Embedded Systems", "Electronics Design"]
 	},
 	{
 		"title": "Attendance Machine",
@@ -95,7 +101,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Embedded Systems", "Electronics Design"]
 	},
 	{
 		"title": "RPi Server",
@@ -109,7 +116,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Fullstack Development"]
 	},
 	{
 		"title": "Python Automation",
@@ -126,7 +134,8 @@ const projects = [
 			"Quora Unfollower": "https://github.com/rishabhrkaushik/quoraUnfollower",
 			"Secret Santa Randomizer": "https://github.com/rishabhrkaushik/SecretSantaRandomizer"
 		},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Python"]
 	},
 	{
 		"title": "Mutual Fund Analyser",
@@ -156,7 +165,8 @@ const projects = [
 			"Code": "https://github.com/rishabhrkaushik/MF-Investment-Analyser",
 			"Demonstrate": "https://drive.google.com/file/d/1Eo82HDiAqpC19mlH2wZ9VF5dO_Addf3x/view?usp=sharing"
 		},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Python", "Fullstack Development"]
 	},
 	{
 		"title": "Personal Portfolio Website",
@@ -170,7 +180,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Fullstack Development"]
 	},
 	{
 		"title": "Puzzle Solving Robot",
@@ -197,7 +208,8 @@ const projects = [
 			}
 		],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Embedded Systems", "Robotics", "Electronics Design"]
 	},
 	{
 		"title": "Hex Parser Tool",
@@ -211,7 +223,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Python"]
 	},
 	{
 		"title": "Alexa Controlled Wall Clock Panel",
@@ -242,13 +255,14 @@ const projects = [
 			}
 		],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Fullstack Development", "Electronics Design", "Embedded Systems"]
 	},
 	{
 		"title": "LED Driver ATE",
 		"subTitle": "LnT Technology Services, Aerospace Vertical",
 		"tags": ["ATE", "Electronics", "LabView", "Documentation"],
-		"summary": "Design and development ",
+		"summary": "Design and development of ATE for testing range of constant current LED Drivers",
 		"projectDesc": {
 			"P1": "The project integrated Power Meter, Osciloscope, Variable AC Source , Variable LED loads and switches with a PC application developed in LabVIEW. ATE was used to automate testing of LED driver for various performance parameters, setting multiple operating points and capturing readings from various equipments.",
 			"P2": "My Responsibilities included: ",
@@ -256,21 +270,23 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["ATE", "Electronics Design", "LabVIEW"]
 	},
 	{
 		"title": "Admin Dashboard for IoT Device",
 		"subTitle": "Personal Project",
-		"tags": ["NodeJS", "ReactJS", "MongoDB", "Full Stack Development"],
+		"tags": ["NodeJS", "ReactJS", "MongoDB", "Fullstack Development"],
 		"summary": "Development for front and backend of Admin Dashboard to monitor data from IoT devices. Also used to interact with database and perform backend tasks like registeration, deployment, activation of new device",
 		"projectDesc": {
 			"P1": "Web App for management of IoT device fleet. Based on MERN Stack.",
 			"P2": "My Responsibilities included: ",
-			"B": ["Full Stack Development", "Deployment and management on Linux Server"]
+			"B": ["Fullstack Development", "Deployment and management on Linux Server"]
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
+		"topProject": true,
+		"domains": ["Fullstack Development"]
 	},
 	{
 		"title": "NFC Trigger",
@@ -284,7 +300,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Embedded Systems", "Electronics Design"]
 	},
 	{
 		"title": "Cube Runner",
@@ -298,7 +315,8 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": false
+		"topProject": false,
+		"domains": ["Unity"]
 	},
 	{
 		"title": "Principia",
@@ -312,8 +330,9 @@ const projects = [
 		},
 		"images": [],
 		"links": {},
-		"topProject": true
-	}
+		"topProject": true,
+		"domains": ["Unity"]
+	},
 ]
 
 module.exports = projects;

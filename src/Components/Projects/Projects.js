@@ -21,10 +21,21 @@ class Projects extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedChipIds: [],
+      selectedDomains: this.domains,
       allProjects: false,
     }
   }
+
+  domains = [
+    'Embedded Systems',
+    'ATE',
+    'LabVIEW',
+    'Python',
+    'Fullstack Development',
+    'Electronics Design',
+    'Unity',
+    'Robotics',
+  ]
 
   createProjects() {
     return (
@@ -34,29 +45,38 @@ class Projects extends Component {
         justify="space-evenly"
         alignItems="center"
       >
-        {projects.map((project, i) => {
-          if (this.state.allProjects) {
-            return (
-              <Grid item key={i}>
-                <ProjectCard
-                  key={i}
-                  title={project.title}
-                  subtitle={project.subTitle}
-                  summary={project.summary}
-                  desc={project.projectDesc}
-                  images={project.images}
-                  tags={project.tags}
-                  links={project.links}
-                />
-              </Grid>
-            )
-          } 
-          else {
-            if (project.topProject) {
+        {projects.map((project, projectIndex) => {
+          var toShow = false
+          if (project.topProject) {
+            toShow = true
+          } else if (this.state.allProjects) {
+            toShow = true
+          }
+          // console.log(
+          //   project.title,
+          //   this.state.selectedDomains,
+          //   project.domains,
+          // )
+
+          if (toShow) {
+            toShow = false;
+            for (var i = 0; i < this.state.selectedDomains.length; i++) {
+              if (
+                project.domains
+                  .join('|')
+                  .toLowerCase()
+                  .split('|')
+                  .includes(this.state.selectedDomains[i].toLowerCase())
+              ) {
+                toShow = true
+                break
+              }
+            }
+            if (toShow) {
               return (
-                <Grid item key={i}>
+                <Grid item key={"grid"+projectIndex}>
                   <ProjectCard
-                    key={i}
+                    key={"card"+projectIndex}
                     title={project.title}
                     subtitle={project.subTitle}
                     summary={project.summary}
@@ -67,10 +87,11 @@ class Projects extends Component {
                   />
                 </Grid>
               )
-            } 
-            else {
+            } else {
               return null
             }
+          } else {
+            return null
           }
         })}
       </Grid>
@@ -78,20 +99,25 @@ class Projects extends Component {
   }
 
   toggleDisplayAll = () => {
-    this.setState(prevState => ({
-      allProjects: !prevState.allProjects
-    }));
+    this.setState((prevState) => ({
+      allProjects: !prevState.allProjects,
+    }))
   }
+
   render() {
     return (
       <div className="projects-background">
         <div className="title dark-title">Projects</div>
         <ChipSet
           filter
-          selectedChipIds={this.state.selectedChipIds}
-          handleSelect={(selectedChipIds) => this.setState({ selectedChipIds })}
+          selectedChipIds={this.state.selectedDomains}
+          handleSelect={(selectedChipIds) =>
+            this.setState({ selectedDomains: selectedChipIds })
+          }
         >
-          {<Chip id={'es'} label="Embedded System" />}
+          {this.domains.map((domain, i) => {
+            return <Chip id={domain} label={domain} key={i} />
+          })}
         </ChipSet>
         {this.createProjects()}
         <br />
@@ -118,7 +144,9 @@ class Projects extends Component {
             component="p"
             className="view-all-text"
           >
-            {!this.state.allProjects ? "View All Projects" : "Show Top Projects"}
+            {!this.state.allProjects
+              ? 'View All Projects'
+              : 'Show Top Projects'}
           </Typography>
         </div>
       </div>

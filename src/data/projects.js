@@ -260,7 +260,7 @@ const projects = [
 	},
 	{
 		"title": "LED Driver ATE",
-		"subTitle": "LnT Technology Services, Aerospace Vertical",
+		"subTitle": "LnT Technology Services, Industrial Products Vertical",
 		"tags": ["ATE", "Electronics", "LabView", "Documentation"],
 		"summary": "Design and development of ATE for testing range of constant current LED Drivers",
 		"projectDesc": {

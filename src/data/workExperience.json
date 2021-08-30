@@ -2,6 +2,18 @@
 [
 	{
 		"type": "Work",
+		"startDate": "July 2021",
+		"endDate": "Present",
+		"duration": "",
+		"jobTitle": "Design Engineer",
+		"company": "Anora Instrumentation Pvt. Ltd.",
+		"location": "Chennai",
+		"team": "",
+    	"jobDesc": "",
+		"responsibilities": ["Hardware Designing", "Embedded Firmware", "Python Drivers", "System Designing", "Project Lifecycle Management", "Project Tracking", "Client and Vendor Interactions"]
+	},
+	{
+		"type": "Work",
 		"startDate": "June 2017",
 		"endDate": "Present",
 		"duration": "",
@@ -9,8 +21,20 @@
 		"company": "Multiple Clients",
 		"location": "",
 		"team": "",
-    	"jobDesc": "",
+    	"jobDesc": "Responsible as project lead to deliver complete end to end solution for client.",
 		"responsibilities": ["IoT Product Develpment", "Python Automation", "Electronics System Designing", "Software Development", "Project Lifecycle Management"]
+	},
+	{
+		"type": "Work",
+		"startDate": "April 2021",
+		"endDate": "Present",
+		"duration": "",
+		"jobTitle": "Javascript Instructor",
+		"company": "CampK12",
+		"location": "",
+		"team": "",
+    	"jobDesc": "Teaching project based AI with javascript and VR concepts to school kids.",
+		"responsibilities": ["Javascript Instructor"]
 	},
 	{
 		"type": "Work",

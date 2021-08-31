@@ -140,6 +140,23 @@ const projects = [
 		"domains": ["Python"]
 	},
 	{
+		"title": "Audio Note Recognition",
+		"subTitle": "e-Yantra 2017, IIT-B Challenge",
+		"tags": ["Python", "scikit-learn", "Machine Learning", "Software Development"],
+		"summary": "Wave analytics to extract notes from song or music",
+		"projectDesc": {
+			"P1": "Wave analytics to extract notes from song or music",
+			"P2": "Made using Python, scipy, wave modules",
+			"B": []
+		},
+		"images": [],
+		"links": {
+			"Repository": "https://github.com/rishabhrkaushik/notesFindingMusic"
+		},
+		"topProject": false,
+		"domains": ["Python"]
+	},
+	{
 		"title": "Mutual Fund Analyser",
 		"subTitle": "Personal Project",
 		"tags": ["Python", "Plot.ly", "Pandas", "Numpy", "Jupyter Notebook"],
@@ -181,7 +198,9 @@ const projects = [
 			"B": []
 		},
 		"images": [],
-		"links": {},
+		"links": {
+			"Code Repository": "https://github.com/rishabhrkaushik/rishabhrkaushik.github.io_code"
+		},
 		"topProject": false,
 		"domains": ["Fullstack Development"]
 	},
@@ -209,9 +228,11 @@ const projects = [
 				"thumbnail": require("./../data/Projects/Firebird V.jpg")
 			}
 		],
-		"links": {},
+		"links": {
+			"Digit Recognition Repository": "https://github.com/rishabhrkaushik/digitRecognition"
+		},
 		"topProject": true,
-		"domains": ["Embedded Systems", "Robotics", "Electronics Design"]
+		"domains": ["Embedded Systems", "Robotics", "Electronics Design", "Python"]
 	},
 	{
 		"title": "Hex Parser Tool",

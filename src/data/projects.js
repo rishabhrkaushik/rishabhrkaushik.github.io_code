@@ -337,7 +337,36 @@ const projects = [
 		"topProject": true,
 		"domains": ["Unity"]
 	},
-	
+	{
+		"title": "Encoded Message Blinker",
+		"subTitle": "Maker Project",
+		"tags": ["Embedded Systems", "ATTiny 85", "Arduino"],
+		"summary": "Send multicolor encoded message over LED blinking",
+		"projectDesc": {
+			"P1": "Interface between WS2812, ATtiny85 and switch and power components to send encoded string as led blinking.",
+			"P2": "",
+			"B": []
+		},
+		"images": [
+			{
+				"original": require("./../data/Projects/Encoded Message Blinker - Front.jpg"),
+				"thumbnail": require("./../data/Projects/Encoded Message Blinker - Front.jpg")
+			},
+			{
+				"original": require("./../data/Projects/Encoded Message Blinker - Back.jpg"),
+				"thumbnail": require("./../data/Projects/Encoded Message Blinker - Back.jpg")
+			},
+			{
+				"original": require("./../data/Projects/Encoded Message Blinker - Solder.jpg"),
+				"thumbnail": require("./../data/Projects/Encoded Message Blinker - Solder.jpg")
+			}
+		],
+		"links": {
+			"Repository": "https://github.com/rishabhrkaushik/EncodedMessageBlinker"
+		},
+		"topProject": false,
+		"domains": ["Embedded Systems", "Electronics Design"]
+	},
 ]
 
 module.exports = projects;

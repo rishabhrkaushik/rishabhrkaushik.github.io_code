@@ -25,7 +25,9 @@ const projects = [
 			"B": ["Autonomous Bot Navigation", "Disc Rotation closed loop speed control", "Platform height and angle adjustment"]
 		},
 		"images": [],
-		"links": {},
+		"links": {
+			"DC Motor PID Repository": "https://github.com/rishabhrkaushik/dcMotorPIDControl"
+		},
 		"topProject": true,
 		"domains": ["Electronics Design", "Python", "Embedded Systems", "Robotics"]
 	},
@@ -314,7 +316,9 @@ const projects = [
 			"B": []
 		},
 		"images": [],
-		"links": {},
+		"links": {
+			"Repository": "https://github.com/rishabhrkaushik/Cube-Runner"
+		},
 		"topProject": false,
 		"domains": ["Unity"]
 	},
@@ -333,6 +337,7 @@ const projects = [
 		"topProject": true,
 		"domains": ["Unity"]
 	},
+	
 ]
 
 module.exports = projects;

@@ -46,7 +46,7 @@ const projects = [
 	},
 	{
 		"title": "Smarthomes",
-		"subTitle": "As a part of 1Thing internship, then B.E. project and then personal project.",
+		"subTitle": "1Thing internship, Personal project.",
 		"tags": ["Embedded Systems", "Arduino", "Node.js", "Raspberry Pi", "Frontend Web Development", "Database", "ESP8266"],
 		"summary": "Automating home and giving control to user via phone and voice making user's life more convinient.",
 		"projectDesc": {
@@ -61,7 +61,7 @@ const projects = [
 	},
 	{
 		"title": "CNC Vertical Mill and 3D printer",
-		"subTitle": "As a part of True-education internship",
+		"subTitle": "True-education internship",
 		"tags": ["Arduino", "Mechanics", "PC Toolchain"],
 		"summary": "CNC machine capable of millings, drilling and engraving by giving a gcode file.",
 		"projectDesc": {
@@ -76,7 +76,7 @@ const projects = [
 	},
 	{
 		"title": "Quadcopter",
-		"subTitle": "As a part of True-education internship",
+		"subTitle": "True-education internship",
 		"tags": ["Arduino", "UAV", "Sensors"],
 		"summary": "A Quadcopter from scratch implementing every feature from basic to learn the concepts behind it.",
 		"projectDesc": {
@@ -91,7 +91,7 @@ const projects = [
 	},
 	{
 		"title": "Attendance Machine",
-		"subTitle": "As a part of True-education internship",
+		"subTitle": "True-education internship",
 		"tags": ["Arduino", "IoT", "Sensors"],
 		"summary": "IoT connected RFID based attendance machine capable of logging information in real time to the server which then dislayed real time stats.",
 		"projectDesc": {
@@ -106,7 +106,7 @@ const projects = [
 	},
 	{
 		"title": "RPi Server",
-		"subTitle": "As a part of True-education internship",
+		"subTitle": "True-education internship",
 		"tags": ["Raspberry Pi", "Linux"],
 		"summary": "A 24*7 running machine capable of daily computational needs",
 		"projectDesc": {
@@ -275,7 +275,7 @@ const projects = [
 	},
 	{
 		"title": "Admin Dashboard for IoT Device",
-		"subTitle": "Personal Project",
+		"subTitle": "Freelancing Project",
 		"tags": ["NodeJS", "ReactJS", "MongoDB", "Fullstack Development"],
 		"summary": "Development for front and backend of Admin Dashboard to monitor data from IoT devices. Also used to interact with database and perform backend tasks like registeration, deployment, activation of new device",
 		"projectDesc": {
@@ -290,7 +290,7 @@ const projects = [
 	},
 	{
 		"title": "NFC Trigger",
-		"subTitle": "Personal Project",
+		"subTitle": "Maker Project",
 		"tags": ["ESP32", "Arduino", "MQTT"],
 		"summary": "NFC Based trigger to automate most frequent hardware or software tasks.",
 		"projectDesc": {

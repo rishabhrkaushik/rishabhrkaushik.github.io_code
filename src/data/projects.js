@@ -388,6 +388,36 @@ const projects = [
 		"topProject": false,
 		"domains": ["Embedded Systems", "Electronics Design"]
 	},
+	{
+		"title": "Distributed Music Player",
+		"subTitle": "Freelancing",
+		"tags": ["Electronics System Designing"],
+		"summary": "Play music in master slave architecture over 1000 metres open air range",
+		"projectDesc": {
+			"P1": "Integrated long range RF transiever, amplifier card, speaker, mp3 input to produce distributed music to be played in large area",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Electronics Design"]
+	},
+	{
+		"title": "Satellite Tracking",
+		"subTitle": "Freelancing",
+		"tags": ["Python", "Data Visualisation", "Plotly"],
+		"summary": "View and track orbits or satellite over globe given any time range.",
+		"projectDesc": {
+			"P1": "View and track orbits or satellite over globe given any time range.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Python"]
+	},
 ]
 
 module.exports = projects;

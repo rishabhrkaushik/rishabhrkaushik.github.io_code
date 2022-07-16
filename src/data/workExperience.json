@@ -5,12 +5,12 @@
 		"startDate": "July 2021",
 		"endDate": "Present",
 		"duration": "",
-		"jobTitle": "Design Engineer",
+		"jobTitle": "Lead Engineer",
 		"company": "Anora Instrumentation Pvt. Ltd.",
 		"location": "Chennai",
 		"team": "",
-    	"jobDesc": "",
-		"responsibilities": ["Hardware Designing", "Embedded Firmware", "Python Drivers", "System Designing", "Project Lifecycle Management", "Project Tracking", "Client and Vendor Interactions"]
+    	"jobDesc": "Project lead handling multiple clients and projects including Requirement Gathering, Proposals and Estimates, Design, Development, Schedule Tracking, Manufacturing and Deployment",
+		"responsibilities": ["Project Lifecycle Management", "Training Team", "Process Creation", "Hardware Designing", "Embedded Firmware", "Python Drivers", "System Designing", "Client and Vendor Interactions"]
 	},
 	{
 		"type": "Work",
@@ -27,8 +27,8 @@
 	{
 		"type": "Work",
 		"startDate": "April 2021",
-		"endDate": "Present",
-		"duration": "",
+		"endDate": "Aug 21",
+		"duration": "5 Months",
 		"jobTitle": "Javascript Instructor",
 		"company": "CampK12",
 		"location": "",

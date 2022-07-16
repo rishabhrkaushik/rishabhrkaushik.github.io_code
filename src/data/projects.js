@@ -1,5 +1,65 @@
 const projects = [
 	{
+		"title": "Semiconductor Validation, Battery Management System",
+		"subTitle": "Anora Instrumentation, Post Silicon",
+		"tags": ["Bench Validation", "Python Development", "Instrumentation"],
+		"summary": "Developing tests and test strategy for testing new generation of Battery Management IC's",
+		"projectDesc": {
+			"P1": "Engineering validation of new IC waffers. Conducting various parametric, functional, timing, system's test.",
+			"P2": "My Responsibilities included: ",
+			"B": ["Python Development", "Schematic Designing", "Framework Development"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": true,
+		"domains": ["Python", "Semiconductor Validation", "Test Bench", "Hardware Designing"]
+	},
+	{
+		"title": "System Tester for Solar Inverters",
+		"subTitle": "Anora Instrumentation, Beyond Silicon",
+		"tags": ["ATE", "Electronics", "Embedded Systems", "PCB Designing", "Instrumentation", "Project Management"],
+		"summary": "Designing and manufacturing for complete automated test assembly equipment.",
+		"projectDesc": {
+			"P1": " Designed and manufactured system testers for Solar Invertors for batch manufacturing. Designed custom equipment, selected COTS, designed test strategy and software for the same.",
+			"P2": "My Responsibilities included: ",
+			"B": ["System Designing", "Circuit Designing", "Harness Designing", "Firmware Development", "Test Automation Development"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": true,
+		"domains": ["ATE", "Electronics Design", "Python", "Embedded Systems"]
+	},
+	{
+		"title": "System Tester for Smart Relay",
+		"subTitle": "Anora Instrumentation, Beyond Silicon",
+		"tags": ["ATE", "Electronics", "Embedded Systems", "PCB Designing", "Instrumentation", "Project Management"],
+		"summary": "Designing and manufacturing for manual tester for Smart Relay Module.",
+		"projectDesc": {
+			"P1": " Designed and manufactured system testers for Smart Relay Module for batch manufacturing. Designed custom equipment, selected COTS, designed test strategy and software for the same.",
+			"P2": "My Responsibilities included: ",
+			"B": ["System Designing", "Circuit Designing", "Harness Designing", "Firmware Development", "Test Automation Development"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["ATE", "Electronics Design", "Python", "Embedded Systems"]
+	},
+	{
+		"title": "EVM Manufacturing",
+		"subTitle": "Anora Instrumentation, Beyond Silicon",
+		"tags": ["Electronics", "PCB Designing", "Manufacturing Management"],
+		"summary": "Designing and manufacturing for complete automated test assembly equipment.",
+		"projectDesc": {
+			"P1": "Manufactured multiple EVM and circuit boards. Vendor interfaction, schedule management, client management.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Electronics Design"]
+	},
+	{
 		"title": "Circuit Breaker Testing ATE",
 		"subTitle": "LnT Technology Services, Aerospace Vertical",
 		"tags": ["ATE", "Electronics", "LabView", "PCB Designing", "Documentation"],

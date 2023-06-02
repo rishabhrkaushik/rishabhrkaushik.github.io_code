@@ -1,13 +1,24 @@
-
 [
-	{
+		{
 		"type": "Work",
-		"startDate": "July 2021",
+		"startDate": "Jan 2023",
 		"endDate": "Present",
 		"duration": "",
 		"jobTitle": "Lead Engineer",
+		"company": "Anora LLC",
+		"location": "Dallas, USA",
+		"team": "",
+    	"jobDesc": "Project lead handling multiple clients and projects including Requirement Gathering, Proposals and Estimates, Design, Development, Schedule Tracking, Manufacturing and Deployment",
+		"responsibilities": ["Project Lifecycle Management", "Training Team", "Process Creation", "Hardware Designing", "Embedded Firmware", "Python Drivers", "System Designing", "Client and Vendor Interactions"]
+	},
+	{
+		"type": "Work",
+		"startDate": "July 2021",
+		"endDate": "Jan 2023",
+		"duration": "1.5 Years",
+		"jobTitle": "Lead Engineer",
 		"company": "Anora Instrumentation Pvt. Ltd.",
-		"location": "Chennai",
+		"location": "Chennai, India",
 		"team": "",
     	"jobDesc": "Project lead handling multiple clients and projects including Requirement Gathering, Proposals and Estimates, Design, Development, Schedule Tracking, Manufacturing and Deployment",
 		"responsibilities": ["Project Lifecycle Management", "Training Team", "Process Creation", "Hardware Designing", "Embedded Firmware", "Python Drivers", "System Designing", "Client and Vendor Interactions"]

@@ -1,5 +1,96 @@
 const projects = [
 	{
+		"title": "Power Converters Manufacturing and Debugging",
+		"subTitle": "Anora LLC, System's Testing",
+		"tags": ["Power Electronics", "Hardware Debugging", "Manufacturing", "Project Management"],
+		"summary": "Manufacturing, Test and Debug of various power converters based on SiCFETs",
+		"projectDesc": {
+			"P1": "Design and perform tests and debug procedure for manufacturing units of various power converters based on SiCFETs. High power and high density boards were manufactured and tested.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": true,
+		"domains": ["Power Electronics", "Hardware Debugging", "Manufacturing", "Project Management"]
+	},
+	{
+		"title": "Firmware and UI Development for Modular Power Converters",
+		"subTitle": "Anora LLC, System's Testing",
+		"tags": ["Firmware Development", "Software Maintainance", "Embedded Systems"],
+		"summary": "Developed firmware for evaluating various features of a modular evaluation platorm.",
+		"projectDesc": {
+			"P1": "The program is used to prototype and evaluate performance of various power converter applications. Running on a custom hardware, the program is used to control and monitor various parameters of the power converter.",
+			"P2": "The firmware is developed in C on C2000 family of uC by TI. The UI is developed in C# using WPF. The major features of the program include:",
+			"B": ["Free Running PWM", "One Shot PWM", "ADC", "MODBUS", "UART"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": true,
+		"domains": ["Firmware Development", "Software Maintainance", "Embedded Systems", "C2000", "C#"]
+	},
+	{
+		"title": "LabVIEW Wrapper for Device Driver", 
+		"subTitle": "Anora LLC, System's Testing",
+		"tags": ["LabVIEW", "CPP"],
+		"summary": "Developed LabVIEW wrapper for a PXI card device driver",
+		"projectDesc": {
+			"P1": "Wrote LabVIEW wrapper for a PXI card device driver. The driver was written in C++ and the wrapper was written in LabVIEW. The wrapper was used to control the PXI card from LabVIEW.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Firmware Development", "Software Maintainance", "Embedded Systems", "C2000", "C#"]
+	},
+	{
+		"title": "Wafer Probing Station Automation",
+		"subTitle": "Anora LLC, System's Testing",
+		"tags": ["Industrial Automation", "Electronics", "Embedded Systems", "PCB Designing", "Instrumentation", "Project Management", "Driver Developlment"],
+		"summary": "Automating wafer probing station so that it can be controlled by PC",
+		"projectDesc": {
+			"P1": "Designing and manufacturing of a custom instrument to control legacy wafer probing station using PC. The solution consist of uC based design to sense and control the wafer probing station.",
+			"P2": "Various part of solution include:",
+			"B": ["PCB Designing", "Circuit Designing", "Firmware Development", "Driver Development", "Enclosure Design", "Reverse Engineer", "Project Management", "Manufacturing"]
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Hardware Designing", "Embedded Systems", "PCB Designing", "Instrumentation", "Project Management", "Driver Development"]
+	},
+	{
+		"title": "Playing with Flipper Zero",
+		"subTitle": "Exploratory Project",
+		"tags": ["Flipper Zero", "Hardware Hacking"],
+		"summary": "Playing around with various flipper zero firmware and applications",
+		"projectDesc": {
+			"P1": "The Flipper Zero is a small, open-source, hardware hacking platform. It is a tiny computer that can be used for penetration testing, reverse engineering, and general hacking.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": false,
+		"domains": ["Hardware Hacking"]
+	},	
+	{
+		"title": "Playing with AI APIs",
+		"subTitle": "Exploratory Project",
+		"tags": ["OpenAI", "Python"],
+		"summary": "Playing around with various LLM and AI APIs",
+		"projectDesc": {
+			"P1": "Exploring capabilities of various AI APIs and LLM APIs. Working with OpenAI, HuggingFace, langchain framework, etc.",
+			"P2": "",
+			"B": []
+		},
+		"images": [],
+		"links": {},
+		"topProject": true,
+		"domains": ["Python", "AI"]
+	},	
+
+	{
 		"title": "Semiconductor Validation, Battery Management System",
 		"subTitle": "Anora Instrumentation, Post Silicon",
 		"tags": ["Bench Validation", "Python Development", "Instrumentation"],
@@ -7,7 +98,7 @@ const projects = [
 		"projectDesc": {
 			"P1": "Engineering validation of new IC waffers. Conducting various parametric, functional, timing, system's test.",
 			"P2": "My Responsibilities included: ",
-			"B": ["Python Development", "Schematic Designing", "Framework Development"]
+			"B": ["Framework Development", "Python Development", "Leading Project", "Schematic Designing"]
 		},
 		"images": [],
 		"links": {},
@@ -50,7 +141,7 @@ const projects = [
 		"tags": ["Electronics", "PCB Designing", "Manufacturing Management"],
 		"summary": "Designing and manufacturing for complete automated test assembly equipment.",
 		"projectDesc": {
-			"P1": "Manufactured multiple EVM and circuit boards. Vendor interfaction, schedule management, client management.",
+			"P1": "Manufactured multiple EVM and circuit boards. Vendor interaction, schedule management, client management.",
 			"P2": "",
 			"B": []
 		},
@@ -169,12 +260,12 @@ const projects = [
 	{
 		"title": "RPi Server",
 		"subTitle": "True-education internship",
-		"tags": ["Raspberry Pi", "Linux"],
+		"tags": ["Raspberry Pi", "Linux", "Docker"],
 		"summary": "A 24*7 running machine capable of daily computational needs",
 		"projectDesc": {
 			"P1": "Set up a complete server on Raspberry Pi for day to day operations.The server would be accesible from all intranet devices with appropriate permissions. Learnt configuration of Linux.",
 			"P2": "The following services and servers were configured",
-			"B": ["File Sharing Server", "Print Server", "Media Server", "Web Server", "NodeJS server"]
+			"B": ["Paperless", "PiHole", "File Sharing Server", "Print Server", "Media Server", "Web Server", "NodeJS server", "Portainer"]
 		},
 		"images": [],
 		"links": {},

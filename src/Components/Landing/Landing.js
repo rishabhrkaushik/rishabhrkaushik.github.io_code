@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faQuora } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 // for fading text
 import ReactTextRotator from 'react-text-rotator';
@@ -163,8 +163,8 @@ function Landing() {
             <a href="https://github.com/rishabhrkaushik" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="social-icon" icon={faGithub} />
             </a>
-            <a href="https://www.quora.com/profile/Rishabh-Kaushik-4" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="social-icon" icon={faQuora} />
+            <a href="https://medium.com/@rishabhrkaushik" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="social-icon" icon={faMedium} />
             </a>
           </div>
         </div>

@@ -24,12 +24,15 @@ class Contact extends Component {
           </div>
           <div className="column">
             <div>
-              +91-8055878067
+              +1 469-743-1906
+            </div>
+            <div>
+              +91 805-587-8067
             </div>
           </div>
           <div className="column">
             <div>
-              Bangalore, India
+              Richardson, Texas, USA
             </div>
           </div>
         </div>
